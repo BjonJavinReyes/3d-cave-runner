@@ -112,7 +112,17 @@ function WaitThenFinish() {
 	statsData["totalDistance"] = TotalDistance.ToString();
 	Skillz.ReportStats(TotalScore, statsData);
 	
-	Application.LoadLevel("end");
+	if (PlayerPrefs.GetInt("SkillzGame") == 1) { //Skillz tournament game
+		var metrics = new Dictionary.<String,String>();
+		metrics["score"] = TotalScore.ToString();
+		Skillz.ReportFinalScore(metrics);
+		
+		PlayerPrefs.SetInt("SkillzGame", 0);
+		Application.LoadLevel("start");
+		Application.LoadLevel("transition");
+	} else { //single player game
+		Application.LoadLevel("end");
+	}
 }
 
 public var showScoreOnScreen : boolean = true;
