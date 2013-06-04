@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="skillz_onboard_tab_height">108dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_ic_cash_height">60dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_cash_width">47dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_height">58dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_width">46dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_b_padding_right">5dp</dimen><!-- 2.0 -->
+    
+    <!-- Cards -->
+    <dimen name="skillz_card_width">216dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_height">309dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_spacing">16dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_padding_top">10dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_title_padding_bottom">6dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_ic_award_width">60dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_award_height">75dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_section_2_padding">10dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_i10_deposit_tile_width">252dp</dimen>
+    <dimen name="skillz_i10_deposit_tile_height">300dp</dimen>
+    <dimen name="skillz_i10_profile_nav_text_size">18sp</dimen>
+    
+    <dimen name="skillz_geotrust_dark_width">126dp</dimen>
+    <dimen name="skillz_geotrust_dark_height">44dp</dimen>
+    <dimen name="skillz_geotrust_trans_width">102dp</dimen>
+    <dimen name="skillz_geotrust_trans_height">31dp</dimen>
+</resources>

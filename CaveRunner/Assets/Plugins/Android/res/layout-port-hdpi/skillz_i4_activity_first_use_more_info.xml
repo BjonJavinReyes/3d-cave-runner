@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+    <!--  <include layout="@layout/skillz_i10_actionbar" /> -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1" 
+        android:background="@drawable/skillz_i4_box_backing_fade">
+        <RelativeLayout
+            android:id="@+id/skillzLogoContainer"
+      		android:layout_width="match_parent"
+      	 	android:layout_height="wrap_content"
+      	 	android:layout_margin="10dp"
+      	  	android:background="@drawable/skillz_i4_bg_tournaments_header_content_one">
+      	  	<ImageView
+      	  	    android:id="@+id/skillzBetaTag"
+      	  	    android:layout_width="wrap_content"
+      	  	    android:layout_height="70dp"
+      	  	    android:scaleType="fitEnd"
+      	  	    android:layout_alignParentTop="true"
+      	  	    android:layout_alignParentRight="true"
+      	  	    android:src="@drawable/skillz_i4_tag_beta" />
+		    <ImageView 
+		        android:id="@+id/skillzLogo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="16dp"
+		        android:paddingBottom="16dp"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/skillz_i4_icon_logo"/>
+			<TextView
+			    android:id="@+id/skillzInfoTagline"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:paddingBottom="10dp"
+			    android:layout_centerHorizontal="true"
+			    android:gravity="bottom|center_horizontal"
+			    android:layout_below="@id/skillzLogo"
+			    android:contentDescription="@string/skillz_font_helvetica_black_cn"
+			    style="@style/Skillz.I4.TextView.White.SmallPlus.Shadow"
+			    android:text="@string/skillz_i4_info_tagline" />
+	    </RelativeLayout>
+    
+        <LinearLayout
+            android:id="@+id/skillzInnerInfoBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/skillzLogoContainer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/skillz_i4_bg_moreinfo_content">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/skillz_i4_icon_info_dudes" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    style="@style/Skillz.I4.TextView.DarkGray.Small"
+                    android:text="@string/skillz_i4_info_join" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/skillz_i4_icon_info_play" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    style="@style/Skillz.I4.TextView.DarkGray.Small"
+                    android:text="@string/skillz_i4_info_play" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/skillz_i4_icon_info_win" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    style="@style/Skillz.I4.TextView.DarkGray.Small"
+                    android:text="@string/skillz_i4_info_win" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+	    <Button
+		    android:id="@+id/skillzCreateAccount"
+		    android:layout_width="match_parent"
+		    android:layout_height="80dp"
+		    android:layout_gravity="top|center_horizontal"
+		    android:gravity="center"
+		    android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+		    style="@style/Skillz.I4.Button.Gold.Large.Shadow"
+		    android:text="@string/skillz_i4_freesignup" />
+	    <TextView
+	        android:id="@+id/skillzAlreadyHaveAnAccount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        style="@style/Skillz.I4.TextView.White.Small.Shadow"
+	        android:text="@string/skillz_i4_already_have_an_account" />
+	</LinearLayout>
+</LinearLayout>

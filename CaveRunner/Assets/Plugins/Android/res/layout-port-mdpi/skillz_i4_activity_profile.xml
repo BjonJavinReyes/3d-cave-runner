@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/skillzLoadedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/skillzAB"
+        android:layout_marginTop="@dimen/skillz_i4_view_negative_actionbar_margin"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/skillz_i4_margin_full"
+                android:background="@drawable/skillz_i4_bg_player_card"
+                android:orientation="vertical" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/skillz_i4_view_player_card_header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/skillz_i4_bg_player_card_footer"
+                    android:orientation="vertical"
+                    android:padding="@dimen/skillz_i4_margin_full" >
+
+                    <include
+                        android:id="@+id/skillzTauntContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        layout="@layout/skillz_i4_view_taunt" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                        layout="@layout/skillz_i4_view_player_winning_ratio" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                        layout="@layout/skillz_i4_view_player_high_score" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                        layout="@layout/skillz_i4_view_player_games_played" />
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                        layout="@layout/skillz_i4_view_player_avg_score" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/Skillz.I4.TextView.Slate.Micro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+                            android:text="@string/skillz_i4_gaming_history" />
+
+                        <TextView
+                            android:id="@+id/skillzLongestStreak"
+                            style="@style/Skillz.I4.TextView.Slate.Micro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+                            android:text="@string/skillz_i4_longest_win_streak" />
+                    </RelativeLayout>
+
+                    <com.skillz.android.client.ui.views.WinLossGraph
+                        android:id="@+id/skillzResultsGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="@dimen/skillz_i4_margin_full"
+                        android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                        android:background="@drawable/skillz_i4_bg_gamer_graph"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/skillzReportUser"
+                    style="@style/Skillz.I4.TextView.DarkGray.Micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+                    android:text="@string/skillz_i4_report_user" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/skillzProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <include
+        android:id="@+id/skillzAB"
+        android:layout_alignParentTop="true"
+        layout="@layout/skillz_i4_actionbar" />
+
+    <include
+        layout="@layout/skillz_i4_view_upload_avatar"
+        android:visibility="gone" />
+
+</RelativeLayout>

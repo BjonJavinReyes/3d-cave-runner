@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/skillzHeader"
+            style="@style/Skillz.I10.View.Header.Relative"
+            android:text="@string/skillz_withdraw" />
+
+        <TextView
+            android:id="@+id/skillzTextView"
+            style="@style/Skillz.I10.Text.Gray.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/skillzFooter"
+            android:layout_below="@id/skillzHeader"
+            android:padding="@dimen/skillz_i10_side_margin" />
+
+        <LinearLayout
+            android:id="@+id/skillzFooter"
+            style="@style/Skillz.I10.View.Footer"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/skillzCancelButton"
+                style="@style/Skillz.I10.Button.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_cancel" />
+
+            <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+            <Button
+                android:id="@+id/skillzNextButton"
+                style="@style/Skillz.I10.Button.Large.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

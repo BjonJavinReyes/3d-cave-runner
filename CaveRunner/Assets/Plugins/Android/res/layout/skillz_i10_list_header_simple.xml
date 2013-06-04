@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/skillz_i10_side_margin_half"
+    android:paddingLeft="@dimen/skillz_i10_side_margin_half"
+    android:background="@color/skillz_i10_bg_list_header">
+    <ImageView
+        android:id="@+id/skillzListHeaderIcon"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="@dimen/skillz_i10_side_margin"
+        android:layout_marginRight="@dimen/skillz_i10_side_margin"
+        style="@style/Skillz.I10.View.ExpandIcon" />
+    <TextView
+        android:id="@+id/skillzListHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Skillz.I10.Text.White.Small.Bold.Shadow" />
+</LinearLayout>

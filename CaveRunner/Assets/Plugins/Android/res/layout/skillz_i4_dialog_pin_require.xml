@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzDialog"
+    style="@style/Skillz.I10.View.Dialog.Background"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/skillzDialogContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/skillz_i4_prompt_silver_slate_temp"
+        android:orientation="vertical" >
+        <ScrollView
+            android:id="@+id/skillzDialogMessageScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+		        <com.skillz.android.client.ui.views.GradientTextView
+		            android:id="@+id/skillzDialogMessage"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+		            android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+		            android:angle="90"
+		            android:gravity="center"
+		            android:singleLine="true"
+		            android:layout_marginTop="20dp"
+		            android:layout_marginBottom="10dp"
+		            android:text="@string/skillz_i4_dialog_require_pin"
+		            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+		            style="@style/Skillz.I4.TextView.Black.XLarge" />
+		        <EditText 
+		            android:id="@+id/skillzPin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="left|center_vertical"
+		            android:singleLine="true"
+		            android:layout_marginBottom="5dp"
+		            android:hint="@string/skillz_i4_dialog_pin_hint"
+		            android:maxLength="4"
+		            android:inputType="number|textNoSuggestions|textFilter"
+		            style="Skillz.I11.Input.Text.Prompt"
+		            />
+ 		        <com.skillz.android.client.ui.views.GradientTextView
+		            android:id="@+id/skillzDialogTagline"
+		            android:text="@string/skillz_i4_dialog_require_pin_desc"
+		            android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+		            android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+		            android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+		            android:angle="90"
+		            style="@style/Skillz.I4.TextView.Black.Small"
+		            android:layout_marginBottom="5dp"
+		            android:padding="5dp"
+		            android:gravity="center"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" />
+		    </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/skillzDialogContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:visibility="gone" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/skillzProgressView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="16dip"
+            android:paddingTop="16dip"
+            android:visibility="gone" >
+            <ProgressBar
+                android:id="@+id/skillzProgressBar"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" />
+            <TextView
+                android:id="@+id/skillzProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/skillz_i10_text_gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/skillzDialogFooter"
+        style="@style/Skillz.I10.View.Dialog.Footer" >
+        <Button
+            android:id="@+id/skillzDialogCancelButton"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+            style="@style/Skillz.I10.Button.Small"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/skillz_i4_dialog_require_pin_cancel" />
+        <View
+            android:id="@+id/skillzDialogButtonDivider"
+            style="@style/Skillz.I10.View.ButtonDivider" />
+        <Button
+            android:id="@+id/skillzDialogActionButton"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+            style="@style/Skillz.I10.Button.Small"
+            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/skillz_i4_dialog_require_pin_settings" />
+    </LinearLayout>
+</LinearLayout>

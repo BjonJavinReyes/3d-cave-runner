@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/skillzLoadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:id="@+id/skillzLoadedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/skillzAB"
+        android:layout_marginTop="@dimen/skillz_i4_view_negative_actionbar_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/skillzAB"
+            android:layout_margin="@dimen/skillz_i4_margin_full"
+            android:background="@drawable/skillz_i4_bg_player_card"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/skillz_i4_view_player_card_header" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/skillz_i4_bg_player_card_footer"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="@dimen/skillz_i4_margin_full" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:clipChildren="false" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/skillz_i4_bg_taunt_container"
+                        android:clipChildren="false" >
+
+                        <TextView
+                            android:id="@+id/skillzTauntText"
+                            style="@style/Skillz.I4.TextView.White.Medium.Shadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                            android:text="YOU REALLY SHOULD JUST DIE" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_marginTop="-8dp"
+                        android:src="@drawable/skillz_i4_icon_quote_start" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="-8dp"
+                        android:layout_marginRight="-8dp"
+                        android:src="@drawable/skillz_i4_icon_quote_end" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/skillzListView"
+                    style="@style/Skillz.I4.ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/skillz_i4_margin_full"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/skillz_i4_margin_half"
+                    android:paddingBottom="@dimen/skillz_i4_margin_half"
+                    android:overScrollMode="never"
+                    android:background="@drawable/skillz_i4_bg_player_card_metric" />
+
+                <TextView
+                    android:id="@+id/skillzTauntsCollected"
+                    style="@style/Skillz.I4.TextView.DarkGray.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/skillz_i4_margin_half"
+                    android:layout_marginTop="@dimen/skillz_i4_margin_half"
+                    android:contentDescription="@string/skillz_i4_font_helvetica_black_cn" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/skillzAB"
+        android:layout_alignParentTop="true"
+        layout="@layout/skillz_i4_actionbar" />
+
+</RelativeLayout>

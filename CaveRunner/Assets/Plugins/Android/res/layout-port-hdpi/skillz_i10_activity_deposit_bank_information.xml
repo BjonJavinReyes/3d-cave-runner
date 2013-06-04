@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/skillzHeader"
+                style="@style/Skillz.I10.View.Header"
+                android:text="@string/skillz_deposit_bank_info_deposit" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/skillzDepositBankInfoFirstName"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:maxLength="40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:nextFocusDown="@+id/skillzDepositBankInfoLastName"
+                    android:hint="@string/skillz_deposit_bank_info_first_name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/skillzDepositBankInfoLastName"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:maxLength="40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_deposit_bank_info_last_name"
+                    android:inputType="textCapWords" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/skillzDepositBankInfoZipCode"
+                style="@style/Skillz.I10.Input.Text.Margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:hint="@string/skillz_deposit_bank_info_zip_code"
+                android:nextFocusDown="@id/skillzDepositBankInfoAccountNumber" />
+
+            <EditText
+                android:id="@+id/skillzDepositBankInfoAccountNumber"
+                style="@style/Skillz.I10.Input.Text.Margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/skillz_deposit_bank_info_account_number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/skillzDepositBankInfoRoutingNumber"
+                style="@style/Skillz.I10.Input.Text.Margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/skillz_deposit_bank_info_routing_number"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/Skillz.I10.Text.Gray.Small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="@string/skillz_deposit_bank_info_what_are_these" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/skillzDepositBankInfoRememberCheckBox"
+                    style="@style/Skillz.I10.Input.CheckBox" />
+
+                <TextView
+                    style="@style/Skillz.I10.Text.Gray.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dip"
+                    android:text="@string/skillz_deposit_bank_info_save_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/skillzFooter"
+                style="@style/Skillz.I10.View.Footer" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+                <Button
+                    android:id="@+id/skillzDepositBankInfoDepositButton"
+                    style="@style/Skillz.I10.Button.Large.Blue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/skillz_deposit_bank_info_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

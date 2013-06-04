@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+	
+    <RelativeLayout
+            android:id="@+id/skillzProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/skillzProgressBar"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/skillzLoadedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/skillz_i4_view_negative_actionbar_margin">        
+        <RelativeLayout
+            android:id="@+id/skillzHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/skillz_i4_bg_my_account_header">
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="60dp"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="left|center_vertical"
+		        android:singleLine="true"
+		        android:text="@string/skillz_i4_my_account"
+		        android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+		        style="@style/Skillz.I4.TextView.LighterGray.MediumPlus"/>
+        </RelativeLayout>
+        
+        <ListView
+            android:id="@+id/skillzListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/skillzFooter"
+            android:layout_below="@+id/skillzHeader"
+            style="@style/Skillz.I4.ListView"/>
+        
+        <View
+            android:id="@+id/skillzFooter"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/skillz_i4_bg_tournament_results_footer" />
+    </RelativeLayout>
+
+</LinearLayout>

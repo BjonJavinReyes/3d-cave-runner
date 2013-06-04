@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_window_focused="false"
+        android:state_enabled="true"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_default" />
+ 
+    <item
+        android:state_window_focused="false"
+        android:state_enabled="false"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_default" />
+ 
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_selected" />
+ 
+    <item
+        android:state_enabled="true"
+        android:state_focused="true"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_selected" />
+ 
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_default" />
+ 
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_disabled" />
+ 
+    <item
+        android:drawable="@drawable/skillz_i10_bg_text_field_dark_disabled" />
+ 
+</selector>

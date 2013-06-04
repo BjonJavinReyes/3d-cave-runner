@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/skillz_i4_bg_tournament_tile"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skillzTournamentName"
+            style="@style/Skillz.I4.TextView.LighterGray.Medium"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/skillz_i4_margin_half"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/skillz_i4_margin_half"
+            android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+            android:layout_marginRight="@dimen/skillz_i4_margin_full"
+            android:layout_marginTop="@dimen/skillz_i4_margin_half"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/skillz_i4_bg_tournament_tile_header"
+                android:clipChildren="false"
+                android:clipToPadding="false" >
+
+                <ImageView
+                    android:id="@+id/skillzTournamentPrizesIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-2dp"
+                    android:src="@drawable/skillz_i4_icon_prizes_orange" />
+
+                <TextView
+                    android:id="@+id/skillzTournamentPrizes"
+                    style="@style/Skillz.I4.TextView.DarkGray.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/skillz_i4_margin_full"
+                    android:layout_marginBottom="@dimen/skillz_i4_margin_full"
+                    android:layout_marginRight="@dimen/skillz_i4_margin_half"
+                    android:contentDescription="@string/skillz_i4_font_helvetica_black_cn" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/skillz_i4_bg_tournament_tile_footer" >
+
+                <LinearLayout
+                    android:id="@+id/skillzTournamentInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/skillz_i4_margin_half"
+                    android:background="@drawable/skillz_i4_bg_tournament_tile_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/skillz_i4_margin_half"
+                        android:background="@drawable/skillz_i4_bg_tournament_tile_content_dark">
+
+                        <ImageView
+                            android:id="@+id/skillzPlayersIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/skillz_i4_margin_full"
+                            android:layout_marginBottom="@dimen/skillz_i4_margin_full"
+                            android:src="@drawable/skillz_i4_icon_players" />
+
+                        <TextView
+                            android:id="@+id/skillzTournamentPlayerCountLabel"
+                            style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                            android:gravity="center_vertical"
+                            android:text="@string/skillz_i4_players_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/skillz_i4_margin_quarter"
+                            android:layout_toRightOf="@id/skillzPlayersIcon"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_roman" />
+                        
+                        <TextView
+                            android:id="@+id/skillzTournamentPlayerCount"
+                            style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+                            android:layout_toRightOf="@id/skillzTournamentPlayerCountLabel"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_roman" />
+
+                        <ImageView
+                            android:id="@+id/skillzTournamentInfoIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/skillz_i4_icon_info" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:id="@+id/skillzTournamentTimeLabel"
+                            style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                            android:text="@string/skillz_i4_begins_label"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+                            android:drawablePadding="@dimen/skillz_i4_margin_quarter"
+                            android:drawableLeft="@drawable/skillz_i4_icon_clock" />
+                        
+                        <TextView
+                            android:id="@+id/skillzTournamentTime"
+                            android:gravity="center_vertical"
+                            style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/skillzTournamentTimeLabel"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+                            android:contentDescription="@string/skillz_i4_font_helvetica_roman" />
+
+                        <View
+                            android:layout_toLeftOf="@+id/skillzEntryContainer"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/skillz_i4_margin_half"
+                            android:background="#333333" />
+                        
+                        <LinearLayout
+                            android:id="@+id/skillzEntryContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="@dimen/skillz_i4_margin_half">
+
+                            <TextView
+                                style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+                                android:text="@string/skillz_i4_entry" />
+
+                            <TextView
+                                android:id="@+id/skillzTournamentFee"
+                                style="@style/Skillz.I4.TextView.LighterGray.Micro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/skillz_i4_font_helvetica_bold" >
+                            </TextView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/skillzTournamentCompeteButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/skillz_i4_button_gold_up">
+			<ImageView
+			    android:id="@+id/skillzTournamentArrows"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_alignParentLeft="true"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/skillz_i4_icon_arrows_orange" />
+            
+            <TextView
+                style="@style/Skillz.I4.TextView.White.Large.Shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignTop="@id/skillzTournamentArrows"
+                android:layout_alignBottom="@id/skillzTournamentArrows"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/skillz_i4_margin_full"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                android:text="@string/skillz_i4_start" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

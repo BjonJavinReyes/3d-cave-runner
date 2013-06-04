@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@color/skillz_i10_bg_list_pressed"
+        android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/skillz_i10_bg_list_pressed" />
+        </shape>
+    </item>
+    <item
+        android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/skillz_i10_bg_list_pressed" />
+        </shape>
+    </item>
+</selector>

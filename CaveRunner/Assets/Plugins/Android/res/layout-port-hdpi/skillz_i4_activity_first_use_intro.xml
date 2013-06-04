@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/skillz_onboard_actionbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/skillz_i4_background" >
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+			    	android:id="@+id/skillzHeader"
+			    	layout="@layout/skillz_i4_view_header_logo" />  
+                <LinearLayout
+                    android:id="@+id/skillzIntroCompeteBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_below="@+id/skillzHeader"
+                    android:orientation="horizontal"
+                    android:background="@drawable/skillz_i4_graphics_landing_greybar">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/skillz_i4_graphics_landing_compete" />
+                        <com.skillz.android.client.ui.views.FillWidthTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+					        android:textColor="@color/skillz_i4_text_slate"
+					        android:textSize="@dimen/skillz_i4_text_small"
+					        android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                            android:text="@string/skillz_i4_landing_compete_subtitle" />
+                    </LinearLayout>
+                     <ImageView
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="0.40"
+                         android:scaleType="fitStart"
+                         android:src="@drawable/skillz_i4_icon_landing_users" />
+                </LinearLayout>
+               <LinearLayout
+                    android:id="@+id/skillzIntroWinPrizesBar"
+                    android:layout_alignTop="@+id/skillzIntroCompeteBar"
+                    android:layout_marginTop="110dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/skillz_i4_graphics_landing_greybar">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:gravity="center">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/skillz_i4_graphics_landing_winprizes" />
+                        <com.skillz.android.client.ui.views.FillWidthTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+					        android:textColor="@color/skillz_i4_text_slate"
+					        android:textSize="@dimen/skillz_i4_text_small"
+					        android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                            android:text="@string/skillz_i4_landing_winprizes_subtitle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="149dp"
+                    android:layout_height="144dp"
+                    android:layout_alignLeft="@+id/skillzIntroWinPrizesBar"
+                    android:layout_alignTop="@+id/skillzIntroWinPrizesBar"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginLeft="-50dp"
+                    android:src="@drawable/skillz_i4_icon_landing_cash" />
+                <Button
+			        android:id="@+id/skillzFirstUseIntroCreateAccount"
+			        android:layout_below="@+id/skillzIntroWinPrizesBar"
+			        android:layout_width="match_parent"
+			        android:layout_height="80dp"
+			        android:gravity="center"
+			        android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+			        style="@style/Skillz.I4.Button.Gold.Large.Shadow"
+			        android:text="@string/skillz_i4_freesignup" />
+			</RelativeLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i4_landing_login_bg"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:layout_marginTop="5dp">
+            <EditText 
+                android:id="@+id/skillzFirstUseIntroUsername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/skillz_i4_landing_username"
+                style="@style/Skillz.I11.Input.Text.IntroLogin"
+                android:inputType="textNoSuggestions|textFilter"
+                android:nextFocusDown="@+id/skillzFirstUseIntroPassword"
+                android:singleLine="true" />
+            <EditText 
+                android:id="@+id/skillzFirstUseIntroPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/skillz_i4_landing_password"
+                style="@style/Skillz.I11.Input.Text.IntroLogin"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/skillzFirstUseIntroRememberMeBar"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/skillz_i4_landing_login_left" >
+                <CheckBox
+                    android:id="@+id/skillzFirstUseIntroRememberMe"
+                    android:layout_width="@dimen/skillz_i11_checkbox_grey_size"
+                    android:layout_height="@dimen/skillz_i11_checkbox_grey_size"
+                    android:button="@drawable/skillz_i4_checkbox_grey"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/skillzFirstUseIntroRememberMeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/skillz_i4_text_lighter_gray"
+                    android:textSize="@dimen/skillz_i4_text_small"
+                    android:contentDescription="@string/skillz_i4_font_helvetica_light"
+                    android:text="@string/skillz_i4_landing_rememberme" />
+                </LinearLayout>
+           	<TextView
+           	    android:id="@+id/skillzFirstUseIntroLogin"
+           	    android:layout_weight="5"
+           	    android:layout_width="0dp"
+           	    android:layout_height="match_parent"
+           	    android:gravity="center"
+           	    android:background="@drawable/skillz_i4_landing_login_right_selector"
+           	    android:textColor="@color/skillz_i4_text_white"
+           	    android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+           	    android:textSize="@dimen/skillz_i4_text_small_plus"
+           	    android:text="@string/skillz_i4_landing_login" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

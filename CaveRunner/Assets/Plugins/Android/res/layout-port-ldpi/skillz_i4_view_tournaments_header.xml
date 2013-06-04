@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/skillz_i4_bg_tournaments_header_arrow"
+    android:layout_width="match_parent"
+    android:layout_height="90dp" >
+    <LinearLayout 
+        android:id="@+id/skillzFilterContentContainer"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/skillzHeaderContentLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/skillz_i4_bg_tournaments_header_content_left" >
+            <TextView
+                android:id="@+id/skillzChooseGamesText"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textSize="@dimen/skillz_i4_text_micro"
+                android:textColor="#d0d0d0"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+                android:text="@string/skillz_i4_tournaments_filter_choose" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+	            <TextView
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:gravity="center_vertical|left"
+	                android:singleLine="true"
+	                android:textSize="@dimen/skillz_i4_text_mini"
+	                android:textColor="#d0d0d0"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+	                android:text="@string/skillz_i4_tournaments_game_type" />
+	            <TextView
+	                android:id="@+id/skillzTournamentTypeText"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:paddingLeft="2dp"
+	                android:gravity="center_vertical|left"
+	                android:singleLine="true"
+	                android:textColor="@color/skillz_i4_text_white"
+	                android:textSize="@dimen/skillz_i4_text_mini"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+	                android:text="@string/skillz_i4_tournaments_game_type_all" />
+	        </LinearLayout>
+         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/skillzHeaderContentDivider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/skillzHeaderContentRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/skillz_i4_bg_tournaments_header_content_right">
+            <LinearLayout
+                android:id="@+id/skillzFilterSelect"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ToggleButton
+                    android:id="@+id/skillzFilterCash"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:gravity="center"
+                    android:background="@drawable/skillz_i4_selector_filter_cash"
+                    android:checked="true" />
+                <ToggleButton
+                    android:id="@+id/skillzFilterZ"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:gravity="center"
+                    android:background="@drawable/skillz_i4_selector_filter_z"
+                    android:checked="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+	    android:id="@+id/skillzNoCashFilterContentContainer"
+	    android:visibility="gone"
+   		android:layout_width="match_parent"
+	    android:layout_height="49dp"
+	    android:layout_marginTop="14dp"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"
+	    android:layout_alignParentTop="true"
+	    android:orientation="horizontal">
+        <LinearLayout
+             android:id="@+id/skillzHeaderNoCashContent"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:padding="3dp"
+             android:background="@drawable/skillz_i4_bg_tournaments_header_content_one" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/skillz_i4_text_medium"
+                android:textColor="@color/skillz_i4_text_white"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+                android:text="@string/skillz_i4_tournaments_tournament_selection" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:orientation="horizontal">
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/skillz_i4_text_micro"
+	                android:textColor="@color/skillz_i4_text_white"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+	                android:text="@string/skillz_i4_tournaments_game_type" />
+	            <TextView
+	                android:id="@+id/skillzNoCashTournamentTypeText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="2dp"
+	                android:textSize="@dimen/skillz_i4_text_micro"
+	                android:textColor="@color/skillz_i4_text_blue_standard"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_bold" />
+	        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

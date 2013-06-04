@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#bdbdbd"/>
+            <corners android:radius="@dimen/skillz_i10_card_corner_radius" />
+        </shape>
+    </item>
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#5373aa"
+                android:centerColor="#505daf"
+                android:endColor="#694ad0"
+                android:angle="270"/>
+            <corners android:radius="@dimen/skillz_i10_card_corner_radius"/>
+        </shape>
+    </item>
+</layer-list>

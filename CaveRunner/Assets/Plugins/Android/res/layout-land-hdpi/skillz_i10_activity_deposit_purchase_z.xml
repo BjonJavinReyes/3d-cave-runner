@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin"
+        android:paddingLeft="@dimen/skillz_i10_side_margin"
+        android:paddingRight="@dimen/skillz_i10_side_margin" >
+
+        <TextView
+            android:id="@+id/skillzHeader"
+            style="@style/Skillz.I10.View.Header.Relative"
+            android:text="@string/skillz_i10_deposit_select_z_amount" />
+      
+        <View
+            android:id="@+id/skillzFooter"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" />
+
+        <com.skillz.android.client.ui.views.HorizontalListView
+            android:id="@+id/skillzZAmountHorizontalListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/skillzFooter"
+            android:layout_below="@id/skillzHeader"
+            android:cacheColorHint="@null" />
+
+    </RelativeLayout>
+
+</LinearLayout>

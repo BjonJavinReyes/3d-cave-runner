@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzListItemMenuName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/skillz_i10_text_size_medium_small"
+    android:textColor="@color/skillz_i10_list_item_gray"
+    android:gravity="center_vertical"
+    android:drawablePadding="6dp"
+    android:paddingLeft="4dp" 
+    android:paddingRight="4dp" 
+    android:paddingTop="2dp" 
+    android:paddingBottom="2dp" 
+    />

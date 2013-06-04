@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Skillz"></style>
+    <style name="Skillz.I4"></style>
+    
+    <!-- TextView -->
+    <style name="Skillz.I4.TextView"></style>
+    
+    <style name="Skillz.I4.TextView.White">
+        <item name="android:textColor">@color/skillz_i4_text_white</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Unreadable">
+        <item name="android:textSize">@dimen/skillz_i4_text_unreadable</item>
+    </style>
+     <style name="Skillz.I4.TextView.White.UnreadablePlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_unreadable_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+
+    <style name="Skillz.I4.TextView.White.Micro.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Small.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.SmallPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+   </style>
+    <style name="Skillz.I4.TextView.White.Medium.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.MediumPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Large.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.XLarge.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.Hero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.White.SuperHero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.Black">
+        <item name="android:textColor">@color/skillz_i4_text_black</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.Black.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.LightGray">
+        <item name="android:textColor">@color/skillz_i4_text_light_gray</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightGray.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.DarkGray">
+        <item name="android:textColor">@color/skillz_i4_text_dark_gray</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Mini">
+        <item name="android:textSize">@dimen/skillz_i4_text_mini</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.DarkGray.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.Slate">
+        <item name="android:textColor">@color/skillz_i4_text_slate</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Unreadable">
+        <item name="android:textSize">@dimen/skillz_i4_text_unreadable</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.UnreadablePlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_unreadable_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.Slate.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.LightBlue">
+        <item name="android:textColor">@color/skillz_i4_text_light_blue</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.LightBlue.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.TextView.LighterGray">
+        <item name="android:textColor">@color/skillz_i4_text_lighter_gray</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.MediumPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.TextView.LighterGray.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <!-- EditText -->
+    <style name="Skillz.I4.EditText">
+        <item name="android:contentDescription">@string/skillz_i4_font_helvetica_roman</item>
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light">
+        <item name="android:background">@drawable/skillz_i4_text_light</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray">
+        <item name="android:textColor">@color/skillz_i4_text_dark_gray</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+     <style name="Skillz.I4.EditText.Light.DarkGray.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+    <style name="Skillz.I4.EditText.Light.DarkGray.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+    
+    <style name="Skillz.I4.EditText.Dark"></style>
+    <style name="Skillz.I4.EditText.Dark.White"></style>
+    <style name="Skillz.I4.EditText.Dark.White.Micro"></style>
+    <style name="Skillz.I4.EditText.Dark.White.Small"></style>
+    <style name="Skillz.I4.EditText.Dark.White.Medium"></style>
+    <style name="Skillz.I4.EditText.Dark.White.Large"></style>
+    <style name="Skillz.I4.EditText.Dark.White.XLarge"></style>
+    <style name="Skillz.I4.EditText.Dark.White.Hero"></style>
+    <style name="Skillz.I4.EditText.Dark.White.SuperHero"></style>
+    
+    <!-- Button -->
+    <style name="Skillz.I4.Button">
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- Gray Button -->
+    <style name="Skillz.I4.Button.Gray">
+        <item name="android:background">@drawable/skillz_i4_button_gray</item>
+        <item name="android:textColor">@color/skillz_i4_text_light_gray</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.Button.Gray.Micro.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.Small.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.SmallPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.Medium.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.MediumPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.Large.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.XLarge.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.Hero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gray.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+     <style name="Skillz.I4.Button.Gray.SuperHero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <!-- Blue Button -->
+    <style name="Skillz.I4.Button.Blue">
+        <item name="android:background">@drawable/skillz_i4_button_blue</item>
+        <item name="android:textColor">@color/skillz_i4_text_white</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.Button.Blue.Micro.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.Small.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.SmallPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.Medium.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.MediumPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.Large.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.XLarge.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.Hero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Blue.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+     <style name="Skillz.I4.Button.Blue.SuperHero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+   <!-- Gold Button -->
+    <style name="Skillz.I4.Button.Gold">
+        <item name="android:background">@drawable/skillz_i4_button_gold</item>
+        <item name="android:textColor">@color/skillz_i4_button_gold</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.Micro">
+        <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+    </style>
+    <style name="Skillz.I4.Button.Gold.Micro.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.Small">
+        <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.Small.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.SmallPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_small_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.SmallPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.Medium">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.Medium.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.MediumPlus">
+        <item name="android:textSize">@dimen/skillz_i4_text_medium_plus</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.MediumPlus.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.Large">
+        <item name="android:textSize">@dimen/skillz_i4_text_large</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.Large.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.XLarge">
+        <item name="android:textSize">@dimen/skillz_i4_text_xlarge</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.XLarge.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.Hero">
+        <item name="android:textSize">@dimen/skillz_i4_text_hero</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.Hero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="Skillz.I4.Button.Gold.SuperHero">
+        <item name="android:textSize">@dimen/skillz_i4_text_superhero</item>
+    </style>
+     <style name="Skillz.I4.Button.Gold.SuperHero.Shadow">
+        <item name="android:shadowColor">@color/skillz_i4_shadow_black</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+     <!-- Light Gray Button -->
+     <style name="Skillz.I4.Button.LightGray">
+     	<item name="android:background">@drawable/skillz_i4_button_light_gray</item>
+        <item name="android:textColor">@color/skillz_i4_text_white</item>
+     </style>
+     
+     <style name="Skillz.I4.Button.LightGray.Small">
+         <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+     </style>
+     <style name="Skillz.I4.Button.LightGray.Micro">
+         <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+     </style>
+     <style name="Skillz.I4.Button.LightGray.UnreadablePlus">
+         <item name="android:textSize">@dimen/skillz_i4_text_unreadable_plus</item>
+     </style>
+     
+     <!-- Slate Button -->
+     <style name="Skillz.I4.Button.Slate">
+     	<item name="android:background">@drawable/skillz_i4_button_slate</item>
+        <item name="android:textColor">@color/skillz_i4_text_white</item>
+     </style>
+     
+     <style name="Skillz.I4.Button.Slate.Small">
+         <item name="android:textSize">@dimen/skillz_i4_text_small</item>
+     </style>
+     <style name="Skillz.I4.Button.Slate.Micro">
+         <item name="android:textSize">@dimen/skillz_i4_text_micro</item>
+     </style>
+     <style name="Skillz.I4.Button.Slate.UnreadablePlus">
+         <item name="android:textSize">@dimen/skillz_i4_text_unreadable_plus</item>
+     </style>
+    
+    <!-- Spinner -->
+    <style name="Skillz.I4.Spinner"></style>
+    <style name="Skillz.I4.Spinner.Light"></style>
+    <style name="Skillz.I4.Spinner.Dark"></style>
+   
+    <!-- Checkbox -->
+    <style name="Skillz.I4.CheckBox">
+        <item name="android:layout_width">@dimen/skillz_i4_checkbox_width</item>
+        <item name="android:layout_height">@dimen/skillz_i4_checkbox_height</item>
+    </style>
+    
+    <!-- ListView -->
+    <style name="Skillz.I4.ListView">
+        <item name="android:cacheColorHint">@color/skillz_i4_transparent</item>
+        <item name="android:divider">@color/skillz_i4_transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <style name="Skillz.I4.ListView.Spaced">
+        <item name="android:dividerHeight">3dp</item>
+    </style>
+    
+    <!-- View -->
+    <style name="Skillz.I4.View"></style>
+    
+    <style name="Skillz.I4.View.PlacementTile">
+        <item name="android:layout_width">@dimen/skillz_i4_icon_tile_width</item>
+        <item name="android:layout_height">@dimen/skillz_i4_icon_tile_width</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+</resources>

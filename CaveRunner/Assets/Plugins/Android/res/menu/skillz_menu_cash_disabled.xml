@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/skillzMenuTournaments"
+       android:icon="@drawable/skillz_ic_menu_tournaments"
+       android:title="@string/skillz_menu_tournaments" />
+   <item android:id="@+id/skillzMenuMyAccount"
+        android:icon="@drawable/skillz_ic_menu_account"
+        android:title="@string/skillz_menu_my_account" />
+   <item android:id="@+id/skillzMenuMyProfile"
+        android:icon="@drawable/skillz_ic_menu_profile"
+        android:title="@string/skillz_menu_my_profile" />
+   <item android:id="@+id/skillzMenuMyGameHistory"
+        android:icon="@drawable/skillz_ic_menu_game_history"
+        android:title="@string/skillz_menu_my_game_history" />
+   <item android:id="@+id/skillzMenuGamers"
+        android:icon="@drawable/skillz_ic_menu_profile"
+        android:title="@string/skillz_menu_gamers" />
+   <item android:id="@+id/skillzMenuWithdraw"
+        android:icon="@drawable/skillz_ic_menu_withdraw"
+        android:title="@string/skillz_menu_withdraw" />
+   <!-- <item android:id="@+id/skillzMenuBuyZ"
+        android:icon="@drawable/skillz_ic_menu_buy_z"
+        android:title="@string/skillz_menu_buy_z" /> -->
+   <item android:id="@+id/skillzMenuContact"
+        android:icon="@drawable/skillz_ic_menu_help"
+        android:title="@string/skillz_contact_title" />
+   <item android:id="@+id/skillzMenuExit"
+        android:icon="@drawable/skillz_ic_menu_exit"
+        android:title="@string/skillz_menu_exit" />
+</menu>

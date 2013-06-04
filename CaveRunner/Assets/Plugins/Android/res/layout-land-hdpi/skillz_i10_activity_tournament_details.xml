@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/skillz_i4_background">
+    <include layout="@layout/skillz_i10_actionbar"/>
+    <TextView
+        android:id="@+id/skillzTournamentDetailsGameTitle"
+        android:layout_width="match_parent"
+        android:text="@string/skillz_i10_tournament_details_game_title"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/skillz_i10_side_margin_half"
+        style="@style/Skillz.I10.Text.White.Medium"
+  		android:contentDescription="@string/skillz_font_helvetica_black_cn"
+  		android:background="@drawable/skillz_i20_bg_game_history_title"
+  		android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false">
+	    <RelativeLayout 
+	        android:orientation="vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="@dimen/skillz_i10_side_margin_half"
+	        android:layout_marginLeft="@dimen/skillz_i10_side_margin"
+	        android:layout_marginRight="@dimen/skillz_i10_side_margin_half"
+	        android:layout_marginBottom="@dimen/skillz_i10_side_margin_half"
+	        >
+	        <TextView
+	            android:id="@+id/skillzTournamentDetailsDetails"
+	            android:layout_alignParentTop="true"
+	            android:text="@string/skillz_i10_tournament_details_details"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            style="@style/Skillz.I10.Text.White.Small.Bold"/>
+	        <Button
+	            android:layout_alignParentBottom="true"
+	            android:layout_width="fill_parent"
+	            android:layout_marginTop="8dp"
+	            android:id="@+id/skillzTournamentDetailsTournaments"
+	            android:text="@string/skillz_i10_tournament_details_tournaments"
+	            style="@style/Skillz.I10.Button.Large" />
+	        <LinearLayout
+	            android:layout_height="fill_parent"
+	            android:layout_width="fill_parent"
+	            android:layout_above="@id/skillzTournamentDetailsTournaments"
+	            android:layout_below="@id/skillzTournamentDetailsDetails"
+	            android:orientation="vertical"
+	            android:background="@drawable/skillz_i10_btn_gray_default">
+	            <TextView
+	                android:id="@+id/skillzTournamentDetailsGameType"
+	                android:text="@string/skillz_i10_tournament_details_game_type"
+	                android:drawableLeft="@drawable/skillz_i10_ic_gametype"
+	                android:drawablePadding="8dp"
+	                android:layout_marginTop="8dp"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginRight="8dp"
+	                android:layout_marginBottom="4dp"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	            <TextView
+	                android:id="@+id/skillzTournamentDetailsPlayerLimit"
+	                android:text="@string/skillz_i10_tournament_details_player_limit"
+	                android:drawableLeft="@drawable/skillz_i10_ic_players"
+	                android:drawablePadding="8dp"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginRight="8dp"
+	                android:layout_marginBottom="4dp"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	           	<include layout="@layout/skillz_i10_divider" />
+	            <TextView
+	                android:text="@string/skillz_i10_tournament_details_description"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginRight="8dp"
+	                android:layout_marginTop="2dp"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	            <ScrollView
+	                android:layout_weight="1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="0dip"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginRight="8dp"
+	                android:layout_marginTop="0dp"
+	                android:layout_marginBottom="4dp">
+	                <TextView
+		                android:layout_width="fill_parent"
+		                android:id="@+id/skillzTournamentDetailsGameDescription"
+		                style="@style/Skillz.I10.Text.White.Micro" />
+	            </ScrollView>
+
+	            <LinearLayout
+	                android:layout_marginBottom="4dp"
+				    android:layout_height="wrap_content"
+				    android:layout_width="fill_parent"
+				    android:orientation="horizontal">
+	            <TextView
+					android:id="@+id/skillzTournamentDetailsIDHeader"
+	                android:layout_marginLeft="8dp"
+	                android:layout_marginRight="0dp"
+	                android:layout_marginTop="2dp"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:id="@+id/skillzTournamentDetailsID"
+	                android:layout_marginLeft="2dp"
+	                android:layout_marginRight="8dp"
+	                android:layout_marginTop="2dp"
+	                style="@style/Skillz.I10.Text.White.Micro" />
+	            
+        	</LinearLayout>
+	            
+	        </LinearLayout>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:orientation="vertical"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="@dimen/skillz_i10_side_margin_half"
+	        android:layout_marginLeft="@dimen/skillz_i10_side_margin_half"
+	        android:layout_marginRight="@dimen/skillz_i10_side_margin"
+	        android:layout_marginBottom="@dimen/skillz_i10_side_margin_half"
+	        >
+	        <LinearLayout
+	            android:id="@+id/skillzTournamentDetailsPrizeHeader"
+	            android:layout_alignParentTop="true"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dp"
+	            android:layout_marginRight="6dp"
+	            android:orientation="horizontal">
+	            <TextView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:text="@string/skillz_i10_tournament_details_place"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	            <TextView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="right"
+	                android:text="@string/skillz_i10_tournament_details_cash_prizes"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	            <TextView
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:gravity="right"
+	                android:text="@string/skillz_i10_tournament_details_z_prizes"
+	                style="@style/Skillz.I10.Text.White.Small.Bold" />
+	        </LinearLayout>
+	        <Button
+	            android:layout_alignParentBottom="true"
+	            android:layout_width="fill_parent"
+	            android:layout_marginTop="8dp"
+	            android:id="@+id/skillzTournamentDetailsEnter"
+	            android:text="@string/skillz_i10_tournament_details_enter"
+	            style="@style/Skillz.I10.Button.Large.Blue" />
+	        <FrameLayout
+	            android:layout_height="fill_parent"
+	            android:layout_width="fill_parent"
+	            android:layout_above="@id/skillzTournamentDetailsEnter"
+	            android:layout_below="@id/skillzTournamentDetailsPrizeHeader"
+	            style="@style/Skillz.I10.View.Tile">
+	            <ListView
+	                android:id="@+id/skillzTournamentDetailsPrizeListView"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:padding="2dp"
+	                style="@style/Skillz.I10.View.ListView" />
+	        </FrameLayout>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

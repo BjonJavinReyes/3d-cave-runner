@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="@dimen/skillz_i4_margin_full"
+        android:background="@drawable/skillz_i4_bg_avatar" >
+
+        <com.skillz.android.client.ui.views.AvatarImageView
+            android:id="@+id/skillzAvatarImage"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/skillz_i4_icon_avatar_default" />
+    </RelativeLayout>
+
+</LinearLayout>

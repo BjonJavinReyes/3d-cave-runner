@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzLoginContainer"
+    style="@style/Skillz.I10.View.Dialog.Background"
+    android:layout_width="@dimen/skillz_i10_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/skillz_i10_bg_dialog_content">
+	    <TextView
+	        android:id="@+id/skillzLoginTitle"
+	        style="@style/Skillz.I10.View.Dialog.Header"
+	        android:text="@string/skillz_login_title" />
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="@dimen/skillz_i10_side_margin_text_field"
+	        android:orientation="vertical" >
+
+	        <EditText
+	            android:id="@+id/skillzLoginUsername"
+	            style="@style/Skillz.I10.Input.Text.Margin"
+	            android:inputType="textNoSuggestions|textFilter"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/skillz_login_username" />
+
+	        <EditText
+	            android:id="@+id/skillzLoginPassword"
+	            style="@style/Skillz.I10.Input.Text.Margin"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:hint="@string/skillz_login_password"
+	            android:inputType="textPassword" />
+	        
+	        <RelativeLayout
+	            android:id="@+id/skillzLoginRememberMeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+	            android:layout_margin="@dimen/skillz_i10_text_field_margin" >
+                <CheckBox 
+                    android:layout_centerVertical="true"
+	                android:id="@+id/skillzLoginRememberMe"
+	                style="@style/Skillz.I10.Input.CheckBox"/>
+                <TextView
+	                android:layout_centerVertical="true"
+	                android:id="@+id/skillzLoginRememberMeLabel"
+	                android:text="@string/skillz_login_remember_me"
+	                android:layout_margin="@dimen/skillz_i10_side_margin_text_field"
+	                android:layout_toRightOf="@id/skillzLoginRememberMe"
+	                style="@style/Skillz.I10.Text.Gray.Micro.Bold" />
+            </RelativeLayout>
+	
+	        <TextView
+	            android:id="@+id/skillzFirstUseForgotPassword"
+	            style="@style/Skillz.I10.Text.Blue.Small"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_margin="@dimen/skillz_i10_text_field_margin"
+	            android:gravity="center_vertical"
+	            android:text="@string/skillz_i10_first_use_intro_forgot_password" />
+    	</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Skillz.I10.View.Dialog.Footer" >
+
+        <Button
+            android:id="@+id/skillzLoginSubmit"
+            style="@style/Skillz.I10.Button.Large.Blue"
+            android:layout_width="fill_parent"
+            android:singleLine="true"
+            android:text="@string/skillz_login_submit" />
+    </LinearLayout>
+
+</LinearLayout>

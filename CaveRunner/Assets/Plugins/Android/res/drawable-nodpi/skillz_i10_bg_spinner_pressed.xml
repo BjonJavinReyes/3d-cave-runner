@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/skillz_i10_btn_gray_pressed" />
+    <item android:drawable="@drawable/skillz_i10_ic_dropdownarrow" 
+        android:right="8dp" />
+    <item android:drawable="@drawable/skillz_i10_ic_dropdowndivider" 
+          android:right="36dp"
+          android:top="1dp"
+          android:bottom="2dp" />
+</layer-list>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+    <include layout="@layout/skillz_i10_actionbar" />
+    <RelativeLayout
+        android:id="@+id/skillzTournamentsScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar 
+	        android:id="@+id/skillzProgressBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:indeterminate="true"
+	        android:layout_centerInParent="true" />
+        <LinearLayout 
+            android:id="@+id/skillzFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+           	<include layout="@layout/skillz_i4_view_tournaments_footer" />
+        </LinearLayout>
+        <com.skillz.android.client.ui.views.TouchGallery
+	        android:id="@+id/skillzTournamentInfoGallery"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:unselectedAlpha="1"
+	        android:fadingEdge="none"
+	        android:layout_above="@id/skillzFooter"
+	        android:spacing="@dimen/skillz_card_spacing"
+	        android:layout_marginBottom="-16dp"
+	        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" />
+        <View 
+	        android:id="@+id/skillzGetStartedUnderlay"
+	        android:visibility="gone"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignTop="@id/skillzTournamentsScreen"
+	        android:layout_alignBottom="@id/skillzTournamentsScreen"
+	        android:layout_alignLeft="@id/skillzTournamentsScreen"
+	        android:layout_alignRight="@id/skillzTournamentsScreen"
+	        android:background="@drawable/skillz_i4_underlay_get_started" />
+        <ImageView
+	        android:id="@+id/skillzGetStartedPopup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/skillzTournamentInfoGallery"
+	        android:layout_marginBottom="42dp"
+	        android:src="@drawable/skillz_i4_welcome_modal_cash"
+	        android:layout_centerHorizontal="true"
+	        android:visibility="gone" />
+	    <View
+	        android:id="@+id/skillzGetStartDismisser"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

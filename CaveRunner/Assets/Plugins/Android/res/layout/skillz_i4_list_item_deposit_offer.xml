@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	<TextView
+	    android:id="@+id/skillzText1"
+	    android:layout_width="136dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:background="@drawable/skillz_i4_background_deposit_offer"
+	    android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+	    style="@style/Skillz.I4.TextView.White.SuperHero.Shadow" />
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzDialog"
+    style="@style/Skillz.I10.View.Dialog.Background"
+    android:layout_width="@dimen/skillz_i10_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/skillz_i10_bg_dialog_content">
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/skillz_i10_gamers_first_use_msg"
+	        android:layout_margin="@dimen/skillz_i10_side_margin"
+	        style="@style/Skillz.I10.Text.Gray.Small.Bold" />
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false">
+	        <FrameLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	            <TextView
+	                android:id="@+id/skillzGamersDialogContacts"
+	                android:drawableBottom="@drawable/skillz_i10_ic_contact"
+	                android:gravity="center"
+	                android:layout_gravity="center"
+	                android:text="@string/skillz_i10_gamers_first_use_contact"
+	                style="@style/Skillz.I10.View.DialogTile"/>
+	        </FrameLayout>
+	        <FrameLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1">
+	            <TextView
+	                android:id="@+id/skillzGamersDialogEmail"
+	                android:drawableBottom="@drawable/skillz_i10_ic_email"
+	                android:gravity="center"
+	                android:layout_gravity="center"
+	                android:text="@string/skillz_i10_gamers_first_use_email"
+	                style="@style/Skillz.I10.View.DialogTile"/>
+	        </FrameLayout>
+	    </LinearLayout>
+	</LinearLayout>
+    <Button
+        android:id="@+id/skillzGamersDialogDone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/skillz_i10_side_margin"
+        android:text="@string/skillz_i10_gamers_first_use_done"
+        style="@style/Skillz.I10.Button.Medium.Blue" />
+</LinearLayout>

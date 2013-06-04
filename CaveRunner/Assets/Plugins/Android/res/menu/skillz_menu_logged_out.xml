@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/skillzMenuContact"
+        android:icon="@drawable/skillz_ic_menu_help"
+        android:title="@string/skillz_contact_title" />
+    <item android:id="@+id/skillzMenuExit"
+        android:icon="@drawable/skillz_ic_menu_exit"
+        android:title="@string/skillz_menu_exit" />
+</menu>

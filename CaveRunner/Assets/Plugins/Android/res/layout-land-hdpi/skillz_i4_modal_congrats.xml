@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzPromptCongratsScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bb000000"
+    android:orientation="vertical" >
+    <com.skillz.android.client.ui.views.HeavenlyView
+        android:id="@+id/skillzHeavenlyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i4_background_heavenly"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/skillzPromptHeaderText"
+	        style="@style/Skillz.I4.TextView.White.Large.Shadow"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:contentDescription="@string/skillz_font_helvetica_black_cn"
+	        android:text="@string/skillz_i4_prompt_congrats_header" />
+	    <RelativeLayout
+            android:id="@+id/skillzPromptDialog"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/skillz_i4_prompt_lightgrey_back" >
+        <RelativeLayout
+            android:id="@+id/skillzPromptSlateContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="45dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/skillz_i4_prompt_silver_slate_temp" >
+            <com.skillz.android.client.ui.views.GradientTextView 
+                android:id="@+id/skillzPromptCongratsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90" 
+                android:gravity="center"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                android:text="@string/skillz_i4_prompt_congrats_title"
+                style="@style/Skillz.I4.TextView.Black.XLarge" />
+            <com.skillz.android.client.ui.views.GradientTextView 
+                android:id="@+id/skillzPromptCongratsWinnings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90" 
+                android:gravity="right|center_vertical"
+                android:layout_below="@id/skillzPromptCongratsTitle"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+                android:background="@drawable/skillz_i4_rounded_gray"
+                style="@style/Skillz.I4.TextView.Black.XLarge" />
+            <LinearLayout
+                android:id="@+id/skillzPromptScoreContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/skillz_i4_rounded_gray"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="8dp"
+                android:layout_below="@id/skillzPromptCongratsWinnings"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+	             <com.skillz.android.client.ui.views.GradientTextView 
+	                android:id="@+id/skillzPromptCongratsScorePrefix"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                    android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                    android:angle="90" 
+	                android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+	                android:text="@string/skillz_i4_prompt_congrats_score_prefix"
+	                style="@style/Skillz.I4.TextView.Black.Medium" />
+	             <com.skillz.android.client.ui.views.GradientTextView 
+	                android:id="@+id/skillzPromptCongratsScore"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                    android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                    android:angle="90" 
+	                android:gravity="center_vertical"
+	                android:paddingLeft="1dp"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+	                style="@style/Skillz.I4.TextView.Black.Medium" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/skillzPromptCongratsMedal"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitEnd"
+                android:layout_alignTop="@+id/skillzPromptCongratsTitle"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/skillz_i4_congrats_medal" />
+		</RelativeLayout>
+      	<ImageView
+           android:id="@+id/skillzPromptIconCash"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/skillz_i11_prompt_money" />
+      	<ImageView
+           android:id="@+id/skillzPromptIconZ"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:visibility="invisible"
+           android:src="@drawable/skillz_i4_icon_prompt_z" />
+    </RelativeLayout>
+	</LinearLayout>
+	    <com.skillz.android.client.ui.views.HeavenlyView
+        android:id="@+id/skillzSparkleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

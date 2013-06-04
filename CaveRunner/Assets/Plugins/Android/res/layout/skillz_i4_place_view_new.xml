@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/skillzPlaceViewImageView"
+        android:layout_width="@dimen/skillz_i4_icon_tile_width"
+        android:layout_height="@dimen/skillz_i4_icon_tile_width"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/skillzPlaceViewTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/skillzPlaceViewUnknown"
+            style="@style/Skillz.I4.TextView.Slate.XLarge"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/skillz_i4_bg_place_view"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/skillzPlaceViewText"
+                style="@style/Skillz.I4.TextView.Slate.XLarge"
+                android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/skillzPlaceViewOrdinalText"
+                android:layout_toRightOf="@id/skillzPlaceViewText"
+                android:layout_alignParentTop="true"
+                style="@style/Skillz.I4.TextView.Slate.UnreadablePlus"
+                android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

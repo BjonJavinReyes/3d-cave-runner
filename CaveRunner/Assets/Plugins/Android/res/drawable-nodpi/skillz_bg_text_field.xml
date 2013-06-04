@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/skillz_text_corner_radius"
+             android:topRightRadius="@dimen/skillz_text_corner_radius"
+             android:bottomLeftRadius="@dimen/skillz_text_corner_radius"
+             android:bottomRightRadius="@dimen/skillz_text_corner_radius"
+            />
+    <gradient android:startColor="@color/skillz_text_field_bg_gradient_top"
+              android:endColor="@color/skillz_text_field_bg_gradient_bottom"
+              android:angle="270"
+              />
+    <padding android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp"/>
+</shape>

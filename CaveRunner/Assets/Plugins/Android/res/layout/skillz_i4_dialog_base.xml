@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i10_bg_dialog" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/skillz_i4_margin_half"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/skillz_i4_prompt_silver_slate_temp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.skillz.android.client.ui.views.GradientTextView
+                    android:id="@+id/skillzDialogTitle"
+                    style="@style/Skillz.I4.TextView.Black.XLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/skillz_i4_margin_half"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+                    android:layout_marginRight="@dimen/skillz_i4_margin_full"
+                    android:angle="90"
+                    android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                    android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:startColor="@color/skillz_i4_text_gradient_blueslate_start" />
+
+                <com.skillz.android.client.ui.views.GradientTextView
+                    android:id="@+id/skillzDialogMessage"
+                    style="@style/Skillz.I4.TextView.Black.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+                    android:layout_marginRight="@dimen/skillz_i4_margin_full"
+                    android:layout_marginTop="5dp"
+                    android:angle="90"
+                    android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+                    android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:startColor="@color/skillz_i4_text_gradient_blueslate_start" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skillz_i4_margin_half"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/skillzDialogNegative"
+                style="@style/Skillz.I10.Button.Small"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/skillz_i4_margin_quarter"
+                android:layout_weight="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn" />
+
+            <Button
+                android:id="@+id/skillzDialogPositive"
+                style="@style/Skillz.I10.Button.Small.Blue"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/skillz_i4_margin_quarter"
+                android:layout_weight="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                android:text="@string/skillz_i4_ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

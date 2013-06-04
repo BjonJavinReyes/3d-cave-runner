@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/skillz_i10_btn_gray_default" />
+    <item android:drawable="@drawable/skillz_i10_ic_dropdownarrow" 
+        android:right="8dp" />
+    <item android:drawable="@drawable/skillz_i10_ic_dropdowndivider" 
+          android:right="36dp"
+          android:top="1dp"
+          android:bottom="2dp" />
+    <item>
+        <shape android:shape="rectangle">
+            <padding 
+                android:left="@dimen/skillz_i10_text_field_padding_left"
+                android:right="@dimen/skillz_i10_text_field_padding"
+                android:top="@dimen/skillz_i10_text_field_padding"
+                android:bottom="@dimen/skillz_i10_text_field_padding"
+                />
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

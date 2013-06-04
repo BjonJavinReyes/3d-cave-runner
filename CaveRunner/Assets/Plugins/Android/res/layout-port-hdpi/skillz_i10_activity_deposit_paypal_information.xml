@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/skillzHeader"
+                style="@style/Skillz.I10.View.Header"
+                android:text="@string/skillz_deposit_paypal_info_deposit" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/skillz_i10_text_field_margin" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/skillzDepositPaypalInfoFirstName"
+                        style="@style/Skillz.I10.Input.Text.Margin"
+                        android:maxLength="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/skillz_deposit_paypal_info_first_name"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/skillzDepositPaypalInfoLastName"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/skillzDepositPaypalInfoLastName"
+                        style="@style/Skillz.I10.Input.Text.Margin"
+                        android:maxLength="40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/skillz_deposit_paypal_info_last_name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/skillzDepositPaypalInfoZipCode"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/skillz_deposit_paypal_info_zip_code"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:nextFocusDown="@id/skillzDepositPaypalInfoUsername" />
+
+                <EditText
+                    android:id="@+id/skillzDepositPaypalInfoUsername"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/skillz_deposit_paypal_info_username"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/skillzDepositPaypalInfoPassword"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/skillz_deposit_paypal_info_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/skillz_i10_text_field_margin"
+                    android:layout_marginLeft="@dimen/skillz_i10_text_field_margin"
+                    android:layout_marginRight="@dimen/skillz_i10_text_field_margin"
+                    android:layout_marginTop="@dimen/skillz_i10_text_field_margin"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/skillzDepositPaypalInfoRememberCheckBox"
+                        style="@style/Skillz.I10.Input.CheckBox" />
+
+                    <TextView
+                        style="@style/Skillz.I10.Text.Gray.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dip"
+                        android:text="@string/skillz_deposit_paypal_info_save_name" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/skillzFooter"
+                style="@style/Skillz.I10.View.Footer" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+                <Button
+                    android:id="@+id/skillzDepositPaypalInfoDepositButton"
+                    style="@style/Skillz.I10.Button.Large.Blue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/skillz_deposit_paypal_info_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

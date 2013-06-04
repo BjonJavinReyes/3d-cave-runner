@@ -1,0 +1,818 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="Skillz">
+    </style>
+    
+    <style name="SkillzDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Headers -->
+    
+    <style name="Skillz.H1">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">0.0001</item> 
+    </style>
+    
+    <style name="Skillz.H2">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    
+    <style name="Skillz.H3">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">0.0001</item> 
+    </style>
+    
+    <style name="Skillz.H4">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">0.0001</item> 
+    </style>
+    
+    <style name="Skillz.H5">
+        
+    </style>
+    
+    <!-- Inputs -->
+    
+    <style name="Skillz.Input">
+        
+    </style>
+    
+    <style name="Skillz.Input.Btn">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="Skillz.Input.Btn.Action">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">36dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/skillz_text_white</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.0001</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    
+    <style name="Skillz.Input.Btn.Card">
+		<item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">@dimen/skillz_button_height</item>
+		<item name="android:textSize">@dimen/skillz_button_text_size</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">0.0001</item>  
+		<item name="android:gravity">center</item> 
+		<item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="Skillz.Input.Btn.Card.Small">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <style name="Skillz.Input.Btn.Card.Tournament">
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="Skillz.Input.Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/skillz_bg_text_field</item>
+    </style>
+    
+    <style name="Skillz.Input.Text.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="Skillz.Input.Text.Small.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="Skillz.Input.CheckBox">
+        <item name="android:button">@drawable/skillz_checkbox_button</item>
+        <item name="android:background">@drawable/skillz_bg_text_field</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_width">40dip</item>
+    </style>
+        
+    <style name="Skillz.Input.Text.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="Skillz.Input.Text.SingleLine.Inverse">
+        <item name="android:background">@drawable/skillz_bg_info_text_field</item>
+        <item name="android:textColor">@color/skillz_text_white</item>
+    </style>
+    
+    <style name="Skillz.Input.Text.SingleLine.Inverse.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Skillz.Input.Text.SingleLine.Inverse.Green">
+        <item name="android:textColor">@color/skillz_text_green</item>
+    </style>
+    
+    <!-- Paragraph -->
+    
+    <style name="Skillz.P">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="Skillz.P.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Skillz.P.Green">
+        <item name="android:textColor">@color/skillz_text_green</item>
+    </style>
+    
+    <style name="Skillz.P.Large">
+		<item name="android:textSize">20sp</item>        
+    </style>
+    
+    <style name="Skillz.P.Medium">
+		<item name="android:textSize">18sp</item>        
+    </style>
+    
+    <style name="Skillz.P.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="Skillz.P.Small.Green">
+        <item name="android:textColor">@color/skillz_text_green</item>
+    </style>
+    
+    <style name="Skillz.P.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Divs -->
+    
+    <style name="Skillz.View">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="Skillz.View.Card">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">@dimen/skillz_card_margin_top</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="Skillz.View.CardStacked">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    
+    <style name="Skillz.View.CardHeader">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+		<item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">0.0001</item>
+		<item name="android:gravity">center</item>     
+    </style>
+    
+    <style name="Skillz.View.ListView">
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:listSelector">@drawable/skillz_list_selector</item>
+    </style>
+    
+    <style name="Skillz.View.Pill">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">46dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-1</item>
+		<item name="android:shadowRadius">0.0001</item>
+    </style>
+    
+    <!-- Table styles -->
+    
+    <style name="Skillz.Table">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/skillz_text_white</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+    
+    <style name="Skillz.Table.Header">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    
+    <!-- Iteration 20 -->
+    
+    <style name="Skillz.I20">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Skillz.I20.CardText">
+        <item name="android:contentDescription">@string/skillz_font_helvetica_thin</item>
+        <item name="android:textSize">@dimen/skillz_card_section_text_size</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    
+    <style name="Skillz.I20.MoreInfoBtnSmall">
+        <item name="android:singleLine">false</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_roman</item>
+        <item name="android:textSize">@dimen/skillz_more_info_small_text</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+    </style>
+    
+    <style name="Skillz.I20.MoreInfoBtnLarge">
+        <item name="android:contentDescription">@string/skillz_font_helvetica_black_cn</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">none</item>
+    </style>
+    
+    <style name="Skillz.I20.MoreInfoBtnArrow">
+        <item name="android:layout_width">@dimen/skillz_more_info_ic_arrow_width</item>
+        <item name="android:layout_height">@dimen/skillz_more_info_ic_arrow_height</item>
+        <item name="android:layout_marginLeft">@dimen/skillz_more_info_ic_arrow_margin</item>
+        <item name="android:layout_marginRight">@dimen/skillz_more_info_ic_arrow_margin</item>
+    </style>
+    
+    <style name="Skillz.I20.MoreInfoSmall">
+        <item name="android:contentDescription">@string/skillz_font_helvetica_roman</item>
+        <item name="android:textSize">@dimen/skillz_more_info_small_text</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:paddingLeft">@dimen/skillz_more_info_bg_padding_left</item>
+    </style>
+    
+    <style name="Skillz.I20.MoreInfoJoin">
+        <item name="android:contentDescription">@string/skillz_font_helvetica_black_cn</item>
+        <item name="android:textSize">@dimen/skillz_more_info_join_text</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:layout_width">@dimen/skillz_more_info_join_width</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    
+    <style name="Skillz.I20.Input">
+        <item name="android:textColor">#b9b9b9</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+    </style>
+    <style name="Skillz.I20.Input.Text">
+        <item name="android:layout_height">@dimen/skillz_text_field_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/skillz_i20_bg_text_field_default</item>
+        <item name="android:paddingLeft">@dimen/skillz_text_field_padding_left</item>
+        <item name="android:paddingRight">@dimen/skillz_text_field_padding_right</item>
+    </style>
+    <style name="Skillz.I20.Input.Text.Margin">
+        <item name="android:layout_margin">@dimen/skillz_text_field_margin</item>
+    </style>
+    
+    <!-- Iteration 10 -->
+    <style name="Skillz.I10">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Skillz.I10.H0">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_extra_large</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    <style name="Skillz.I10.H0.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:shadowDy">-1</item>
+    </style>
+    <style name="Skillz.I10.H0.Blue">
+        <item name="android:textColor">@color/skillz_i10_text_blue</item>
+    </style>
+    
+    <style name="Skillz.I10.H1">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_large</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    <style name="Skillz.I10.H1.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_light</item>
+        <item name="android:shadowDy">-1</item>
+    </style>
+    <style name="Skillz.I10.H1.Blue">
+        <item name="android:textColor">@color/skillz_i10_text_blue</item>
+    </style>
+    <style name="Skillz.I10.H1.White">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+    </style>
+    
+    <style name="Skillz.I10.H2">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    <style name="Skillz.I10.H2.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_light</item>
+        <item name="android:shadowDy">-1</item>
+    </style>
+    <style name="Skillz.I10.H2.Blue">
+        <item name="android:textColor">@color/skillz_i10_text_blue</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+    </style>
+    <style name="Skillz.I10.H2.White">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+    <style name="Skillz.I10.H3">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.H3.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_light</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    <style name="Skillz.I10.H3.White">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    
+    <style name="Skillz.I10.Input">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_roman</item>
+    </style>
+    
+    <style name="Skillz.I10.Input.Text">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/skillz_i10_bg_text_field</item>
+    </style>
+    <style name="Skillz.I10.Input.Text.Dark">
+        <item name="android:background">@drawable/skillz_i10_bg_text_field_dark</item>
+    	<item name="android:textColor">@color/skillz_i10_text_field_dark</item>
+    </style>
+    
+    <style name="Skillz.I10.Input.Text.Multiline">
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">top</item>
+    </style>
+    <style name="Skillz.I10.Input.Text.Multiline.Dark">
+        <item name="android:background">@drawable/skillz_i10_bg_text_field_dark</item>
+        <item name="android:textColor">@color/skillz_i10_text_field_dark</item>
+    </style>
+    
+    <style name="Skillz.I10.Input.Text.Margin">
+        <item name="android:layout_margin">@dimen/skillz_i10_text_field_margin</item>
+    </style>
+    <style name="Skillz.I10.Input.Text.ReadOnly">
+        <item name="android:contentDescription">@string/skillz_font_helvetica_bold</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    <style name="Skillz.I10.Input.Text.ReadOnly.Margin">
+        <item name="android:layout_margin">@dimen/skillz_i10_text_field_margin</item>
+    </style>
+    
+    <style name="Skillz.I10.Input.CheckBox">
+        <item name="android:button">@drawable/skillz_i10_btn_checkbox</item>
+        <item name="android:background">@drawable/skillz_i10_bg_text_field</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_width">40dip</item>
+    </style>
+    
+    <!-- 
+      ~ This style must also be accompanied by a custom adapter to set
+      ~ the textSize, typeface, and textColor 
+      -->
+    <style name="Skillz.I10.Input.Spinner">
+        <item name="android:background">@drawable/skillz_i10_bg_spinner</item>
+    </style>
+    
+    <style name="Skillz.I10.ActionBar">
+        
+    </style>
+    <style name="Skillz.I10.ActionBar.Text">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.ActionBar.Text">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+    </style>
+    <style name="Skillz.I10.ActionBar.Text.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    <style name="Skillz.I10.ActionBar.Text.Blue">
+        <item name="android:textColor">@color/skillz_i10_text_blue</item>
+    </style>
+    <style name="Skillz.I10.ActionBar.Menu">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_micro</item>
+    </style>
+    
+    <style name="Skillz.I10.Text">
+        <item name="android:contentDescription">@string/skillz_font_avenir_roman</item>
+    </style>
+    <style name="Skillz.I10.Text.White">
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Micro">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_micro</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Micro.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Small">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Small.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Small.Bold.Shadow">
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.0001</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Medium">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+    </style>
+    <style name="Skillz.I10.Text.White.Medium.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    
+    <style name="Skillz.I10.Text.Gray">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue">
+        <item name="android:textColor">@color/skillz_i10_text_blue</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Micro">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_micro</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Micro.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Small">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Small.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Medium">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+    </style>
+    <style name="Skillz.I10.Text.Blue.Medium.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Large">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_large</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Large.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Medium">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Medium.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Small">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Small.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Micro">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_micro</item>
+    </style>
+    <style name="Skillz.I10.Text.Gray.Micro.Bold">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+    </style>
+    
+    <style name="Skillz.I10.Button">
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:background">@drawable/skillz_i10_btn_gray</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.0001</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <style name="Skillz.I10.Button.Small">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+    </style>
+    <style name="Skillz.I10.Button.Small.Blue">
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.0001</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:background">@drawable/skillz_i10_btn_blue</item>
+    </style>
+    
+    <style name="Skillz.I10.Button.Medium">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+    </style>
+    <style name="Skillz.I10.Button.Medium.Blue">
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.0001</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:background">@drawable/skillz_i10_btn_blue</item>
+    </style>
+    <style name="Skillz.I10.Button.Large">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_large</item>
+    </style>
+    <style name="Skillz.I10.Button.Large.Blue">
+        <item name="android:shadowColor">@color/skillz_i10_shadow_dark</item>
+        <item name="android:textColor">@color/skillz_i10_text_white</item>
+        <item name="android:background">@drawable/skillz_i10_btn_blue</item>
+    </style>
+    
+    <style name="Skillz.I10.View">
+        
+    </style>
+    
+    <style name="Skillz.I10.View.TournamentList"></style>
+    <style name="Skillz.I10.View.TournamentList.PrizeText">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_extra_large</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    <style name="Skillz.I10.View.TournamentList.GameType">
+        <item name="android:textSize">@dimen/skillz_i10_text_size_medium</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_roman</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+    </style>
+    
+    <style name="Skillz.I10.View.Header" parent="Skillz.I10.H2.White">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Skillz.I10.View.Header.Relative">
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    
+    <style name="Skillz.I10.View.Footer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">@dimen/skillz_i10_side_margin</item>
+        <item name="android:paddingRight">@dimen/skillz_i10_side_margin</item>
+        <item name="android:background">@drawable/skillz_i10_bg_footer</item>
+	</style>
+	
+    <style name="Skillz.I10.View.ButtonDivider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">@dimen/skillz_i10_side_margin</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+	
+    <style name="Skillz.I10.View.Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/skillz_i10_view_divider</item>
+    </style>
+    <style name="Skillz.I10.View.Card">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">@dimen/skillz_i10_card_top_margin</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/skillz_i10_bg_tournament_tile</item>
+    </style>
+    
+    <style name="Skillz.I10.View.Tile">
+        <item name="android:background">@drawable/skillz_i10_bg_gray_tile</item>
+    </style>
+    
+    <style name="Skillz.I10.View.Hint">
+        <item name="android:layout_width">@dimen/skillz_i10_btn_hint_size</item>
+        <item name="android:layout_height">@dimen/skillz_i10_btn_hint_size</item>
+        <item name="android:src">@drawable/skillz_i10_ic_moreinfo</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="Skillz.I10.View.Dialog">
+    </style>
+    <style name="Skillz.I10.View.Dialog.Background">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">@dimen/skillz_i10_card_top_margin</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:background">@drawable/skillz_i10_bg_dialog</item>
+    </style>
+    <style name="Skillz.I10.View.Dialog.Header" parent="Skillz.I10.H3.Gray">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Skillz.I10.View.Dialog.Text">
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="Skillz.I10.View.Dialog.Footer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">@dimen/skillz_i10_side_margin</item>
+        <item name="android:paddingRight">@dimen/skillz_i10_side_margin</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="Skillz.I10.View.ExpandIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/skillz_i10_bg_list_expand_icon</item>
+    </style>
+    
+    <style name="Skillz.I10.View.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@color/skillz_i10_list_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">@drawable/skillz_i10_list_selector</item>
+    </style>
+    <style name="Skillz.I10.View.ListView.Tiles">
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:listSelector">@null</item>
+    </style>
+    <style name="Skillz.I10.View.ListView.Expandable">
+        <item name="android:background">@color/skillz_i10_clear</item>
+        <item name="android:childDivider">@android:color/transparent</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">2dp</item>            
+    </style>
+    
+    
+    
+    <style name="Skillz.I10.View.PlaceTile">
+        <item name="android:layout_width">@dimen/skillz_game_history_ic_medal_2_width</item>
+        <item name="android:layout_height">@dimen/skillz_game_history_ic_medal_2_width</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+    
+    <style name="Skillz.I10.View.IconTile">
+        <item name="android:layout_width">@dimen/skillz_i10_icon_tile_width</item>
+        <item name="android:layout_height">@dimen/skillz_i10_icon_tile_height</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+    
+    <style name="Skillz.I10.View.ActionBarButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="Skillz.I10.View.DialogTile">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">@dimen/skillz_i10_text_size_small</item>
+        <item name="android:textColor">@color/skillz_i10_text_gray</item>
+        <item name="android:contentDescription">@string/skillz_font_avenir_black</item>
+        <item name="android:background">@drawable/skillz_i10_bg_avatar</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+    
+    <!-- I11 -->
+    <style name="Skillz">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Skillz.I11">
+        
+    </style>
+    
+    <style name="Skillz.I11.Text">
+        
+    </style>
+    
+    <style name="Skillz.I11.Text.LogoTagline">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#c8c8c8</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_bold</item>
+        <item name="android:shadowColor">#cc000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <style name="Skillz.I11.Text.LogoTagline.Land">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Skillz.I11.Text.Small">
+        <item name="android:textSize">@dimen/skillz_i11_text_size_small</item>
+    </style>
+    <style name="Skillz.I11.Text.Small.Light">
+        <item name="android:textColor">@color/skillz_i11_text_light</item>
+    </style>
+    
+    <style name="Skillz.I11.View"></style>
+    <style name="Skillz.I11.View.InputContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/skillz_i11_bg_entry</item>
+    </style>
+    
+    <style name="Skillz.I11.Input"></style>
+    <style name="Skillz.I11.Input.Text"></style>
+    <style name="Skillz.I11.Input.Text.Light">
+        <item name="android:textSize">@dimen/skillz_i11_text_size_small</item>
+        <item name="android:textColor">@color/skillz_i11_text_dark</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_roman</item>
+        <item name="android:background">@drawable/skillz_i11_text_light</item>
+    </style>
+    <style name="Skillz.I11.Input.Text.Prompt">
+        <item name="android:textSize">@dimen/skillz_i11_text_size_medium</item>
+        <item name="android:textColor">@color/skillz_i11_text_light</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_roman</item>
+        <item name="android:background">@drawable/skillz_i11_text_light</item>
+    </style>
+    <style name="Skillz.I11.Input.Text.IntroLogin">
+        <item name="android:layout_height">@dimen/skillz_text_field_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/skillz_i11_text_light</item>
+        <item name="android:contentDescription">@string/skillz_font_helvetica_light</item>
+        <item name="android:background">@drawable/skillz_i4_landing_login_field</item>
+        <item name="android:paddingLeft">@dimen/skillz_text_field_padding_left</item>
+        <item name="android:paddingRight">@dimen/skillz_text_field_padding_right</item>
+    </style>
+</resources>

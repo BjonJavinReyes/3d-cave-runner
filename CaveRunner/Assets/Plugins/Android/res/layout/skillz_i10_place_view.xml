@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/skillz_game_history_ic_medal_2_width"
+        android:layout_height="@dimen/skillz_game_history_ic_medal_2_width"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+     	android:id="@+id/skillzPlaceViewImageView" />
+    <RelativeLayout
+        android:id="@+id/skillzPlaceViewTextContainer"
+        android:layout_width="@dimen/skillz_game_history_ic_medal_2_width"
+        android:layout_height="@dimen/skillz_game_history_ic_medal_2_width"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="@style/Skillz.I10">
+        <TextView
+            android:id="@+id/skillzPlaceViewUnknown"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/skillz_font_helvetica_medium"
+            style="@style/Skillz.I10.H1.Gray" />
+        <TextView
+         android:id="@+id/skillzPlaceViewText"
+         android:contentDescription="@string/skillz_font_helvetica_medium"
+         android:singleLine="true"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         style="@style/Skillz.I10.H1.Gray" />
+        <TextView
+            android:id="@+id/skillzPlaceViewOrdinalText"
+            android:layout_alignTop="@id/skillzPlaceViewText"
+            android:layout_toRightOf="@id/skillzPlaceViewText"
+            android:contentDescription="@string/skillz_font_helvetica_thin"
+            android:singleLine="true"
+            style="@style/Skillz.I10.Text.Gray.Micro" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/skillzGameHistoryHeader"
+            style="@style/Skillz.I10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/skillz_i20_bg_game_history_title"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/skillz_i10_game_history_outer_padding"
+            android:paddingRight="@dimen/skillz_i10_game_history_outer_padding"
+            android:paddingTop="3dp" >
+
+            <ImageView
+                android:id="@+id/skillzGameHistoryHeaderAvatar"
+                android:layout_width="@dimen/skillz_game_history_ic_medal_width"
+                android:layout_height="@dimen/skillz_game_history_ic_medal_width"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/skillz_i20_ic_medal_2_white" />
+
+            <TextView
+                android:id="@+id/skillzGameHistoryHeaderPlayerText"
+                style="@style/Skillz.I10.Text.White.Small.Bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/skillz_font_helvetica_roman"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp" />
+            
+            <TextView
+                android:id="@+id/skillzGameHistoryHeaderAverageText"
+                style="@style/Skillz.I10.Text.White.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/skillz_font_helvetica_thin"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/skillz_i10_game_history_internal_padding"
+                android:text="@string/skillz_game_history_average_score" />
+
+            <TextView
+                android:id="@+id/skillzGameHistoryHeaderAverageScore"
+                style="@style/Skillz.I10.Text.White.Small.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/skillz_font_helvetica_bold"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/skillzGameHistoryHeaderShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/skillzGameHistoryHeader"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/skillz_i10_ab_dropshadow" />
+
+        <ExpandableListView
+            android:id="@+id/skillzGameHistoryExpandableListView"
+            style="@style/Skillz.I10.View.ListView.Expandable"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/skillzGameHistoryHeaderShadow" />
+
+        <LinearLayout
+            android:id="@+id/skillzProgressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/skillzProgressBar"
+                style="@android:style/Widget.ProgressBar.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

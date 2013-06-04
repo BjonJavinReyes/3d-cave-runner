@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i20_bg_game_history_title"
+        android:padding="@dimen/skillz_i10_side_margin"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin">
+        <TextView
+            android:id="@+id/skillzHeader"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	style="@style/Skillz.I10.Text.White.Medium"
+        	android:contentDescription="@string/skillz_font_helvetica_black_cn"
+        	android:text="@string/skillz_i10_deposit_title" />
+    </RelativeLayout>
+    <com.skillz.android.client.ui.views.TouchGallery
+        android:id="@+id/skillzDepositAmountGallery"
+        android:spacing="20dp"
+        android:unselectedAlpha="1"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null" />
+
+    <RelativeLayout
+        android:id="@+id/skillzProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</LinearLayout>

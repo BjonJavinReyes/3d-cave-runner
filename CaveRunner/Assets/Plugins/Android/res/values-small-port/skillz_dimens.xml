@@ -1,0 +1,9 @@
+
+    <resources>
+        <dimen name="skillz_i10_profile_nav_text_size">12sp</dimen>
+        <dimen name="skillz_i10_first_use_more_info_height">248dp</dimen>
+        
+        <dimen name="skillz_i11_text_size_large">22sp</dimen>
+        <dimen name="skillz_i11_intro_sign_up_arrows_margin">8dp</dimen>
+        <dimen name="skillz_i11_intro_sign_up_text_margin">10dp</dimen>
+    </resources>

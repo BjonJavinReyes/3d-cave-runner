@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/skillz_i4_bg_taunt_list_item">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/skillzListItemTauntIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+	
+    <TextView
+        android:id="@+id/skillzListItemTauntText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+        android:layout_marginRight="@dimen/skillz_i4_margin_half"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+        style="@style/Skillz.I4.TextView.DarkGray.Medium" />
+    
+    <TextView
+        android:id="@+id/skillzListItemTauntPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+        style="@style/Skillz.I4.TextView.LightGray.Medium" />
+    <TextView
+        android:id="@+id/skillzListItemTauntZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+        android:contentDescription="@string/skillz_i4_font_helvetica_bold_cn"
+        android:textColor="#4e99bc"
+        android:text="z"
+        style="@style/Skillz.I4.TextView.LightGray.Medium" />
+</LinearLayout>

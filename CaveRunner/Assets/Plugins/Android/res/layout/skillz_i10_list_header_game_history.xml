@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i20_bg_blue_header_bar">
+    <TextView
+        android:id="@+id/skillzGameHistorySectionHeaderTitleText"
+        style="@style/Skillz.I10.Text.White.Small.Bold.Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/skillz_font_helvetica_bold"
+        android:gravity="left"
+        android:paddingLeft="@dimen/skillz_i10_game_history_outer_padding"
+        android:singleLine="true" />
+    <ImageView
+        android:id="@+id/skillzGameHistorySectionHeaderExpandedIndicator"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/skillz_i10_side_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/skillz_i10_ic_expand" />
+    <TextView
+        android:id="@+id/skillzGameHistorySectionHeaderPrizesText"
+        style="@style/Skillz.I10.Text.White.Small.Bold.Shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/skillz_i10_side_margin"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/skillzGameHistorySectionHeaderExpandedIndicator"
+        android:contentDescription="@string/skillz_font_helvetica_medium"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="@string/skillz_game_history_header_prize" />
+</RelativeLayout>

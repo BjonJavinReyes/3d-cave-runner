@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/skillz_i4_background">
+    <include layout="@layout/skillz_i10_actionbar" />
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:fillViewport="true"
+	    android:layout_marginTop="@dimen/skillz_i4_view_negative_actionbar_margin">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <RelativeLayout
+	            android:id="@+id/skillzHeader"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/skillz_i4_bg_my_account_header">
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="60dp"
+			        android:layout_marginLeft="10dp"
+			        android:gravity="left|center_vertical"
+			        android:singleLine="true"
+			        android:text="@string/skillz_i4_my_account"
+			        android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+			        style="@style/Skillz.I4.TextView.LighterGray.MediumPlus"/>
+	        </RelativeLayout>
+        	
+	        <FrameLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1">
+	            <include android:id="@+id/skillzMyAccountUsername" layout="@layout/skillz_i4_view_my_account_username" android:visibility="gone" />
+		        <include android:id="@+id/skillzWithdrawInformation" layout="@layout/skillz_i4_view_my_account_withdraw" android:visibility="gone" />
+		        <include android:id="@+id/skillzPersonalInformation" layout="@layout/skillz_i4_view_my_account_personal" android:visibility="gone" />
+		        <include android:id="@+id/skillzDepositInformation" layout="@layout/skillz_i4_view_my_account_deposit" android:visibility="gone" />
+		        <include android:id="@+id/skillzChangePassword" layout="@layout/skillz_i4_view_my_account_password" android:visibility="gone" />
+	        </FrameLayout>
+	        
+	        
+	        <FrameLayout
+	            android:id="@+id/skillzFooter"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/skillz_i4_bg_tournament_results_footer">
+	            <Button
+	                android:id="@+id/skillzUpdateButton"
+	                android:layout_width="match_parent"
+	                android:layout_height="80dp"
+	                android:text="@string/skillz_i4_my_account_update"
+	                android:layout_margin="@dimen/skillz_i4_margin_full"
+	                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+	                android:onClick="onSubmitClick"
+	                style="@style/Skillz.I4.Button.Gold.Large.Shadow" />
+	        </FrameLayout>
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

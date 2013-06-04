@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i4_bg_player_card_metric" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+        android:layout_centerVertical="true"
+        android:text="@string/skillz_i4_avg_score"
+        android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+        style="@style/Skillz.I4.TextView.White.Micro.Shadow" />
+
+    <TextView
+        android:id="@+id/skillzAvgScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+        android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+        style="@style/Skillz.I4.TextView.White.Medium.Shadow" />
+
+</RelativeLayout>

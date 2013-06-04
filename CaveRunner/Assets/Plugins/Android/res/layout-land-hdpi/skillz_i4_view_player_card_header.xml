@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/skillz_i4_margin_full" >
+
+    <RelativeLayout
+        android:id="@+id/skillzPlayerCardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="@dimen/skillz_i4_margin_full"
+        android:layout_marginBottom="@dimen/skillz_i4_margin_full"
+        android:background="@drawable/skillz_i4_bg_player_card_title"
+        android:paddingLeft="90dp" >
+
+        <TextView
+            android:id="@+id/skillzUsername"
+            style="@style/Skillz.I4.TextView.Slate.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skillz_i4_margin_half"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+            android:text="Makun" />
+
+        <TextView
+            android:id="@+id/skillzLeague"
+            style="@style/Skillz.I4.TextView.Slate.Micro"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@id/skillzUsername"
+            android:layout_alignTop="@id/skillzUsername"
+            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+            android:layout_toRightOf="@id/skillzUsername"
+            android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+            android:gravity="center_vertical"
+            android:text="Bronze Player" />
+
+        <ImageView
+            android:id="@+id/skillzCountryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skillzUsername"
+            android:src="@drawable/skillz_i4_icon_america"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/skillzLocationJoined"
+            style="@style/Skillz.I4.TextView.Slate.Micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/skillzUsername"
+            android:layout_below="@id/skillzUsername"
+            android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/skillzAvatarContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/skillzPlayerCardHeader" >
+
+        <include
+            android:layout_width="90dp"
+            layout="@layout/skillz_i4_view_player_avatar" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/skillzPlayerCardHeader"
+        android:layout_alignRight="@id/skillzPlayerCardHeader"
+        android:layout_alignTop="@id/skillzPlayerCardHeader"
+        android:layout_marginRight="@dimen/skillz_i4_margin_full" >
+
+        <ImageView
+            android:id="@+id/skillzPlayerAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/skillz_i4_icon_player_add"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/skillzPlayerRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/skillz_i4_icon_player_remove"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

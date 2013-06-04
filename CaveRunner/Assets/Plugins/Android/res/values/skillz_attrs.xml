@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="skillz_card_layout_style">
+        <attr name="divider" format="boolean"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+</resources>

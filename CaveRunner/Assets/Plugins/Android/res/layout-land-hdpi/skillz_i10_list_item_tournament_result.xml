@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/skillz_i10_side_margin"
+    android:paddingRight="@dimen/skillz_i10_side_margin"
+    android:gravity="center_vertical">
+    <com.skillz.android.client.ui.views.PlaceView
+        android:id="@+id/skillzListItemTournamentPlace"
+        style="@style/Skillz.I10.View.IconTile" />
+    <ImageView
+        android:id="@+id/skillzListItemTournamentAvatar"
+        android:scaleType="center"
+        style="@style/Skillz.I10.View.IconTile" />
+    <TextView 
+        android:id="@+id/skillzListItemTournamentPlayer"
+        android:layout_marginLeft="8dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/Skillz.I10.Text.Gray.Small" />
+    <TextView
+        android:id="@+id/skillzListItemTournamentCash"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        style="@style/Skillz.I10.Text.Gray.Small.Bold" />
+    <TextView 
+        android:id="@+id/skillzListItemTournamentPoints"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        style="@style/Skillz.I10.Text.Gray.Small.Bold" />
+    <TextView 
+        android:id="@+id/skillzListItemTournamentScore"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/Skillz.I10.Text.Gray.Small.Bold" />
+</LinearLayout>

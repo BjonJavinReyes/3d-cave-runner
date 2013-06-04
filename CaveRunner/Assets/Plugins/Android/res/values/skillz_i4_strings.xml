@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fonts -->
+    <string name="skillz_i4_font_helvetica_black_cn">HELVETICA_BLACK_CN</string>
+    <string name="skillz_i4_font_helvetica_bold">HELVETICA_BOLD</string>
+    <string name="skillz_i4_font_helvetica_bold_cn">HELVETICA_BOLD_CN</string>
+    <string name="skillz_i4_font_helvetica_light">HELVETICA_LIGHT</string>
+    <string name="skillz_i4_font_helvetica_medium">HELVETICA_MEDIUM</string>
+    <string name="skillz_i4_font_helvetica_roman">HELVETICA_ROMAN</string>
+    <string name="skillz_i4_font_helvetica_thin">HELVETICA_THIN</string>
+    
+    <string name="skillz_i4_logo_tagline">PLAY FOR FUN, PLAY TO WIN</string>
+    
+    <string name="skillz_i4_freesignup">FREE SIGN UP</string>
+    <string name="skillz_i4_playnow">PLAY NOW</string>
+    
+    <string name="skillz_i4_already_have_an_account">
+        <![CDATA[
+        <u>Already have an account?</u>
+        ]]>
+    </string>
+    
+    <!-- Landing -->
+    <string name="skillz_i4_landing_compete_subtitle">IN MULTIPLAYER TOURNAMENTS</string>
+	<string name="skillz_i4_landing_winprizes_subtitle">PLAYING THE GAMES YOU LOVE</string>
+	<string name="skillz_i4_landing_rememberme">KEEP ME LOGGED IN</string>
+	<string name="skillz_i4_landing_login">LOGIN</string>
+	<string name="skillz_i4_landing_username">USERNAME</string>
+	<string name="skillz_i4_landing_password">PASSWORD</string>
+	
+	<!-- Info / More Info / About Skillz -->
+	<string name="skillz_i4_info_tagline">
+    	<![CDATA[
+    	The first multiplayer tournament system with <b><font color="#49a8e1">PRIZES</font></b> for Android games!
+    	]]>
+	</string>
+	<string name="skillz_i4_info_join">Join tournaments inside your favorite games!</string>
+	<string name="skillz_i4_info_play">Play against gamers &amp; friends everywhere, at any time!</string>
+	<string name="skillz_i4_info_win">Win prizes and bragging rights!</string>
+
+	<string name="skillz_i4_play_again">PLAY AGAIN</string>
+	<string name="skillz_i4_tournaments">TOURNAMENTS</string>
+	<string name="skillz_i4_see_details">SEE DETAILS</string>
+	<string name="skillz_i4_player">PLAYER</string>
+	<string name="skillz_i4_prize">PRIZE</string>
+	<string name="skillz_i4_menu">MENU</string>
+	
+	
+	<!-- Deposit Offer Prompt -->
+	<string name="skillz_i4_prompt_deposit_text">GAMERS YOU\'VE DEFEATED HAVE ALREADY WON CASH TOURNAMENTS</string>
+	<string name="skillz_i4_prompt_deposit_confirm">I\'M READY TO WIN!</string>
+	<string name="skillz_i4_prompt_deposit_tagline">WANT TO WIN CASH?</string>
+	<string name="skillz_i4_prompt_deposit_cancel">
+	    <![CDATA[
+	    <u>No thanks, I want to keep practicing</u>
+	    ]]>
+	</string>
+	
+	<!-- My Account -->
+	<string name="skillz_i4_my_account">MY ACCOUNT</string>
+	<string name="skillz_i4_my_account_change_username">Change Username</string>
+	<string name="skillz_i4_my_account_withdraw_information">Withdraw Information</string>
+	<string name="skillz_i4_my_account_personal_information">Personal Information</string>
+	<string name="skillz_i4_my_account_deposit_information">Deposit Information</string>
+	<string name="skillz_i4_my_account_change_password">Change Password</string>
+	<string name="skillz_i4_my_account_pin">PIN Settings</string>
+	<string name="skillz_i4_my_account_log_out">Log Out</string>
+	<string name="skillz_i4_my_account_update">UPDATE</string>
+	<string name="skillz_i4_my_account_withdraw_information_uppercase">WITHDRAW INFORMATION</string>
+	<string name="skillz_i4_my_account_deposit_information_uppercase">DEPOSIT INFORMATION</string>
+	<string name="skillz_i4_my_account_change_username_uppercase">CHANGE USERNAME</string>
+	<string name="skillz_i4_my_account_personal_information_uppercase">PERSONAL INFORMATION</string>
+	<string name="skillz_i4_my_account_change_password_uppercase">CHANGE PASSWORD</string>
+	<string name="skillz_i4_my_account_zip">Zip</string>
+	<string name="skillz_i4_my_account_username">Username</string>
+	<string name="skillz_i4_my_account_first_name">First Name</string>
+	<string name="skillz_i4_my_account_last_name">Last Name</string>
+	<string name="skillz_i4_my_account_email">Email Address</string>
+	<string name="skillz_i4_my_account_street_address">Street Address</string>
+	<string name="skillz_i4_my_account_apt">Apt, Unit, Bldg</string>
+	<string name="skillz_i4_my_account_ssn">SSN</string>
+	<string name="skillz_i4_my_account_current_password">Current Password</string>
+	<string name="skillz_i4_my_account_new_password">New Password</string>
+	<string name="skillz_i4_my_account_error_invalid_username">Invalid username</string>
+	<string name="skillz_i4_my_account_error_email_invalid">Email is not valid</string>
+	<string name="skillz_i4_my_account_updating">Updating...</string>
+	<string name="skillz_i4_my_account_update_successful">Update successful</string>
+
+	<!-- Congrats Prompt -->
+	<string name="skillz_i4_prompt_congrats_header">CONGRATULATIONS!</string>
+	<string name="skillz_i4_prompt_congrats_title">TOURNAMENT RESULTS</string>
+	<string name="skillz_i4_prompt_congrats_score_prefix">SCORE: </string>
+	
+    <!-- Signup Bonus Prompt -->
+    <string name="skillz_i4_welcome_to_skillz">WELCOME TO SKILLZ</string>
+    <string name="skillz_i4_start_winning">You\'re ready to start winning!</string>
+    <string name="skillz_i4_signup_bonus_z_text_blob">Win Z-points by competing in our z games!</string>
+    <string name="skillz_i4_signup_bonus_cash_text_blob">Win real money by competing in our cash games!</string>
+    <string name="skillz_i4_signup_bonus_amount">HERE\'S %s ON US</string>
+    
+	<!-- Deposit -->
+	<string name="skillz_i4_deposit">CHOOSE DEPOSIT AMOUNT</string>
+	<string name="skillz_i4_deposit_submit_payment">SUBMIT PAYMENT</string>
+	<string name="skillz_i4_deposit_get_extra">PLUS GET EXTRA BONUS CASH!</string>
+	<string name="skillz_i4_deposit_deposit_amount">DEPOSIT AMOUNT</string>
+	<string name="skillz_i4_deposit_deposit_bonus">DEPOSIT BONUS</string>
+	<string name="skillz_i4_deposit_total_balance">TOTAL BALANCE</string>
+	<string name="skillz_i4_deposit_continue">Continue</string>
+	<string name="skillz_i4_deposit_preferred_card">Remember payment info</string>
+	<string name="skillz_i4_deposit_remember">Remember</string>
+	<string name="skillz_i4_deposit_blank_card">1234 5678 9012 3456</string>
+	<string name="skillz_i4_deposit_paypal">Paypal</string>
+	<string name="skillz_deposit_paypal_connect">Connecting to PayPal Service...</string>
+	
+	<!-- Confirm Join Tournament Dialog -->
+	<string name="skillz_i4_dialog_join_fee">ENTRY FEE: %s</string>
+	<string name="skillz_i4_dialog_join_tagline">ARE YOU READY TO TEST YOUR SKILLZ?</string>
+	<string name="skillz_i4_dialog_join_confirm">PLAY</string>
+	<string name="skillz_i4_dialog_join_cancel">CANCEL</string>
+	
+	<!-- Play Again Tournament Dialog -->
+	<string name="skillz_i4_dialog_join_again">PLAY AGAIN</string>
+	<string name="skillz_i4_dialog_join_again_desc">This will take you to a similar tournament to the one you just played.</string>
+	<string name="skillz_i4_dialog_join_again_fee">ENTRY FEE: %s</string>
+	
+	<!-- Player Profile -->
+	<string name="skillz_i4_winning_ratio">WINNING RATIO</string>
+	<string name="skillz_i4_played">PLAYED</string>
+	<string name="skillz_i4_wins">WINS</string>
+	<string name="skillz_i4_high_score">BEST SCORE</string>
+	<string name="skillz_i4_gaming_history">GAMING HISTORY</string>
+	<string name="skillz_i4_avg_score">AVG SCORE</string>
+	<string name="skillz_i4_longest_win_streak">LONGEST WIN STREAK: %s</string>
+	<string name="skillz_i4_choose_your_shout_out">CHOOSE YOUR SHOUT OUT</string>
+	<string name="skillz_i4_select_a_taunt_that_fits_you">Select a taunt that fits you!</string>
+	<string name="skillz_i4_upload_new_avatar">UPLOAD NEW AVATAR</string>
+	<string name="skillz_i4_allowed_image_formats">Allowed image formats: JPEG-GIF-PNG</string>
+	<string name="skillz_i4_image_library">IMAGE LIBRARY</string>
+	<string name="skillz_i4_image_capture">IMAGE CAPTURE</string>
+	<string name="skillz_i4_update_profile_avatar">UPDATE PROFILE AVATAR</string>
+	<string name="skillz_i4_taunts_collected">%s COLLECTED</string>
+	<string name="skillz_i4_report_user">REPORT USER</string>
+	<string-array name="skillz_i4_profile_rank_types">
+        <item>BRONZE PLAYER</item>
+        <item>SILVER PLAYER</item>
+        <item>GOLD PLAYER</item>
+        <item>PLATINUM PLAYER</item>
+        <item>DIAMOND PLAYER</item>
+    </string-array>
+    <string name="skillz_i4_profile_joined_fmt" formatted="false">JOINED %1$tm/%1$td/%1$ty</string>
+    
+    <string name="skillz_i4_uploading">Uploading...</string>
+    <string name="skillz_i4_confirm_shout_out_price">CONFIRM SHOUT OUT PURCHASE FOR: %s</string>
+    <string name="skillz_i4_confirm">CONFIRM</string>
+    <string name="skillz_i4_cancel">CANCEL</string>
+    <string name="skillz_i4_purchasing">Purchasing...</string>
+    <string name="skillz_i4_percentage_complete">%s complete...</string>
+    <string name="skillz_i4_avatar_upload_complete">Upload Complete</string>
+    <string name="skillz_i4_avatar_upload_failed">Upload Failed</string>
+    <string name="skillz_i4_avatar_upload">Avatar Upload</string>
+
+    <!-- PIN -->
+	<string name="skillz_i4_dialog_pin_hint">0000</string>
+	
+	<string name="skillz_i4_dialog_set_pin_q">SET PIN?</string>
+	<string name="skillz_i4_dialog_set_pin_q_desc">If set, your 4-digit PIN will be required for cash transactions (deposits, entering cash tournaments) of your choosing.</string>
+	<string name="skillz_i4_dialog_set_pin_q_cancel">No Thanks</string>
+	<string name="skillz_i4_dialog_set_pin_q_confirm">Set PIN</string>
+	
+	<string name="skillz_i4_dialog_set_pin">SET PIN</string>
+	<string name="skillz_i4_dialog_set_pin_cancel">Nevermind</string>
+	<string name="skillz_i4_dialog_set_pin_confirm">Set PIN</string>
+	
+	<string name="skillz_i4_dialog_require_pin">ENTER PIN</string>
+	<string name="skillz_i4_dialog_require_pin_desc">Your PIN is required to complete this action.</string>
+	<string name="skillz_i4_dialog_require_pin_cancel">Nevermind</string>
+	<string name="skillz_i4_dialog_require_pin_confirm">CONFIRM</string>
+	<string name="skillz_i4_dialog_require_pin_settings">PIN Settings</string>
+	
+	<string name="skillz_i4_dialog_pin_settings">PIN SETTINGS</string>
+	<string name="skillz_i4_dialog_pin_settings_menu_config">Configure PIN Protected Actions</string>
+	<string name="skillz_i4_dialog_pin_settings_menu_remove">Remove PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_menu_update">Change PIN</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_config">PIN PERMISSIONS</string>
+	<string name="skillz_i4_dialog_pin_settings_config_require">Require entry of my PIN to:</string>
+	<string name="skillz_i4_dialog_pin_settings_config_require_cash_tournament">Enter cash tournaments</string>
+	<string name="skillz_i4_dialog_pin_settings_config_require_play_again">\"Play again\" cash tournaments</string>
+	<string name="skillz_i4_dialog_pin_settings_config_require_stored_deposit">Deposit using stored payment information</string>
+	<string name="skillz_i4_dialog_pin_settings_config_require_withdraw">Make a withdraw</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_cancel">Do Not Change</string>
+	<string name="skillz_i4_dialog_pin_settings_confirm">Change</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_config_pin">Enter PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_config_pin_desc">Enter your PIN to continue.</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_button_close">Close</string>
+	<string name="skillz_i4_dialog_pin_settings_button_back">Back</string>
+	<string name="skillz_i4_dialog_pin_settings_button_save">Save</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_update">CHANGE PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_update_old">Current PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_update_new">New PIN</string>
+	
+	<string name="skillz_i4_dialog_pin_settings_remove">REMOVE PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_remove_desc">Your PIN will be removed and will no longer be required to perform cash transactions.</string>
+	<string name="skillz_i4_dialog_pin_settings_remove_confirm">Remove PIN</string>
+	<string name="skillz_i4_dialog_pin_settings_remove_cancel">Nevermind</string>
+	
+	<string name="skillz_i4_pin_set_success_msg">Your PIN has been set!</string>
+	<string name="skillz_i4_pin_update_success_msg">Your PIN has been changed!</string>
+	<string name="skillz_i4_pin_remove_success_msg">Your PIN has been removed!</string>
+	
+	<!-- Tournaments -->
+	<string name="skillz_i4_tournaments_game_type">GAME TYPE: </string>
+	<string name="skillz_i4_tournaments_game_type_all">ALL</string>
+	<string name="skillz_i4_tournaments_game_type_cash">CASH TOURNAMENT</string>
+	<string name="skillz_i4_tournaments_game_type_z">Z TOURNAMENT</string>
+	<string name="skillz_i4_tournaments_filter_choose">CHOOSE GAMES TO ENTER: </string>
+	
+	<string name="skillz_i4_tournaments_tournament_selection">TOURNAMENT SELECTION</string>
+	
+	<string name="skillz_i4_ok">OK</string>
+	<string name="skillz_i4_error">ERROR</string>
+	<string name="skillz_i4_login">LOGIN</string>
+	<string name="skillz_i4_taunt_purchase_error">NOT ENOUGH Z</string>
+	<string name="skillz_i4_taunt_purchase_error_msg">You need more Z.  Come back when you\'ve earned some more.</string>
+	
+	<string name="skillz_i4_start">START</string>
+	<string name="skillz_i4_entry">ENTRY</string>
+	<string name="skillz_i4_begins">%s</string>
+	<string name="skillz_i4_begins_label">BEGINS:</string>
+	<string name="skillz_i4_players">%s</string>
+	<string name="skillz_i4_ends_label">ENDS:</string>
+	<string name="skillz_i4_players_label">PLAYERS:</string>
+	<string name="skillz_i4_now">NOW</string>
+</resources>

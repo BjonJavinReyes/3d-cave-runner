@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzUploadAvatarContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bb000000" >
+
+    <LinearLayout
+        android:id="@+id/skillzUploadAvatarClickCatcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/skillz_i4_bg_avatar_modal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="32dp" >
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/skillz_i4_margin_full"
+            android:background="@drawable/skillz_i4_bg_avatar" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:src="@drawable/skillz_i4_icon_avatar_default" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Skillz.I4.TextView.Slate.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skillz_i4_margin_full"
+            android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+            android:text="@string/skillz_i4_upload_new_avatar" />
+
+        <TextView
+            style="@style/Skillz.I4.TextView.Slate.Micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skillz_i4_margin_half"
+            android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+            android:text="@string/skillz_i4_allowed_image_formats" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/skillz_i4_margin_full"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/skillzGallery"
+                style="@style/Skillz.I4.Button.LightGray.Micro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/skillz_i4_margin_quarter"
+                android:layout_weight="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+                android:drawableLeft="@drawable/skillz_i4_icon_gallery"
+                android:paddingLeft="@dimen/skillz_i4_margin_full"
+                android:text="@string/skillz_i4_image_library" />
+
+            <Button
+                android:id="@+id/skillzCamera"
+                style="@style/Skillz.I4.Button.LightGray.Micro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/skillz_i4_margin_quarter"
+                android:layout_weight="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+                android:drawableLeft="@drawable/skillz_i4_icon_camera"
+                android:paddingLeft="@dimen/skillz_i4_margin_half"
+                android:text="@string/skillz_i4_image_capture" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

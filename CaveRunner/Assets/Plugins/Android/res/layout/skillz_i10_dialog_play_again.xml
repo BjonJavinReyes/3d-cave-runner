@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Skillz.I10.View.Dialog.Background"
+    android:layout_width="@dimen/skillz_i10_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/skillz_i10_bg_dialog_content">
+        <TextView
+	        style="@style/Skillz.I10.View.Dialog.Header"
+	        android:text="@string/skillz_play_again" />
+    	<TextView
+	        android:id="@+id/skillzPlayAgainMessage"
+	        style="@style/Skillz.I10.View.Dialog.Text"
+	        android:layout_height="130dip"
+	        android:gravity="left|center_vertical" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/skillzProgressView"
+        android:layout_width="fill_parent"
+        android:layout_height="130dip"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/skillzProgressBar"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Skillz.I10.View.Dialog.Footer" >
+
+        <Button
+            android:id="@+id/skillzPlayAgainCancelButton"
+            style="@style/Skillz.I10.Button.Large"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/skillz_cancel" />
+
+        <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+        <Button
+            android:id="@+id/skillzPlayAgainPlayButton"
+            style="@style/Skillz.I10.Button.Large.Blue"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:text="@string/skillz_play" />
+    </LinearLayout>
+
+</LinearLayout>

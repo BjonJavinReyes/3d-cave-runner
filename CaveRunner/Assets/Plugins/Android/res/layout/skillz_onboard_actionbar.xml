@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/skillz_ab"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/skillz_ab_height"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/skillz_ab_left_padding"
+            android:paddingRight="@dimen/skillz_ab_left_padding" >
+
+            <ImageView
+                android:id="@+id/skillz_ab_logo"
+                android:layout_width="@dimen/skillz_ab_icon"
+                android:layout_height="@dimen/skillz_ab_icon"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/skillz_i10_ic_skillz_logo" />
+
+            <TextView
+                android:id="@+id/skillz_ab_game_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/skillz_font_avenir_roman"
+                android:paddingLeft="@dimen/skillz_ab_game_name_left_padding"
+                android:singleLine="true"
+                android:textColor="@color/skillz_i10_text_gray"
+                android:textSize="@dimen/skillz_ab_game_name_text_size" />
+
+            <LinearLayout
+                android:id="@+id/skillz_ab_what_is"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="@dimen/skillz_ab_ic_what_is_width"
+                    android:layout_height="@dimen/skillz_ab_ic_what_is_height"
+                    android:layout_marginLeft="@dimen/skillz_ab_what_is_left_padding"
+                    android:src="@drawable/skillz_i20_ic_info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/skillz_ab_what_is_left_padding"
+                    android:text="@string/skillz_onboard_what_is"
+                    android:textColor="@color/skillz_i10_text_gray"
+                    android:textSize="@dimen/skillz_ab_what_is_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skillzABEnvironment"
+            style="@style/Skillz.I10.Text.Gray.Micro.Bold"
+            android:layout_width="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#CC000000"
+            android:paddingLeft="8dp"
+            android:textColor="#FF0000"
+            android:textSize="10sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/skillz_ab_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/skillz_i10_ab_dropshadow" />
+
+</LinearLayout>

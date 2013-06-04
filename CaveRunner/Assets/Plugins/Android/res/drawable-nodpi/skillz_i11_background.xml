@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <gradient 
+                android:startColor="#2b2b2b"
+                android:endColor="#7e7e7e"
+                android:angle="270"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/skillz_i10_action_bar_height">
+        <bitmap android:src="@drawable/skillz_i10_bg_logo" android:gravity="center"/>
+    </item>  
+    <item>
+        <shape android:shape="rectangle">
+            <gradient 
+                android:startColor="#aa29323c"
+                android:endColor="#aa646d76"
+                android:angle="270"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/skillz_i10_bg_noise" android:tileMode="repeat"/>
+    </item>
+</layer-list>

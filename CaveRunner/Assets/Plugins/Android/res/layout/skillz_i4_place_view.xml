@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="@dimen/skillz_i4_icon_tile_width"
+        android:layout_height="@dimen/skillz_i4_icon_tile_width"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+     	android:id="@+id/skillzPlaceViewImageView" />
+    <RelativeLayout
+        android:id="@+id/skillzPlaceViewTextContainer"
+        android:layout_width="@dimen/skillz_i4_icon_tile_width"
+        android:layout_height="@dimen/skillz_i4_icon_tile_width"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/skillzPlaceViewUnknown"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+            style="@style/Skillz.I4.TextView.Slate.XLarge" />
+        <TextView
+         android:id="@+id/skillzPlaceViewText"
+         android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+         android:singleLine="true"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         style="@style/Skillz.I4.TextView.Slate.XLarge" />
+        <TextView
+            android:id="@+id/skillzPlaceViewOrdinalText"
+            android:layout_alignTop="@id/skillzPlaceViewText"
+            android:layout_toRightOf="@id/skillzPlaceViewText"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+            android:singleLine="true"
+            style="@style/Skillz.I4.TextView.Slate.Small" />
+    </RelativeLayout>
+</RelativeLayout>

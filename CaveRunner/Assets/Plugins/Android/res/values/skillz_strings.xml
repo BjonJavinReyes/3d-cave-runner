@@ -1,0 +1,706 @@
+<resources>
+    
+    <string name="skillz_font_avenir_roman">AVENIR_ROMAN</string>
+    <string name="skillz_font_avenir_black">AVENIR_BLACK</string>
+    <string name="skillz_font_default">DEFAULT</string>
+    <string name="skillz_font_default_bold">DEFAULT_BOLD</string>
+    <string name="skillz_font_helvetica_black_cn">HELVETICA_BLACK_CN</string>
+    <string name="skillz_font_helvetica_bold">HELVETICA_BOLD</string>
+    <string name="skillz_font_helvetica_bold_cn">HELVETICA_BOLD_CN</string>
+    <string name="skillz_font_helvetica_light">HELVETICA_LIGHT</string>
+    <string name="skillz_font_helvetica_medium">HELVETICA_MEDIUM</string>
+    <string name="skillz_font_helvetica_roman">HELVETICA_ROMAN</string>
+    <string name="skillz_font_helvetica_thin">HELVETICA_THIN</string>
+    
+    <string name="skillz_play">Play</string>
+    <string name="skillz_cancel">Cancel</string>
+    <string name="skillz_ok">OK</string>
+    <string name="skillz_next">Next</string>
+    <string name="skillz_error">Error</string>
+    <string name="skillz_retry">Retry</string>
+    <string name="skillz_update">Update</string>
+    <string name="skillz_entry_fee_free">FREE</string>
+    
+    <string name="skillz_activation_failed_title">Skillz activation failed!</string>
+    <string name="skillz_activation_failed_msg">Skillz could not be activated. Ensure your copy of the game is official and valid. If you believe this to be in error, let us know: contact@skillz.com</string>
+    <string name="skillz_activation_failed_button">OK</string>
+    
+    <!-- <string name="skillz_error_generic_server">An error has occurred on the server</string> -->
+    <string name="skillz_error_generic_server">Holy Moly! We\'re swamped with gamers! Please wait a moment and try again.</string>
+    <string name="skillz_error_io_exception">An error has occurred connecting to the server. Please try again.</string>
+    
+    <string name="skillz_deposit_previous_balance">Previous Balance</string>
+    <string name="skillz_deposit_amount">Deposit Amount</string>
+    <string name="skillz_deposit_bonus">Deposit Bonus</string>
+    <string name="skillz_deposit_current_balance">Current Balance</string>
+
+    <string name="skillz_game_starts_in">Game starts in&#8230;</string>
+    
+    <string name="skillz_current_balance">Current Balance: </string>
+    <string name="skillz_locked_balance">Non-withdrawable funds: </string>
+    
+    <string name="skillz_address_first_name">First Name</string>
+    <string name="skillz_address_last_name">Last Name</string>
+    <string name="skillz_address_street_billing">Billing Address</string>
+    <string name="skillz_address_street">Street Address</string>
+    <string name="skillz_address_unit">Apt, Unit, Bldg</string>
+    <string name="skillz_address_city">City</string>
+    <string name="skillz_address_state">State</string>
+    <string name="skillz_address_zip">Zip</string>
+    
+    <string name="skillz_terms_of_service_title">Terms of Service</string>
+    
+    <string name="skillz_login_submit">Log In</string>
+    <string name="skillz_login_confirm_submit">Confirm</string>
+    <string name="skillz_login_create_account">Create Account</string>
+    <string name="skillz_login_title">Login</string>
+    <string name="skillz_login_confirm_title">Confirm Password</string>
+    <string name="skillz_login_invalid_credentials">Invalid Credentials</string>
+    <string name="skillz_create_account_title">Sign Up</string>
+    <string name="skillz_create_account_error">Could not create account</string>
+    <string name="skillz_create_account_username_help">Please choose a username between 6 and 26 characters.</string>
+    <string name="skillz_create_account_email_help">Please enter your email address. This is for verification purposes. We won\'t spam you.</string>
+    <string name="skillz_create_account_password_help">Please choose a password at least 6 characters long.</string>
+    <string name="skillz_login_username">Username</string>
+    <string name="skillz_login_email">E-mail Address</string>
+    <string name="skillz_login_password">Password</string>
+    <string name="skillz_login_password_confirm">Confirm Password</string>
+    <string name="skillz_login_sign_up">Sign Up</string>
+    <string name="skillz_login_forgot_password">Forgot Password?</string>
+    <string name="skillz_login_remember_me">Keep Me Logged In</string>
+    <string name="skillz_login_no_username">You must enter a username</string>
+    <string name="skillz_login_no_password">You must enter a password</string>
+
+    <string name="skillz_info_loading">Retrieving tournaments&#8230;</string>
+    <string name="skillz_info_tournament">Tournament</string>
+    <string name="skillz_info_entry_fee">Ent. Fee</string>
+    <string name="skillz_info_first_prize">1st Prize</string>
+    <string name="skillz_info_unlimited_entry">UNLIMITED</string>
+    <string name="skillz_info_progressive_prize">Progressive</string>
+    <string name="skillz_info_num_players">Players</string>
+    <string name="skillz_info_starts_in">Starts In</string>
+    <string name="skillz_info_balance">Balance: %s </string>
+    
+    <string name="skillz_status_join">Join</string>
+    <string name="skillz_status_leave">Bow out</string>
+    <string name="skillz_status_play">Play</string>
+    <string name="skillz_status_details">Highest Score | %1$s Entry Fee | %2$s Grand Prize | %3$d/%4$d Players | Starts in %5$s</string>
+    <string name="skillz_status_players">Players:</string>
+    <string name="skillz_status_refresh">Refresh</string>
+    <string name="skillz_status_waiting_for_finish">Players are still playing. A notification will be sent with the results once concluded.</string>
+    <string name="skillz_status_in_progress">In progress</string>
+    <string name="skillz_status_already_started">The tournament has already started and you have forfeited.</string>
+    <string name="skillz_status_forfeited_title">You have forfeited</string>
+    
+    <string name="skillz_join_load">Joining tournament&#8230;</string>
+    <string name="skillz_join_error">Could not join tournament</string>
+    <string name="skillz_leave_load">Leaving tournament&#8230;</string>    
+    <string name="skillz_leave_error">Could not leave tournament</string>
+    
+    
+    <string name="skillz_starts_in_hr">%1$d:%2$02d HR</string>
+    <string name="skillz_starts_in_day">%1$d DAY</string>
+    <string name="skillz_starts_in_days">%1$d DAYS</string>
+    <string name="skillz_starts_in_min">%1$d MIN</string>
+    <string name="skillz_starts_in_sec">%1$d SEC</string>
+    
+    <string name="skillz_waiting_for_player">Waiting for player&#8230;</string>
+    <string name="skillz_notification_tournament_results">Tournament Results</string>
+    <string name="skillz_notification_tournament_has_ended">has ended.</string>
+    <string name="skillz_notification_tournament_starting_title">Tournament starting&#8230;</string>
+    <string name="skillz_notification_tournament_starting_message">Your tournament is about to begin.</string>
+    
+    <string name="skillz_winner">Winner</string>
+    <string name="skillz_logging_in">Logging in&#8230;</string>
+    
+    <string name="skillz_starting_game">Starting game</string>
+    <string name="skillz_could_not_start_game">Could not start game</string>
+    
+    <string name="skillz_dialog_report_score_title">SKILLZ</string>
+    <string name="skillz_dialog_report_score_message">Submitting score&#8230;</string>
+    
+    <string name="skillz_dialog_deposit">Deposit</string>
+    <string name="skillz_dialog_deposit_received">Deposit Received</string>
+    <string name="skillz_dialog_deposit_received_message">We\'ve received your deposit of %s.</string>
+    <string name="skillz_dialog_deposit_summary">You\'re about to deposit %s.</string>
+    <string name="skillz_dialog_are_you_sure">Are you sure?</string>
+    <string name="skillz_dialog_skip_tutorial">Skip Tutorial</string>
+    <string name="skillz_dialog_skip_tutorial_message">Are you sure you want to skip this tutorial?</string>
+    <string name="skillz_dialog_bonus_loss">You will lose your opportunity to earn a bonus if you leave this screen.</string>
+    <string name="skillz_dialog_forfeit">You will forfeit if you leave this screen.</string>
+    <string name="skillz_dialog_logout_message">Do you want to log out?</string>
+    <string name="skillz_dialog_leave">Leave</string>
+    <string name="skillz_dialog_cancel">Cancel</string>
+    <string name="skillz_dialog_okay">Okay</string>
+    <string name="skillz_dialog_logout">Log Out</string>
+    <string name="skillz_dialog_logout_msg">Log out of Skillz</string>
+    <string name="skillz_dialog_join">The entry fee is: %s\n\nAre you ready to play?</string>
+    <string name="skillz_dialog_funds_title">Insufficient funds</string>
+    <string name="skillz_dialog_funds_message">You have insufficient funds to play in this tournament.\n\nAdd funds?</string>
+    <string name="skillz_dialog_fundz_message">You have insufficient funds to play in this tournament.</string>
+    
+    <string name="skillz_okay">Okay</string>
+    
+    <string name="skillz_network_required_title">Network Required</string>
+    <string name="skillz_network_required_message">An active internet connection is required. Wifi, Edge, 3G and 4G are supported.</string>
+    
+    <string name="skillz_tournament_prize_header">Prizes: %s</string>
+
+    <string name="skillz_phone_number">Phone Number</string>
+    
+    <!-- First Use -->
+    <string name="skillz_first_use_locked_t1">2v2</string>
+    <string name="skillz_first_use_locked_t2">3v3</string>
+    <string name="skillz_first_use_locked_t3">4v4</string>
+    <string name="skillz_first_use_locked">Locked</string>
+    <string name="skillz_first_use_locked_msg">Tournaments are unlocked after you\'ve entered your first tournament and created a Skillz account.</string>
+    <string name="skillz_first_use_you">You</string>
+    <string name="skillz_first_use_new_user">New User?</string>
+    <string name="skillz_first_use_new_user_msg">Create a Skillz account and win prizes by entering a free tournament.</string>
+    <string name="skillz_first_use_returning_user">Returning User</string>
+    <string name="skillz_first_use_username">Username</string>
+    <string name="skillz_first_use_password">Password</string>
+    <string name="skillz_first_use_try_skillz">Try Skillz</string>
+    <string name="skillz_first_use_login">Login</string>
+    <string name="skillz_first_use_remember_password">Remember Password</string>
+    <string name="skillz_first_use_leave">Leave</string>
+    <string name="skillz_first_use_game_details">Game Details:</string>
+    <string name="skillz_first_use_tournament_results">Tournament Results</string>
+    <string name="skillz_first_use_tournament_results_msg">Sign up for a Skillz account to collect your winnings!</string>
+    <string name="skillz_first_use_tournament_results_create_account">Create Account</string>
+    <string name="skillz_first_use_deposit_offer_skip">Skip</string>
+    <string name="skillz_first_use_deposit_offer_deposit">Deposit</string>
+    
+	<!-- Tournament Results -->
+	<string name="skillz_tournament_results_header_player">Player</string>
+	<string name="skillz_tournament_results_header_prizes">Prize</string>
+	<string name="skillz_tournament_results_header_score">Score</string>
+	<string name="skillz_tournament_results">Tournament Results</string>
+	<string name="skillz_tournament_tournaments">Tournaments</string>
+	<string name="skillz_tournament_play_again">Play Again</string>
+	<string name="skillz_tournament_results_msg">Final tournament results will be posted once all players have finished.</string>
+	
+	<string name="skillz_create_account_loading">Creating account&#8230;</string>
+	
+	<!-- Errors -->
+	<string name="skillz_error_field_empty">%s cannot be empty.</string>
+	<string name="skillz_error_field_alpha_only">%s must only contain alphanumeric characters.</string>
+    <string name="skillz_error_email_invalid">Email is not valid.</string>
+    <string name="skillz_error_tos">Terms of Service</string>
+    <string name="skillz_error_tos_msg">You must read and accept our Terms of Service.</string>
+    
+    <!-- Deposit -->
+    <string name="skillz_deposit_first_use_offer">Deposit $10 now and you\'ll get a $2 bonus and double the %s points!</string>
+    <string name="skillz_deposit_amount_deposit">Add Funds</string>
+    <string name="skillz_deposit_amount_back">Back</string>
+    <string name="skillz_deposit_amount_choose">Choose</string>
+    <string name="skillz_deposit_payment_type_deposit">Deposit</string>
+    <string name="skillz_deposit_payment_type_back">Back</string>
+    <string name="skillz_deposit_payment_type_choose">Choose</string>
+    <string name="skillz_deposit_payment_type_bank">Bank Account</string>
+    <string name="skillz_deposit_payment_type_card">Credit Card</string>
+    <string name="skillz_deposit_payment_type_paypal">PayPal</string>
+    <string name="skillz_deposit_bank_info_first_name">First Name</string>
+    <string name="skillz_deposit_bank_info_last_name">Last Name</string>
+    <string name="skillz_deposit_bank_info_zip_code">Zip Code</string>
+    <string name="skillz_deposit_bank_info_account_number">Account Number</string>
+    <string name="skillz_deposit_bank_info_routing_number">Routing Number</string>
+    <string name="skillz_deposit_bank_info_save_name">Save my zip code.</string>
+    <string name="skillz_deposit_bank_info_what_are_these">What are these?</string>
+    <string name="skillz_deposit_bank_info_deposit">Deposit</string>
+    <string name="skillz_deposit_bank_info_next">Next</string>
+    <string name="skillz_deposit_card_info_first_name">First Name</string>
+    <string name="skillz_deposit_card_info_last_name">Last Name</string>
+    <string name="skillz_deposit_card_info_zip_code">Zip Code</string>
+    <string name="skillz_deposit_card_info_credit_card_number">Card Number</string>
+    <string name="skillz_deposit_card_info_cvc">Security Code</string>
+    <string name="skillz_deposit_card_info_save_name">Save my zip code.</string>
+    <string-array name="skillz_deposit_card_info_months">
+        <item>01 Jan</item>
+        <item>02 Feb</item>
+        <item>03 Mar</item>
+        <item>04 Apr</item>
+        <item>05 May</item>
+        <item>06 Jun</item>
+        <item>07 Jul</item>
+        <item>08 Aug</item>
+        <item>09 Sep</item>
+        <item>10 Oct</item>
+        <item>11 Nov</item>
+        <item>12 Dec</item>
+    </string-array>
+    <string name="skillz_deposit_card_info_deposit">Deposit</string>
+    <string name="skillz_deposit_card_info_next">Next</string>
+    <string name="skillz_deposit_paypal_info_first_name">First Name</string>
+    <string name="skillz_deposit_paypal_info_last_name">Last Name</string>
+    <string name="skillz_deposit_paypal_info_zip_code">Zip Code</string>
+    <string name="skillz_deposit_paypal_info_username">PayPal Username</string>
+    <string name="skillz_deposit_paypal_info_password">PayPal Password</string>
+    <string name="skillz_deposit_paypal_info_save_name">Save my zip code.</string>
+    <string name="skillz_deposit_paypal_info_deposit">Deposit</string>
+    <string name="skillz_deposit_paypal_info_next">Next</string>
+    <string name="skillz_deposit_paypal">Paypal</string>
+    <string name="skillz_deposit_summary_deposit">Deposit</string>
+    <string name="skillz_deposit_summary_msg">DEPOSIT INFORMATION</string>
+    <string name="skillz_deposit_summary_amount">Deposit Amount</string>
+    <string name="skillz_deposit_summary_total_balance">New Total Balance</string>
+    <string name="skillz_deposit_summary_back">Back</string>
+    <string name="skillz_deposit_summary_bonus">Deposit Bonus</string>
+    <string name="skillz_deposit_summary_z_bonus">\u00a4 Points</string>
+    <string name="skillz_deposit_summary_bank_account_number">Account: %s</string>
+    <string name="skillz_deposit_summary_bank_routing_number">Routing: %s</string>
+    <string name="skillz_deposit_summary_card_number">xxxx-xxxx-xxxx-%s</string>
+    
+    <string name="skillz_deposit_error_first_name">First Name is required.</string>
+    <string name="skillz_deposit_error_last_name">Last Name is required.</string>
+    <string name="skillz_deposit_error_zip_code">Zip Code must be 5 digits.</string>
+    <string name="skillz_deposit_error_account_number">Account Number is required.</string>
+    <string name="skillz_deposit_error_routing_number">Routing Number is required.</string>
+    <string name="skillz_deposit_error_credit_card_number">Card Number is required.</string>
+    <string name="skillz_deposit_error_security_code">Security Code is required.</string>
+    <string name="skillz_deposit_error_paypal_username">PayPal Username is required.</string>
+    <string name="skillz_deposit_error_paypal_password">PayPal Password is required.</string>
+
+    <string name="skillz_deposit_sending">Submitting deposit&#8230;</string>
+    <string name="skillz_deposit_paypal_sending">Processing&#8230;</string>
+    
+    
+    <string name="skillz_prize_table_title">Prizes</string>
+    
+    <!-- Menus -->
+    <string name="skillz_menu_logout">Log Out</string>
+    <string name="skillz_menu_exit">Exit</string>
+    <string name="skillz_menu_create_account">Create Account</string>
+    <string name="skillz_menu_my_account">My Account</string>
+    <string name="skillz_menu_my_profile">Profile</string>
+    <string name="skillz_menu_my_game_history">Game History</string>
+    <string name="skillz_menu_gamers">Gamers</string>
+    <string name="skillz_menu_withdraw">Withdraw</string>
+    <string name="skillz_menu_deposit">Deposit Cash</string>
+    <string name="skillz_menu_buy_z">Purchase \u00a4</string>
+    <string name="skillz_menu_tournaments">Tournaments</string>
+
+    <!-- Play Again -->
+    <string name="skillz_play_again">Play Again</string>
+    <string name="skillz_play_again_message">This will take you to a similar tournament to the one you just played.\n\nThe entry fee is: %s</string>
+    <string name="skillz_play_again_message_same_tournament">Do you want to re-enter this tournament?\n\nThe entry fee is: %s</string>
+
+    <!-- Forgot Password -->
+    <string name="skillz_first_use_forgot_password">&lt;u&gt;Forgot Password&lt;/u&gt;</string>
+	<string name="skillz_forgot_password_send">Send</string>
+    <string name="skillz_forgot_password">Forgot Password</string>
+    <string name="skillz_forgot_password_email_or_username">Email or Username</string>
+    <string name="skillz_forgot_password_message">Enter your email address (or username) and we\'ll send you a link to reset your password.</string>
+    <string name="skillz_forgot_password_error">Your email or username is required.</string>
+    <string name="skillz_forgot_password_success">An email has been sent to you to reset your password.</string>
+    <string name="skillz_forgot_password_submitting">Submitting&#8230;</string>
+    
+    <!-- Game History -->
+    <string name="skillz_game_history_header_place">Placed</string>
+    <string name="skillz_game_history_header_score">Score</string>
+    <string name="skillz_game_history_header_game">Game</string>
+    <string name="skillz_game_history_header_date">Date</string>
+    <string name="skillz_game_history_header_prize">PRIZE</string>
+    <string name="skillz_game_history_average_score">AVERAGE SCORE:</string>
+    <string name="skillz_game_history_title">%s\'S GAME HISTORY</string>
+    <string name="skillz_game_history_section_new">NEW RESULTS</string>
+    <string name="skillz_game_history_section_pending">PENDING</string>
+    <string name="skillz_game_history_section_past">PAST RESULTS</string>
+    <string name="skillz_game_history_footer">Showing %1$d of %2$d</string>
+    <string name="skillz_game_history_score">SCORE: %s</string>
+    
+    <!-- Withdraw -->
+    <string name="skillz_withdraw">Withdraw</string>
+    <string name="skillz_withdraw_account_balance">Account Balance</string>
+    <string name="skillz_withdraw_available_funds_label">Available for Withdrawal</string>
+    <string name="skillz_withdraw_forfeit_bonus_funds">You still have %1$s in bonus funds. Withdrawing now will forfeit these funds, leaving you with a balance of %2$s.</string>
+    <string name="skillz_withdraw_amount_min">Withdrawal Amount</string>
+    <string name="skillz_withdraw_pay_description">Your funds will arrive in 4 to 6 weeks to the address listed in your account settings.</string>
+    <string name="skillz_withdraw_amount">Amount</string>
+    <string name="skillz_withdraw_fee">Fee</string>
+    <string name="skillz_withdraw_total">Total</string>
+    <string name="skillz_withdraw_ssn">SSN</string>
+    <string name="skillz_withdraw_ssn_title">Social Security Number</string>
+    <string name="skillz_withdraw_ssn_help">To comply with IRS tax reporting, we must have your social security number.</string>
+    <string name="skillz_withdraw_available_funds">Available Funds</string>
+    <string name="skillz_withdraw_available_funds_help">You have %s in un-released bonus funds. Bonus funds can only be used to play tournaments, and will be forfeited upon withdrawal.</string>
+    <string name="skillz_withdraw_amount_help">Enter a value to withdraw up to %s.</string>
+    <string name="skillz_withdraw_amount_help_fee">Enter an amount to withdraw up to %1$s. Amounts under %2$s are subject to a %3$s transaction fee.</string>
+    <string name="skillz_withdraw_amount_no_funds">Amounts under %1$s are subject to a %2$s transaction fee. Therefore you do not have the available funds to withdraw at this time.</string>
+    <string name="skillz_withdraw_amount_error">You do not have enough funds.</string>
+    <string name="skillz_withdraw_amount_error_fee">Enter an amount greater than the %s transaction fee.</string>
+    <string name="skillz_withdraw_fee_title">Fee</string>
+    <string name="skillz_withdraw_fee_help">Amounts under %1$s are subject to a %2$s transaction fee.</string>
+    <string name="skillz_withdraw_fee_help_no_fee">There is no fee for this transaction.</string>
+    <string name="skillz_withdraw_total_title">Total</string>
+    <string name="skillz_withdraw_total_help">This is the amount you will receive upon tapping the \"Withdraw\" button.</string>
+    <string name="skillz_withdraw_error_missing_amount">Please enter an amount.</string>
+    <string name="skillz_withdraw_executing">Submitting withdrawal</string>
+    <string name="skillz_withdraw_ssn_error">Please enter a valid Social Security Number</string>
+    <string name="skillz_withdraw_address_error">Please enter your street address</string>
+    <string name="skillz_withdraw_zip_error">Please enter your valid zip code</string>
+    <string name="skillz_withdraw_firstname_error">Please enter your first name</string>
+    <string name="skillz_withdraw_lastname_error">Please enter your last name</string>
+    <string name="skillz_withdraw_2_amount">Amount: %s</string>
+    <string name="skillz_withdraw_fee_disclaimer">A %1$s processing fee will be charged for withdrawals below %2$s.</string>
+
+    <!-- Location Settings -->
+    <string name="skillz_location_settings_title">Location Settings</string>
+    <string name="skillz_location_msg">Location is required for Skillz. Please enable location services.</string>
+    <string name="skillz_location_settings">Settings</string>
+    
+    <string name="skillz_location_error_mock">Please disable mock locations in the Settings application.</string>
+    <string name="skillz_location_error_timeout">Skillz could not determine your location.</string>
+    
+    <!-- Game Security -->
+    <string name="skillz_security_location_title">Mock Locations</string>
+    <string name="skillz_security_location_msg">Mock locations must be disabled to play in tournaments.</string>
+
+    <!-- Profile -->
+    <string name="skillz_profile_title">Profile</string>
+    <string name="skillz_profile_joined">Member Since: %s</string>
+    <string name="skillz_profile_total_played_format">%,d</string>
+    <string name="skillz_profile_avg_score_format">%,.0f</string>
+    <string name="skillz_profile_high_score_format">%,.0f</string>
+    <string name="skillz_profile_total_played">Total played</string>
+    <string name="skillz_profile_avg_score">Avg. Score</string>
+    <string name="skillz_profile_high_score">High Score</string>
+    <string name="skillz_profile_tournaments">Tournaments</string>
+    <string name="skillz_profile_game_history">Game History</string>
+
+    <string name="skillz_tournament_type_always_on">Now</string>
+
+    <!-- Help/Customer Service -->
+    <string name="skillz_contact_title">Help/Customer Service</string>
+    <string name="skillz_contact_send_report">Send Report</string>
+    <string name="skillz_contact_type">Type of Concern:</string>
+    <string-array name="skillz_contact_types">
+        <item>Account Inquiry</item>
+        <item>Billing Inquiry</item>
+        <item>Contact Us</item>
+        <item>Report Abuse</item>
+        <item>Report Bug</item>
+    </string-array>
+    <string-array name="skillz_contact_types_anon">
+        <item>Contact Us</item>
+        <item>Report Bug</item>
+    </string-array>
+    <string name="skillz_contact_validation_description">Please write a short description.</string>
+    <string name="skillz_contact_submitting">Sending report&#8230;</string>
+    <string name="skillz_contact_success_title">Send Success</string>
+    <string name="skillz_contact_success_message">Thank you.</string>
+    
+    
+    <!-- My Account -->
+    <string name="skillz_my_account_change_username">Change Username</string>
+    <string name="skillz_my_account_withdraw_info">Withdraw Information</string>
+    <string name="skillz_my_account_personal_info">Personal Information</string>
+    <string name="skillz_my_account_deposit_info">Deposit Information</string>
+    <string name="skillz_my_account_password_info">Password</string>
+    <string name="skillz_my_account_password_info_change">Change Password</string>
+    <string name="skillz_my_account_title">My Account</string>
+    <string name="skillz_my_account_updating">Updating&#8230;</string>
+    
+    <string name="skillz_my_account_withdraw_info_title">Withdraw Information</string>
+    <string name="skillz_my_account_withdraw_info_success_title">Information Updated</string>
+    <string name="skillz_my_account_withdraw_info_success_message">Your withdraw information has been updated successfully.</string>
+    
+    <string name="skillz_my_account_personal_info_title">Personal Information</string>
+    <string name="skillz_my_account_personal_info_success_title">Information Updated</string>
+    <string name="skillz_my_account_personal_info_success_message">Your personal information has been updated successfully.</string>
+
+    <string name="skillz_my_account_deposit_info_title">Deposit Information</string>
+    <string name="skillz_my_account_deposit_info_success_title">Information Updated</string>
+    <string name="skillz_my_account_deposit_info_success_message">Your deposit information has been updated successfully.</string>
+    
+    <string name="skillz_change_password_title">Change Password</string>
+    <string name="skillz_change_password_current_password">Current Password</string>
+    <string name="skillz_change_password_new_password">New Password</string>
+    <string name="skillz_change_password_executing">Updating&#8230;</string>
+    <string name="skillz_change_password_success_title">Password Updated</string>
+    <string name="skillz_change_password_success_message">Your password has been updated successfully.</string>
+    
+    <string name="skillz_my_account_update_username_title">Change Username</string>
+    <string name="skillz_my_account_update_username_success_title">Username Changed</string>
+    <string name="skillz_my_account_update_username_success_message">Your username has been changed successfully.</string>
+    
+    
+    <!-- Email Verification Required -->
+    <string name="skillz_verification_required_title">Email Verification Required</string>
+    <string name="skillz_verification_required_message">You must verify your email address to perform this action. Please check your email and follow the instructions to complete the verification process.</string>
+    <string name="skillz_verification_required_send">Send Verification Email</string>
+    <string name="skillz_verification_required_sending">Sending&#8230;</string>
+    <string name="skillz_verification_required_success">A verification email has been sent.</string>
+    
+    <!-- Iteration 10 -->
+    <string name="skillz_i10_ab_balance">%s</string>
+    <string name="skillz_i10_menu">Menu</string>
+    <string name="skillz_i10_prize_placeholder">---</string>
+    
+    <string name="skillz_i10_tournament_free">Free</string>
+    
+    <string name="skillz_i10_tournament_card_prizes">IN PRIZES</string><!-- 2.0 -->
+    <string name="skillz_i10_tournament_card_starts">Tournament Starts:</string>
+    <string name="skillz_i10_tournament_card_ends">Tournament Ends:</string>
+    <string name="skillz_i10_tournament_card_gametype_placeholder">High Score</string>
+	<string name="skillz_i10_tournament_card_players">Players: %s</string>
+	<string name="skillz_i10_tournament_card_compete">Enter: %s</string> 
+	
+	<string name="skillz_i10_tournament_results_see_details">See Details</string>
+	<string name="skillz_i10_tournament_results_player">PLAYER</string>
+	<string name="skillz_i10_tournament_results_prizes">PRIZES</string>
+	<string name="skillz_i10_tournament_results_score">SCORE</string>
+	<string name="skillz_i10_tournament_results_tournaments">Tournaments</string>
+	<string name="skillz_i10_tournament_results_play_again">Play Again</string>
+	<string name="skillz_i10_tournament_results_game_title">Game Title</string>
+	<string name="skillz_i10_tournament_results_you">You</string>
+	<string name="skillz_i10_tournament_results_pending_player">Pending Player</string>
+
+	<string name="skillz_i10_tournament_details_game_title">Game Title</string>
+	<string name="skillz_i10_tournament_details_details">Details</string>
+	<string name="skillz_i10_tournament_details_place">Place</string>
+	<string name="skillz_i10_tournament_details_cash_prizes">$ Prizes</string>
+	<string name="skillz_i10_tournament_details_z_prizes">\u00a4 Prizes</string>
+	<string name="skillz_i10_tournament_details_starts">Starts: %s</string>
+	<string name="skillz_i10_tournament_details_player_limit">Players: %s</string>
+	<string name="skillz_i10_tournament_details_players_unlimited">Players: Unlimited</string>
+	<string name="skillz_i10_tournament_details_description">Description:</string>
+	<string name="skillz_i10_tournament_details_id">Tournament id:</string>
+	<string name="skillz_i10_tournament_details_tournaments">Tournaments</string>
+	<string name="skillz_i10_tournament_details_enter">Enter: %s</string>
+
+	<string name="skillz_i10_tournament_details_game_type">Game Type: %s</string>
+	<string name="skillz_i10_tournament_details_game_type_high_score">High Score</string>
+	<string name="skillz_i10_tournament_details_game_type_other">Other</string>
+	
+	<string name="skillz_onboard_title">PLAY FOR FUN, PLAY TO WIN</string>
+	<string name="skillz_onboard_compete">COMPETE</string>
+	<string name="skillz_onboard_compete_2">IN TOURNAMENTS</string>
+	<string name="skillz_onboard_win">WIN CASH</string>
+	<string name="skillz_onboard_win_2">AND OTHER PRIZES</string>
+	<string name="skillz_onboard_get_started">GET STARTED</string>
+	<string name="skillz_onboard_get_started_2">FREE MEMBERSHIP</string>
+	<string name="skillz_onboard_login_title">ALREADY A MEMBER?</string>
+	<string name="skillz_onboard_what_is">WHAT IS SKILLZ?</string>
+	
+	<string name="skillz_more_info_title">SKILLZ is&#8230;</string>
+	<string name="skillz_more_info_subtitle">
+	    	<![CDATA[
+	    	A Multiplayer Tournament Platform
+	    	]]>
+	    </string>
+	<string name="skillz_more_info_join">JOIN</string>
+	<string name="skillz_more_info_join_2">
+	    <![CDATA[
+	    <b>JOIN</b> the Competition in Your Favorite Games
+	    ]]>
+	    </string>
+	<string name="skillz_more_info_play">PLAY</string>
+	<string name="skillz_more_info_play_2">
+	    <![CDATA[
+	    <b>PLAY</b> Gamers Worldwide
+	    ]]>
+	    </string>
+	<string name="skillz_more_info_win">WIN</string>
+	<string name="skillz_more_info_win_2">
+	    <![CDATA[
+	    <b>WIN</b> Prizes
+	    ]]>
+	    </string>
+	<string name="skillz_more_info_start">Free &amp; paid tournaments await you</string>
+	<string name="skillz_more_info_start_2">SIGN UP</string>
+	
+	<string name="skillz_i10_first_use_intro_create_account">Create Account</string>
+	<string name="skillz_i10_first_use_intro_returning_user">Returning User</string>
+	<string name="skillz_i10_first_use_intro_username">Username</string>
+	<string name="skillz_i10_first_use_intro_password">Password</string>
+	<string name="skillz_i10_first_use_intro_forgot_password"><u>Forgot password?</u></string>
+	<string name="skillz_i10_first_use_intro_remember_password">Remember Password</string>
+	<string name="skillz_i10_first_use_intro_login">LOGIN</string>
+	
+	<string name="skillz_i10_create_account_account_creation">Account Creation</string>
+	<string name="skillz_i10_create_account_username">Username</string>
+	<string name="skillz_i10_create_account_password">Password</string>
+	<string name="skillz_i10_create_account_email">Email</string>
+	<string name="skillz_i10_create_account_phone">Phone Number</string>
+	<string name="skillz_i10_create_account_sign_up">Sign Up</string>
+	<string name="skillz_i10_create_account_phone_help">Please enter your phone number including area code.</string>
+	
+	<string name="skillz_i10_first_use_tournaments_msg">Test your Skillz and play for cash prizes or virtual currency.\n\nFree tournaments using our virtual currency (Z) are known as Z-Tournaments.\n\nBelow is an example of a Z-Tournament. Tap the description for more details, or press ENTER to jump right in!</string>
+	
+	<string name="skillz_i10_first_use_lobby_game_title">Game Title</string>
+	<string name="skillz_i10_first_use_lobby_player">PLAYER</string>
+	<string name="skillz_i10_first_use_lobby_details">DETAILS</string>
+	<string name="skillz_i10_first_use_lobby_tip">Tip: You\'re waiting on players. Once the match is ready, you can continue.</string>
+	<string name="skillz_i10_first_use_lobby_game_type">Game Type: %s</string>
+	<string name="skillz_i10_first_use_lobby_players">Players: %s</string>
+	<string name="skillz_i10_first_use_lobby_description">Description:</string>
+	<string name="skillz_i10_first_use_lobby_you">You</string>
+	<string name="skillz_i10_waiting_for_player">Waiting for Player&#8230;</string>
+	
+	<string name="skillz_i10_first_use_tournament_results_game_title">Game Title</string>
+	<string name="skillz_i10_first_use_tournament_results_player">PLAYER</string>
+	<string name="skillz_i10_first_use_tournament_results_prizes">PRIZES</string>
+	<string name="skillz_i10_first_use_tournament_results_score">SCORE</string>
+	<string name="skillz_i10_first_use_tournament_results_tip">Tip: Tap on a player to view their profile. Waiting on players and results? Go to Game History in the Menu for a live snapshot of tournament results.</string>
+	<string name="skillz_i10_first_use_tournament_results_tournaments">Tournaments</string>
+
+	<string name="skillz_i10_error_phone">Phone number must be 10 digits</string>
+	
+	<string name="skillz_i10_first_use_deposit_offer_title">Tutorial Completed!</string>
+	<string name="skillz_i10_first_use_deposit_offer_skip">Skip</string>
+	<string name="skillz_i10_first_use_deposit_offer_deposit">Deposit</string>
+	
+	<string name="skillz_i10_notification_tournament_results">Tournament Results</string>
+	<string name="skillz_i10_notification_tournament_has_ended">has ended! See the results!</string>
+	<string name="skillz_i10_notification_tournament_ended">Some of your tournaments have ended! See the results!</string>
+	
+	<string name="skillz_i10_help_send">Send</string>
+	<string name="skillz_i10_help_discard">Cancel</string>
+	<string name="skillz_i10_help_faq">FAQS &amp; INFORMATION</string>
+	<string name="skillz_i10_help_website">VISIT OUR WEBSITE</string>
+	
+	<string name="skillz_i10_root_title">Root Access</string>
+	<string name="skillz_i10_root_msg">Certain features are only available to non-rooted devices.</string>
+	
+	<string name="skillz_i10_deposit_offer_purchase_more_z">Purchase More \u00a4</string>
+	<string name="skillz_i10_deposit_select_z_amount">Add Funds</string>
+	<string name="skillz_i10_deposit_purchase">Add Funds</string>
+	<string name="skillz_i10_deposit_purchase_points_using">Purchase \u00a4 using:</string>
+	<string name="skillz_i10_deposit_purchase_amount">Purchase Amount</string>
+	<string name="skillz_i10_deposit_add">DEPOSIT</string>
+	
+	<string name="skillz_i10_dialog_purchase_received">Purchase Received</string>
+	<string name="skillz_i10_deposit_purchase_z_points">\u00a4 Points</string>
+	<string name="skillz_i10_purchase_sending">Submitting purchase&#8230;</string>
+	
+	<string name="skillz_i10_gamers_invite">Invite other gamers</string>
+	<string name="skillz_i10_gamers_list_hide">Hide</string>
+	<string name="skillz_i10_gamers_list_remove">Remove</string>
+	<string name="skillz_i10_gamers_list_add">Add</string>
+	<string name="skillz_i10_gamers_list_invite">Invite</string>
+	<string name="skillz_i10_gamers_recently_played">Recently Played</string>
+	<string name="skillz_i10_gamers_all_gamers">All Gamers</string>
+	
+	<string name="skillz_i10_gamers_search_hint">Search by Skillz Username</string>
+	<string name="skillz_i10_gamers_search_error">Please enter a username to search</string>
+	<string name="skillz_i10_gamers_search_no_results">No results</string>
+	
+	<string name="skillz_i10_gamers_email_title">Invite Through Email</string>
+	<string name="skillz_i10_gamers_email_from">From: %s</string>
+	<string name="skillz_i10_gamers_email_default_msg">I\'ve been playing game tournaments for cash using Skillz! Come join me and try to beat my top score!</string>
+	<string name="skillz_i10_gamers_email_cancel">Cancel</string>
+	<string name="skillz_i10_gamers_email_send">Send</string>
+	<string name="skillz_i10_gamers_email_to">To: Email Address</string>
+	
+	<string name="skillz_i10_gamers_invite_invite_your_contacts">Invite Your Contacts</string>
+	<string name="skillz_i10_gamers_invite_pending_invites">Pending Invites (%s)</string>
+	<string name="skillz_i10_gamers_invite_total_bonus">Total Bonus: %s</string>
+	<string name="skillz_i10_gamers_invite_total_bonus_points">Total \u00a4: %s</string>
+	<string name="skillz_i10_gamers_invite_invite_selected">Invite Selected (%s)</string>
+	<string name="skillz_i10_gamers_invite_invite">Invite</string>
+	<string name="skillz_i10_gamers_invite_cancel">Cancel</string>
+	<string name="skillz_i10_gamers_invite_sending_single">Sending invitation&#8230;</string>
+	<string name="skillz_i10_gamers_invite_sending_multi">Sending invitations&#8230;</string>
+	<string name="skillz_i10_gamers_invite_success_single">Invitation was sent successfully</string>
+	<string name="skillz_i10_gamers_invite_success_multi">Invitations were sent successfully</string>
+	<string name="skillz_i10_gamers_invite_error">An error occurred while trying to send the invitation</string>
+	<string name="skillz_i10_gamers_invite_expires">Expires %s</string>
+	
+	<string name="skillz_i10_gamers_remove">Removing %s</string>
+	<string name="skillz_i10_gamers_removed">Removed %s</string>
+	<string name="skillz_i10_gamers_add">Adding %s</string>
+	<string name="skillz_i10_gamers_added">Added %s</string>
+	<string name="skillz_i10_gamers_remove_error">Could not remove %s</string>
+	<string name="skillz_i10_gamers_add_error">Could not add %s</string>
+	
+	<string name="skillz_i10_gamers_could_not_load_gamers">Could not load gamers</string>
+	
+	<string name="skillz_i10_gamers_recent">Recent</string>
+	<string name="skillz_i10_gamers_all">All</string>
+	
+	<string name="skillz_i10_gamers_email_multi_to">%s</string>
+	<string name="skillz_i10_gamers_email_multi_to_multi">%1$s and %2$s more&#8230;</string>
+	
+	<string name="skillz_i10_profile_add_to_gamers">Add to Gamers</string>
+	<string name="skillz_i10_profile_remove_gamer">Remove Gamer</string>
+	<string name="skillz_i10_profile_report_abuse">Report Abuse</string>
+	
+	<string name="skillz_i10_gamers_first_use_msg">Now that you\'ve joined Skillz, find other Gamers you may know!</string>
+	<string name="skillz_i10_gamers_first_use_skip">Skip</string>
+	<string name="skillz_i10_gamers_first_use_done">Done</string>
+	<string name="skillz_i10_gamers_first_use_contact">Contacts</string>
+	<string name="skillz_i10_gamers_first_use_email">Email</string>
+	
+	<string name="skillz_i10_list_tournaments_cash">CASH TOURNAMENTS</string>
+	<string name="skillz_i10_list_tournaments_points">Z-POINTS TOURNAMENTS</string>
+	
+	<string name="skillz_i10_activity_label_create_account">Create Account</string>
+	<string name="skillz_i10_activity_label_tournaments">Tournaments</string>
+	<string name="skillz_i10_activity_label_tournament_details">Details</string>
+	<string name="skillz_i10_activity_label_tournament_results">Results</string>
+	<string name="skillz_i10_activity_label_first_use">Skillz</string>
+	<string name="skillz_i10_activity_label_first_use_tournaments">Tutorial</string>
+	<string name="skillz_i10_activity_label_deposit">Add Funds</string>
+	<string name="skillz_i10_activity_label_game_history">Game History</string>
+	<string name="skillz_i10_activity_label_withdraw">Withdraw</string>
+	<string name="skillz_i10_activity_label_profile">Profile</string>
+	<string name="skillz_i10_activity_label_customer_service">Customer Service</string>
+	<string name="skillz_i10_activity_label_my_account">My Account</string>
+	<string name="skillz_i10_activity_label_gamers">Gamers</string>
+	<string name="skillz_i10_activity_label_update_username">Update Username</string>
+	
+	<string name="skillz_i11_activity_label_update_username_prompt">Update Username</string>
+	<string name="skillz_i11_activity_label_deposit_offer_prompt">Deposit Offer</string>
+	
+	<string name="skillz_i4_activity_label_congrats">Congrats</string>
+	
+	<string name="skillz_i10_deposit_title">SELECT DEPOSIT AMOUNT</string>
+	<string name="skillz_i10_deposit_title_z">PURCHASE \u00a4</string>
+	<string name="skillz_i10_deposit_card_title">CREDIT CARD INFORMATION</string>
+	<string name="skillz_i10_deposit_summary_title">DEPOSIT SUMMARY</string>
+	<string name="skillz_i10_deposit_get_an_extra">GET AN EXTRA</string>
+	
+	<string name="skillz_i10_player_card_member_since">MEMBER SINCE %s</string>
+	<string name="skillz_i10_player_card_games_played">GAMES PLAYED</string>
+	<string name="skillz_i10_player_card_highest_score">HIGHEST SCORE</string>
+	<string name="skillz_i10_player_card_average_score">AVERAGE SCORE</string>
+	<string name="skillz_i10_player_card_tournaments">TOURNAMENTS</string>
+	<string name="skillz_i10_player_card_game_history">GAME HISTORY</string>
+	<string name="skillz_i10_player_card_add_gamer">Add Gamer</string>
+	<string name="skillz_i10_player_card_remove_gamer">Remove Gamer</string>
+	<string name="skillz_i10_player_card_report_abuse">Report Abuse</string>
+	
+	<string name="skillz_i10_first_use_your_first_tournament">Your First Tournament</string>
+	
+	<string name="skillz_i10_no_email_for_this_person">No email address for this contact</string>
+	<string name="skillz_i10_first_use_deposit_offer_msg">Deposit now and get an extra bonus!</string>
+	
+	<!-- i11 -->
+	<string name="skillz_i11_play_for_fun_play_to_win">PLAY FOR FUN, PLAY TO WIN</string>
+	<string name="skillz_i11_create_account_tos">
+	    <![CDATA[
+        By tapping &quot;play now&quot;, I represent that I am 18 years of age or older and that I have read, understand, and agree to be bound by the <u>Terms of Service</u>.
+	    ]]>
+	</string>
+	<string name="skillz_i11_USERNAME">USERNAME</string>
+	<string name="skillz_i11_PASSWORD">PASSWORD</string>
+	<string name="skillz_i11_EMAIL_ADDRESS">EMAIL ADDRESS</string>
+	<string name="skillz_i11_create_header">CREATE YOUR SKILLZ ACCOUNT</string>
+	<string name="skillz_i11_login_compete_subtitle">IN MULTIPLAYER TOURNAMENTS</string>
+	<string name="skillz_i11_login_win_prizes_subtitle">PLAYING THE GAMES YOU LOVE</string>
+	<string name="skillz_i11_login_sign_up">FREE SIGN UP</string>
+	<string name="skillz_i11_login_remember_me">KEEP ME LOGGED IN</string>
+	<string name="skillz_i11_login_login">LOGIN</string>
+	
+	<string name="skillz_i11_prompt_username_title">WOULD YOU LIKE TO UPDATE YOUR USERNAME?</string>
+	<string name="skillz_i11_prompt_username_ps">You can always change it later in your account settings.</string>
+	
+	<string name="skillz_i11_prompt_username_confirm">UPDATE</string>
+	<string name="skillz_i11_prompt_username_cancel">NO THANKS</string>
+	
+	<string name="skillz_i11_prompt_deposit_title">PLAY FOR REAL</string>
+	<string name="skillz_i11_prompt_deposit_subtitle">GAMES ARE STARTING RIGHT NOW</string>
+	<string name="skillz_i11_prompt_deposit_confirm">I\'M READY TO WIN!</string>
+	<string name="skillz_i11_prompt_deposit_cancel">NO THANKS, MORE PRACTICE</string>
+</resources>

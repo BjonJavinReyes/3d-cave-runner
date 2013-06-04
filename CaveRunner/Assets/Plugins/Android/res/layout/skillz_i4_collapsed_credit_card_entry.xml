@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff" >
+    <EditText
+        android:id="@+id/ccNumberFull"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:maxLength="19"
+        android:singleLine="true"
+        android:hint="1234 5678 9012 3456"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="5dp"
+        android:visibility="visible" />
+    <TextView 
+        android:id="@+id/ccNumberShort"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:visibility="gone" />
+    <EditText
+        android:id="@+id/ccExpiration"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ccNumberShort"
+        android:gravity="center_vertical"
+        android:background="#00ffffff"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:hint="MM/YY"
+        android:paddingLeft="10dp"
+        android:imeOptions="flagNoExtractUi"
+        android:visibility="gone" />
+    <EditText
+        android:id="@+id/ccCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ccExpiration"
+        android:gravity="center_vertical"
+        android:background="#00ffffff"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:hint="CVV  "
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="10dp"
+        android:visibility="gone" />
+    <EditText
+        android:id="@+id/ccZip"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ccCVV"
+        android:gravity="center_vertical"
+        android:background="#00ffffff"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:maxLength="5"
+        android:singleLine="true"
+        android:hint="ZIP  "
+        android:imeOptions="flagNoExtractUi"
+        android:paddingLeft="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

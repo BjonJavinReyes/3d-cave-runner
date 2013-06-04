@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/skillz_i4_background">
+    <include layout="@layout/skillz_i10_actionbar" />
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/skillzGamersSearch"
+            android:src="@drawable/skillz_i10_ic_search"
+            style="@style/Skillz.I10.View.ActionBarButton" />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/skillz_i10_gamers_invite"
+            android:gravity="right"
+            style="@style/Skillz.I10.Text.White.Micro.Bold"/>
+        <ImageButton
+            android:id="@+id/skillzGamersContacts"
+            android:src="@drawable/skillz_i10_ic_contact"
+            style="@style/Skillz.I10.View.ActionBarButton" />
+        <ImageButton
+            android:id="@+id/skillzGamersEmail"
+            android:src="@drawable/skillz_i10_ic_email"
+            style="@style/Skillz.I10.View.ActionBarButton" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <FrameLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginBottom="40dp">
+	        <ProgressBar 
+	            android:id="@+id/skillzGamersProgressView"
+	            android:indeterminate="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center" />
+	        <ExpandableListView 
+		        android:id="@+id/skillzGamersListView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        style="@style/Skillz.I10.View.ListView.Expandable"
+		        android:visibility="gone" />
+	    </FrameLayout>
+	    <SlidingDrawer
+		       android:id="@+id/skillzGamersInvitedDrawer"
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"
+		       android:handle="@+id/handle"
+		       android:content="@+id/content">
+		       <TextView
+		           android:id="@+id/handle"
+			       android:layout_width="fill_parent"
+			       android:layout_height="40dp"
+			       android:gravity="center"
+			       android:text="Loading..."
+			       android:background="@drawable/skillz_i10_bg_list_header"
+			       style="@style/Skillz.I10.Text.White.Small.Bold.Shadow" />
+		       <LinearLayout
+		           android:id="@+id/content"
+		           android:layout_width="fill_parent"
+		           android:layout_height="fill_parent"
+		           android:orientation="vertical"
+		           android:background="@color/skillz_i10_bg">
+		           <ListView
+		               android:id="@+id/skillzGamersInviteInvitedListView"
+		               android:layout_width="fill_parent"
+		               android:layout_height="0dp"
+		               android:layout_weight="1"
+		               style="@style/Skillz.I10.View.ListView" />
+		           <RelativeLayout
+		               android:layout_width="fill_parent"
+		               android:layout_height="wrap_content">
+		               <TextView
+		                   android:id="@+id/skillzGamersInviteTotalBonus"
+		                   android:layout_width="wrap_content"
+		                   android:layout_alignParentRight="true"
+		                   android:paddingRight="@dimen/skillz_i10_side_margin"
+		                   style="@style/Skillz.I10.Text.Gray.Micro.Bold" />
+		               <TextView
+		                   android:id="@+id/skillzGamersInviteTotalPointsBonus"
+		                   android:layout_width="wrap_content"
+		                   android:layout_alignParentLeft="true"
+		                   android:paddingLeft="@dimen/skillz_i10_side_margin"
+		                   style="@style/Skillz.I10.Text.Gray.Micro.Bold" />
+		           </RelativeLayout>
+		           
+		 	  </LinearLayout>
+		</SlidingDrawer>
+	</RelativeLayout>
+</LinearLayout>

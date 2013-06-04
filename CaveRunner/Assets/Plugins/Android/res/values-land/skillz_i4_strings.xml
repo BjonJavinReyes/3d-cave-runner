@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Signup Bonus Prompt -->
+    <string name="skillz_i4_signup_bonus_amount">HERE\'S %s ON US - START WINNING!</string>
+</resources>

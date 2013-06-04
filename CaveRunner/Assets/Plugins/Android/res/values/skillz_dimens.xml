@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="skillz_ab_height">40dp</dimen>
+    <dimen name="skillz_ab_menu_width">48dp</dimen>
+    <dimen name="skillz_ab_icon">30dp</dimen>
+    <dimen name="skillz_ab_ic_menu">28dp</dimen>
+    <dimen name="skillz_ab_left_padding">5dp</dimen>
+    <dimen name="skillz_ab_game_name_left_padding">5dp</dimen>
+    <dimen name="skillz_ab_game_name_text_size">16sp</dimen>
+    <dimen name="skillz_ab_what_is_text_size">14sp</dimen>
+    <dimen name="skillz_ab_what_is_left_padding">4dp</dimen>
+    <dimen name="skillz_ab_ic_what_is_height">16dp</dimen>
+    <dimen name="skillz_ab_ic_what_is_width">16dp</dimen>
+    
+    <dimen name="skillz_text_field_padding_left">12dp</dimen>
+    <dimen name="skillz_text_field_padding_right">12dp</dimen>
+    <dimen name="skillz_text_field_height">50dp</dimen>
+    <dimen name="skillz_text_field_margin">4dp</dimen>
+    
+    <dimen name="skillz_onboard_login_form_padding_left">8dp</dimen>
+    <dimen name="skillz_onboard_login_form_padding_right">8dp</dimen>
+    <dimen name="skillz_onboard_login_form_height">66dp</dimen>
+    <dimen name="skillz_onboard_login_title_padding_left">14dp</dimen>
+    <dimen name="skillz_onboard_login_title_padding_right">14dp</dimen>
+    <dimen name="skillz_onboard_login_title_padding_top">0dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_login_title_padding_bottom">3dp</dimen>
+    
+    <dimen name="skillz_onboard_login_title_font_size">16sp</dimen>
+    
+    <dimen name="skillz_onboard_title_padding_top">1dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_title_padding_bottom">1dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_tab_container_padding_left">8dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_container_padding_right">8dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_container_padding_bottom">0dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_container_padding_top">0dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_height">116dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_padding_left">14dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_padding_top">8dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_padding_right">14dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_padding_bottom">29dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_b_padding_right">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_padding_left">12dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_padding_top">7dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_padding_right">12dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_padding_bottom">20dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_btn_padding_left">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_btn_padding_top">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_btn_padding_right">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_t_btn_padding_bottom">14dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_tab_margin">0dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_ic_cash_height">75dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_cash_width">59dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_height">73dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_width">58dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_port_padding">10dp</dimen>
+    <dimen name="skillz_onboard_port_ic_arrow_height">48dp</dimen>
+    <dimen name="skillz_onboard_port_ic_arrow_width">43dp</dimen>
+    <dimen name="skillz_onboard_port_login_padding">9dp</dimen>
+    <dimen name="skillz_onboard_port_login_title_padding_left">11dp</dimen>
+    <dimen name="skillz_onboard_port_get_started_width">156dp</dimen>
+    <dimen name="skillz_onboard_port_get_started_image_padding">7dp</dimen>
+    <dimen name="skillz_onboard_port_get_started_left_margin">20dp</dimen>
+    <dimen name="skillz_onboard_port_get_started_height">80dp</dimen>
+    <dimen name="skillz_onboard_port_tab_spacer">7dp</dimen>
+    
+    <dimen name="skillz_more_info_title_height">30dp</dimen>
+    <dimen name="skillz_more_info_title_text">18sp</dimen>
+    <dimen name="skillz_more_info_subtitle_height">30dp</dimen>
+    <dimen name="skillz_more_info_subtitle_text">14sp</dimen>
+    <dimen name="skillz_more_info_subtitle_margin_bottom">12dp</dimen>
+    <dimen name="skillz_more_info_left_padding">20dp</dimen>
+    <dimen name="skillz_more_info_ic_number_width">32dp</dimen>
+    <dimen name="skillz_more_info_ic_number_height">32dp</dimen>
+    <dimen name="skillz_more_info_ic_number_margin_side">3dp</dimen>
+    <dimen name="skillz_more_info_ic_check_width">38dp</dimen>
+    <dimen name="skillz_more_info_ic_check_height">38dp</dimen>
+    <dimen name="skillz_more_info_ic_arrow_height">34dp</dimen>
+    <dimen name="skillz_more_info_ic_arrow_width">30dp</dimen>
+    <dimen name="skillz_more_info_ic_arrow_margin">6dp</dimen>
+    <dimen name="skillz_more_info_ic_cash_2_width">126dp</dimen>
+    <dimen name="skillz_more_info_ic_cash_2_height">119dp</dimen>
+    <dimen name="skillz_more_info_ic_cash_2_margin_bottom">6dp</dimen>
+    <dimen name="skillz_more_info_join_width">60dp</dimen>
+    <dimen name="skillz_more_info_join_text">22sp</dimen>
+    <dimen name="skillz_more_info_small_text">11sp</dimen>
+    <dimen name="skillz_more_info_start_1_margin_top">4dp</dimen>
+    <dimen name="skillz_more_info_start_1_height">64dp</dimen>
+    <dimen name="skillz_more_info_start_2_height">50dp</dimen>
+    <dimen name="skillz_more_info_start_2_margin_left">9dp</dimen>
+    <dimen name="skillz_more_info_start_2_padding_left">9dp</dimen>
+    <dimen name="skillz_more_info_start_2_padding_right">104dp</dimen>
+    <dimen name="skillz_more_info_bg_padding_left">10dp</dimen>
+    <dimen name="skillz_more_info_bg_offset_left">7dp</dimen>
+    <dimen name="skillz_more_info_bg_offset_top">7dp</dimen>
+    <dimen name="skillz_more_info_bg_offset_right">7dp</dimen>
+    
+    <dimen name="skillz_more_info_port_subtitle_text">14sp</dimen>
+    
+    <!-- Cards -->
+    <dimen name="skillz_card_width">250dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_spacing">30dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_margin_top">8dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_padding_left">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_padding_top">6dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_padding_right">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_padding_bottom">16dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_title_padding_bottom">3dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_title_text_size">14dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_inner_padding">5dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_inner_margin_top">-3dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_ic_award_width">55dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_award_height">69dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_prizes_text_size">32dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_prize_text_size">12dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_prize_margin_top">-3dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_section_padding">5dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_section_text_size">16dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_section_2_padding">7dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_btn_height">40dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_btn_margin_top">6dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_btn_padding_right">10dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_btn_text_size">24dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_title_padding">5dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_players_width">19dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_players_height">20dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_timer_width">23dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_timer_height">23dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_high_score_width">24dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_high_score_height">22dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_spacer">6dp</dimen><!-- 2.0 -->
+    
+    
+    
+    <dimen name="skillz_card_layout_margin">2dp</dimen>
+    <dimen name="skillz_card_corner_radius">10dp</dimen>
+    <dimen name="skillz_card_left_padding">8dp</dimen>
+    <dimen name="skillz_card_height">200dp</dimen>
+    <dimen name="skillz_card_header_height">24dip</dimen>
+    <dimen name="skillz_card_text_field_height">20dp</dimen>
+    <dimen name="skillz_half_card_width">105dp</dimen>
+    <dimen name="skillz_card_action_button_padding">3dp</dimen>
+    
+    <dimen name="skillz_i10_card_width">260dp</dimen>
+    <dimen name="skillz_i10_card_top_margin_port">24dp</dimen>
+    <dimen name="skillz_i10_card_top_margin">4dp</dimen>
+    <dimen name="skillz_i10_card_side_padding">16dp</dimen>
+    <dimen name="skillz_i10_card_corner_radius">5dp</dimen>
+    <dimen name="skillz_i10_card_corner_radius_outer">6dp</dimen>
+    
+    
+    
+    
+    <dimen name="skillz_text_size_micro">12sp</dimen>
+    <dimen name="skillz_text_size_small">14sp</dimen>
+    <dimen name="skillz_text_size_medium">18sp</dimen>
+    <dimen name="skillz_text_size_large">22sp</dimen>
+    <dimen name="skillz_button_text_size">26dip</dimen>
+    
+    <dimen name="skillz_text_corner_radius">5dp</dimen>
+    <dimen name="skillz_text_corner_radius_inner">4dp</dimen>
+    
+    <dimen name="skillz_button_height">48dip</dimen>
+    
+    <!-- Tournament Results -->
+    <dimen name="skillz_list_item_tournament_placement_width">40dp</dimen>
+    <dimen name="skillz_list_item_tournament_cash_width">50dp</dimen>
+    <dimen name="skillz_list_item_tournament_z_width">50dp</dimen>
+    <dimen name="skillz_list_item_tournament_score_width">70dp</dimen>
+    
+    <!-- Game History -->
+    <dimen name="skillz_game_history_margin_width">10dp</dimen>
+    <dimen name="skillz_game_history_date_width">65dp</dimen>
+    <dimen name="skillz_game_history_place_width">60dp</dimen>
+    <dimen name="skillz_game_history_score_width">60dp</dimen>
+    <dimen name="skillz_game_history_score_margin_right">5dp</dimen>
+    <dimen name="skillz_game_history_prize_width">95dp</dimen>
+    <dimen name="skillz_game_history_prize_money_width">50dp</dimen>
+    <dimen name="skillz_game_history_prize_points_width">45dp</dimen>
+    <dimen name="skillz_game_history_ic_medal_width">34dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_game_history_ic_medal_height">35dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_game_history_ic_graph_width">14dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_game_history_ic_graph_height">15dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_game_history_ic_medal_2_width">36dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_game_history_ic_medal_2_height">38dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_i10_game_history_outer_padding">8dp</dimen>
+    <dimen name="skillz_i10_game_history_internal_padding">4dp</dimen>
+    <dimen name="skillz_i10_game_history_section_height_min">30dp</dimen>
+    <dimen name="skillz_i10_game_history_land_date_place_width">130dp</dimen>
+    <dimen name="skillz_i10_game_history_land_prizes_width">140dp</dimen>
+    <dimen name="skillz_i10_game_history_land_score_width">140dp</dimen>
+    <dimen name="skillz_i10_game_history_port_date_place_width">108dp</dimen>
+    <dimen name="skillz_i10_game_history_port_prizes_width">70dp</dimen>
+
+    <dimen name="skillz_login_left_margin">8dp</dimen>
+    <dimen name="skillz_login_right_margin">8dp</dimen>
+    
+    <dimen name="skillz_create_account_left_margin">10dip</dimen>
+    <dimen name="skillz_create_account_right_margin">2dp</dimen>
+    
+    <!-- Deposit -->
+    <dimen name="skillz_deposit_tile_width">155dp</dimen>
+    <dimen name="skillz_deposit_tile_height">155dp</dimen>
+    <dimen name="skillz_deposit_tile_padding">4dp</dimen>
+    
+    <!-- Iteration 10 -->
+    <dimen name="skillz_i10_action_bar_height">42dp</dimen>
+    
+    <dimen name="skillz_i10_text_size_micro">12sp</dimen>
+    <dimen name="skillz_i10_text_size_small">14sp</dimen>
+    <dimen name="skillz_i10_text_size_small_medium">16sp</dimen>
+    <dimen name="skillz_i10_text_size_medium_small">18sp</dimen>
+    <dimen name="skillz_i10_text_size_medium">20sp</dimen>
+    <dimen name="skillz_i10_text_size_large">24sp</dimen>
+    <dimen name="skillz_i10_text_size_extra_large">28sp</dimen>
+    <dimen name="skillz_i10_text_size_hero">36sp</dimen>
+    <dimen name="skillz_i10_text_size_superhero">48sp</dimen>
+    
+    <dimen name="skillz_i10_btn_corner_radius">5dp</dimen>
+    <dimen name="skillz_i10_btn_outer_stroke">1dp</dimen>
+    <dimen name="skillz_i10_btn_hint_size">26dp</dimen>
+    <dimen name="skillz_i10_btn_shadow_radius">4dp</dimen>
+    
+    <dimen name="skillz_i10_avatar_corner_radius">4dp</dimen>
+    <dimen name="skillz_i10_avatar_corner_radius_inner">2dp</dimen>
+    <dimen name="skillz_i10_icon_tile_width">40dp</dimen>
+    <dimen name="skillz_i10_icon_tile_height">40dp</dimen>
+    
+    <dimen name="skillz_i10_place_tile_width">38dp</dimen>
+    <dimen name="skillz_i10_place_tile_height">38dp</dimen>
+    
+    <dimen name="skillz_i10_profile_avatar_stroke_width">8dp</dimen>
+    <dimen name="skillz_i10_profile_avatar_corner_radius">4dp</dimen>
+    <dimen name="skillz_i10_profile_avatar_outer">96dp</dimen>
+    <dimen name="skillz_i10_profile_avatar_inner">80dp</dimen>
+    
+    <dimen name="skillz_i10_side_margin">8dp</dimen>
+    <dimen name="skillz_i10_side_margin_half">4dp</dimen>
+    <dimen name="skillz_i10_negative_shadow_margin">-4dp</dimen>
+    
+    <!-- Add these two together to get skillz_i10_side_margin -->
+    <dimen name="skillz_i10_side_margin_text_field">4dp</dimen>
+    <dimen name="skillz_i10_text_field_margin">4dp</dimen>
+    
+    <dimen name="skillz_i10_text_field_padding">6dp</dimen>
+    <dimen name="skillz_i10_text_field_padding_left">10dp</dimen>
+    
+    <dimen name="skillz_i10_dialog_width">250dp</dimen>
+    
+    <dimen name="skillz_i10_deposit_tile_width">180dp</dimen>
+    <dimen name="skillz_i10_deposit_tile_height">213dp</dimen>
+    
+    <dimen name="skillz_i10_first_use_more_info_height">298dp</dimen>
+    
+    <dimen name="skillz_geotrust_dark_width">90dp</dimen>
+    <dimen name="skillz_geotrust_dark_height">31dp</dimen>
+    <dimen name="skillz_geotrust_trans_width">102dp</dimen>
+    <dimen name="skillz_geotrust_trans_height">31dp</dimen>
+    
+    <!-- I11 -->
+    <dimen name="skillz_i11_text_size_micro">12sp</dimen>
+    <dimen name="skillz_i11_text_size_small">14sp</dimen>
+    <dimen name="skillz_i11_text_size_small_medium">16sp</dimen>
+    <dimen name="skillz_i11_text_size_medium_small">18sp</dimen>
+    <dimen name="skillz_i11_text_size_medium">20sp</dimen>
+    <dimen name="skillz_i11_text_size_large">24sp</dimen>
+    <dimen name="skillz_i11_text_size_extra_large">28sp</dimen>
+    <dimen name="skillz_i11_text_size_hero">36sp</dimen>
+    <dimen name="skillz_i11_text_size_superhero">48sp</dimen>
+    
+    <dimen name="skillz_i11_checkbox_grey_size">20dp</dimen>
+    
+    <dimen name="skillz_i11_side_margin">8dp</dimen>
+    
+    
+    <dimen name="skillz_i11_intro_sign_up_arrows_margin">15dp</dimen>
+    <dimen name="skillz_i11_intro_sign_up_text_margin">30dp</dimen>
+    <dimen name="skillz_i11_intro_sign_up_arrow_width">35dp</dimen>
+    
+    <!--  i11 more_info -->
+    <dimen name="skillz_i11_more_info_title_height">46dp</dimen>
+    <dimen name="skillz_i11_more_info_subtitle_text_size">22sp</dimen>
+    
+    <dimen name="skillz_i11_more_info_join_box_height">120dp</dimen>
+    <dimen name="skillz_i11_more_info_join_icon_offset">-12dp</dimen>
+    <dimen name="skillz_i11_more_info_join_icon_width">80dp</dimen>
+    <dimen name="skillz_i11_more_info_join_icon_height">58dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_join_text_padding_top">20dp</dimen>
+    <dimen name="skillz_i11_more_info_join_text_padding_bottom">10dp</dimen>
+    <dimen name="skillz_i11_more_info_join_text_padding_left">10dp</dimen>
+    <dimen name="skillz_i11_more_info_join_text_padding_right">10dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_play_win_container_height">150dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_play_box_height">140dp</dimen>
+    <dimen name="skillz_i11_more_info_play_icon_offset">-10dp</dimen>
+    <dimen name="skillz_i11_more_info_play_icon_width">71dp</dimen>
+    <dimen name="skillz_i11_more_info_play_icon_height">52dp</dimen>
+    <dimen name="skillz_i11_more_info_play_text_padding_top">40dp</dimen>
+    <dimen name="skillz_i11_more_info_play_text_padding_left">10dp</dimen>
+    <dimen name="skillz_i11_more_info_play_text_padding_right">10dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_win_box_height">140dp</dimen>
+    <dimen name="skillz_i11_more_info_win_icon_offset">-10dp</dimen>
+    <dimen name="skillz_i11_more_info_win_icon_width">82dp</dimen>
+    <dimen name="skillz_i11_more_info_win_icon_height">55dp</dimen>
+    <dimen name="skillz_i11_more_info_win_text_padding_top">40dp</dimen>
+    <dimen name="skillz_i11_more_info_win_text_padding_left">10dp</dimen>
+    <dimen name="skillz_i11_more_info_win_text_padding_right">10dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_create_account_height">69dp</dimen>
+    <dimen name="skillz_i11_more_info_create_account_margin">5dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_create_account_arrows_margin">30dp</dimen>
+    <dimen name="skillz_i11_more_info_create_account_text_margin">30dp</dimen>
+    
+    <dimen name="skillz_i11_more_info_arrow_width">34dp</dimen>
+    <dimen name="skillz_i11_more_info_arrow_height">51dp</dimen>
+    <dimen name="skillz_i11_more_info_arrow_delim">-12dp</dimen>
+</resources>

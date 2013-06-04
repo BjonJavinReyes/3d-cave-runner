@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item>
+	    <layer-list>
+	        <item>
+	            <shape android:shape="rectangle">
+	                <gradient android:startColor="#dfeffd"
+	                    android:endColor="#5079d5"
+	                    android:angle="270"/>
+	                <corners android:radius="@dimen/skillz_i10_btn_corner_radius"/>
+	                <stroke android:width="@dimen/skillz_i10_btn_outer_stroke"
+	            		android:color="@color/skillz_i10_btn_outer_stroke_blue"/>
+	            </shape>
+	        </item>
+	        <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+	            <shape android:shape="rectangle">
+	                <gradient android:startColor="#78b7f0"
+	                    android:centerColor="#3e64d3"
+	                    android:endColor="#2135a1"
+	                    android:angle="270" />
+	                <corners android:radius="@dimen/skillz_i10_btn_corner_radius"/>
+	            </shape>
+	        </item>
+	    </layer-list>
+	</item>
+
+</layer-list>

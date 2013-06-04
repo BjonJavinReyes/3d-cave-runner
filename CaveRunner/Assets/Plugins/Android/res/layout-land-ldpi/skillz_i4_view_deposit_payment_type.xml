@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-8dp"
+    android:background="@drawable/skillz_i4_box_inner_opaque">
+    <LinearLayout
+        android:id="@+id/skillzPaymentSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/skillzPaymentCardIcon"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+	   	    android:src="@drawable/skillz_i4_icon_card" />
+        	<LinearLayout 
+        	    android:id="@+id/skillzPaymentTypeContainer"
+        	    android:layout_height="36dp"
+        	    android:layout_width="match_parent"
+       			android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+	   	    	android:layout_marginRight="@dimen/skillz_i4_margin_half"
+	   	    	android:layout_marginTop="@dimen/skillz_i4_margin_quarter"
+	   	    	android:layout_marginBottom="@dimen/skillz_i4_margin_quarter" >
+        	    <FrameLayout
+        	        android:id="@+id/skillzNewVisa"
+        	        android:layout_height="match_parent"
+        	        android:layout_width="0dp"
+        	        android:layout_weight="1"
+        	        android:gravity="center"
+        	        android:background="@drawable/skillz_i4_bg_entry_half_left" >
+	        	    <ImageView
+	        	        android:layout_width="wrap_content"
+	        	        android:layout_height="wrap_content"
+	        	        android:layout_gravity="center"
+	        	        android:src="@drawable/skillz_i4_icon_visa" />
+	        	</FrameLayout>
+        	    <FrameLayout
+        	        android:id="@+id/skillzPayPal"
+        	        android:layout_height="match_parent"
+        	        android:layout_width="0dp"
+        	        android:layout_weight="1"
+        	        android:gravity="center"
+        	        android:background="@drawable/skillz_i4_bg_entry_half_right" >
+	        	    <ImageView
+	        	        android:layout_width="wrap_content"
+	        	        android:layout_height="wrap_content"
+	        	        android:layout_gravity="center"
+	        	        android:paddingTop="3dp"
+	        	        android:paddingLeft="3dp"
+	        	        android:src="@drawable/skillz_i4_icon_paypal" />
+	        	</FrameLayout>
+        	</LinearLayout>
+<!--  	   	<FrameLayout
+	   	    android:id="@+id/skillzNewVisa"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="36dp"
+	   	    android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+	   	    android:layout_marginRight="@dimen/skillz_i4_margin_half"
+	   	    android:layout_marginTop="@dimen/skillz_i4_margin_quarter"
+	   	    android:layout_marginBottom="@dimen/skillz_i4_margin_quarter"
+	   	    android:background="@drawable/skillz_i4_text_light">
+	   	    <TextView
+	   	        android:layout_width="wrap_content"
+	   	        android:layout_height="wrap_content"
+	   	        android:layout_gravity="left|center_vertical"
+	   	        android:paddingLeft="@dimen/skillz_i4_margin_half"
+	   	        style="@style/Skillz.I4.TextView.LightGray.Small"
+	   	        android:text="@string/skillz_i4_deposit_blank_card" />
+	   	</FrameLayout> -->
+    </LinearLayout>
+   	<LinearLayout
+   	    android:id="@+id/skillzVisaExisting"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:gravity="center_vertical"
+   	    android:orientation="horizontal"
+   	    android:visibility="gone">
+   	    <ImageView
+   	        android:id="@+id/skillzChangePayment"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+	   	    android:src="@drawable/skillz_i4_icon_card_add" />
+	   	<TextView
+	   	    android:id="@+id/skillzVisaExistingText"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="36dp"
+	   	    android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+	   	    android:layout_marginRight="@dimen/skillz_i4_margin_half"
+	   	    android:layout_marginTop="@dimen/skillz_i4_margin_quarter"
+	   	    android:layout_marginBottom="@dimen/skillz_i4_margin_quarter"
+	   	    android:gravity="right|center_vertical"
+	   	    android:enabled="false"
+	   	    android:drawableLeft="@drawable/skillz_i4_icon_visa"
+	   	    style="@style/Skillz.I4.EditText.Light.DarkGray.Micro" />
+   	</LinearLayout>
+</FrameLayout>

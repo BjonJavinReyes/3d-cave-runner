@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" >
+
+        <TextView
+            android:id="@+id/skillzHeader"
+            style="@style/Skillz.I10.View.Header.Relative"
+            android:text="@string/skillz_withdraw" />
+
+        <LinearLayout
+            android:id="@+id/skillzFooter"
+            style="@style/Skillz.I10.View.Footer"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/skillzCancelButton"
+                style="@style/Skillz.I10.Button.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_cancel" />
+
+            <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+            <Button
+                android:id="@+id/skillzNextButton"
+                style="@style/Skillz.I10.Button.Large.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_next" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/skillzFooter"
+            android:layout_below="@id/skillzHeader"
+            android:padding="@dimen/skillz_i10_side_margin_text_field" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/skillzWithdrawFirstName"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_address_first_name"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/skillzWithdrawLastName" />
+
+                <EditText
+                    android:id="@id/skillzWithdrawLastName"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_address_last_name"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/skillzWithdrawAddress" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@id/skillzWithdrawAddress"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_address_street"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/skillzWithdrawAddress2" />
+
+                <EditText
+                    android:id="@id/skillzWithdrawAddress2"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_address_unit"
+                    android:nextFocusDown="@+id/skillzWithdrawZip"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:stretchColumns="1">
+
+                <EditText
+                    android:id="@id/skillzWithdrawZip"
+                    style="@style/Skillz.I10.Input.Text.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/skillz_address_zip"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:nextFocusDown="@+id/skillzWithdrawSSN"
+                    android:singleLine="true" />
+
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/skillz_i10_text_field_margin"
+                    android:orientation="horizontal" >
+                	
+                	<EditText
+                	    android:id="@+id/skillzCreateAccountPhone"
+                	    style="@style/Skillz.I10.Input.Text"
+                	    android:layout_width="0dp"
+                	    android:layout_height="wrap_content"
+                	    android:layout_weight="10"
+                	    android:hint="@string/skillz_i10_create_account_phone"
+                	    android:inputType="number"
+                	    android:maxLength="10" />
+                    	                
+	                <ImageView 
+	                    android:id="@+id/skillzCreateAccountPhoneHelp"
+	                    style="@style/Skillz.I10.View.Hint"
+	                   	android:layout_height="fill_parent"
+	                   	android:scaleType="center"
+	                   	android:layout_width="50dip"
+                        android:src="@drawable/skillz_i10_ic_moreinfo" />
+
+           		</LinearLayout>
+                
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/skillz_i10_text_field_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@id/skillzWithdrawSSN"
+                        style="@style/Skillz.I10.Input.Text"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="4"
+                        android:digits="0123456789-"
+                        android:hint="@string/skillz_withdraw_ssn"
+                        android:inputType="number|text"
+                        android:scaleType="center"
+                        android:singleLine="true" 
+                        android:maxLength="11" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/skillzWithdrawSSNHelp"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/skillz_i10_ic_moreinfo" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="skillz_onboard_tab_height">162dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_ic_cash_height">90dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_cash_width">71dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_height">88dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_onboard_ic_award_width">70dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_onboard_b_padding_right">7dp</dimen><!-- 2.0 -->
+    
+    <!-- Cards -->
+    <dimen name="skillz_card_width">324dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_height">465dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_spacing">12dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_padding_top">15dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_title_padding_bottom">9dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_ic_award_width">90dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_card_ic_award_height">113dp</dimen><!-- 2.0 -->
+    
+    <dimen name="skillz_card_section_2_padding">15dp</dimen><!-- 2.0 -->
+    <dimen name="skillz_i10_profile_nav_text_size">24sp</dimen>
+    
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+    <include layout="@layout/skillz_i10_actionbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i20_bg_game_history_title"
+        android:padding="@dimen/skillz_i10_side_margin"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin">
+        <TextView
+            android:id="@+id/skillzHeader"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	style="@style/Skillz.I10.Text.White.Medium"
+        	android:contentDescription="@string/skillz_font_helvetica_black_cn"
+        	android:text="@string/skillz_i10_deposit_summary_title" />
+        <ImageView 
+            android:id="@+id/skillzGeotrust1"
+            android:layout_width="@dimen/skillz_geotrust_dark_width"
+            android:layout_height="@dimen/skillz_geotrust_dark_height"
+            android:layout_gravity="center|right"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/skillz_geotrust_dark" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skillz_i20_bg_game_history_title"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:padding="12dp"
+	                android:orientation="vertical"
+	                android:layout_gravity="center"
+	                android:layout_margin="16dp"
+	                android:background="@drawable/skillz_i10_bg_text_field_default">
+	                <TextView
+	                    android:id="@+id/skillzDepositSummaryUsing"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginBottom="8dp"
+	                    android:text="@string/skillz_deposit_summary_msg"
+	                    style="@style/Skillz.I10.H3.Gray" />
+	                <FrameLayout
+	                    android:id="@+id/skillzDepositSummaryPaymentDetails"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content" />
+            	</LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:gravity="right">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/skillzDepositSummaryDepositAmountLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/skillz_deposit_summary_amount"
+                        style="@style/Skillz.I10.Text.White.Medium" />
+                    <TextView
+                        android:id="@+id/skillzDepositSummaryAmount"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="right"
+                        style="@style/Skillz.I10.Input.Text.ReadOnly" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/skillzDepositSummaryBonusContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/skillz_deposit_summary_bonus"
+                        style="@style/Skillz.I10.Text.White.Medium" />
+                    <TextView
+                        android:id="@+id/skillzDepositSummaryBonus"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="right"
+                        style="@style/Skillz.I10.Input.Text.ReadOnly" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/skillzDepositSummaryZBonusContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/skillz_deposit_summary_z_bonus"
+                        style="@style/Skillz.I10.Text.White.Medium" />
+                    <TextView
+                        android:id="@+id/skillzDepositSummaryZBonus"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="right"
+                        style="@style/Skillz.I10.Input.Text.ReadOnly" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/skillzDepositSummaryTotalBalanceContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/skillz_deposit_summary_total_balance"
+                        style="@style/Skillz.I10.Text.White.Medium"
+                        android:contentDescription="@string/skillz_font_helvetica_bold" />
+                    <TextView
+                        android:id="@+id/skillzDepositSummaryTotalBalance"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="right"
+                        style="@style/Skillz.I10.Input.Text.ReadOnly" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/skillzFooter"
+            style="@style/Skillz.I10.View.Footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+		    <Button
+                android:id="@+id/skillzSubmitButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/skillz_deposit_summary_deposit"
+                style="@style/Skillz.I10.Button.Large.Blue" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

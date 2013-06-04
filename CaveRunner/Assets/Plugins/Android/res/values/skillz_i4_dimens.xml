@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Text -->
+    <dimen name="skillz_i4_text_unreadable">6sp</dimen>
+    <dimen name="skillz_i4_text_unreadable_plus">8sp</dimen>
+    <dimen name="skillz_i4_text_mini">10sp</dimen>
+    <dimen name="skillz_i4_text_micro">12sp</dimen>
+    <dimen name="skillz_i4_text_small">14sp</dimen>
+    <dimen name="skillz_i4_text_small_plus">16sp</dimen>
+    <dimen name="skillz_i4_text_medium">18sp</dimen>
+    <dimen name="skillz_i4_text_medium_plus">20sp</dimen>
+    <dimen name="skillz_i4_text_large">24sp</dimen>
+    <dimen name="skillz_i4_text_xlarge">28sp</dimen>
+    <dimen name="skillz_i4_text_hero">36sp</dimen>
+    <dimen name="skillz_i4_text_superhero">48sp</dimen>
+    
+    <!-- Generic -->
+    <dimen name="skillz_i4_view_negative_actionbar_margin">-4dp</dimen>
+    <dimen name="skillz_i4_margin_full">8dp</dimen>
+    <dimen name="skillz_i4_margin_half">4dp</dimen>
+    <dimen name="skillz_i4_margin_quarter">2dp</dimen>
+    
+    <!-- Checkbox -->
+    <dimen name="skillz_i4_checkbox_width">20dp</dimen>
+    <dimen name="skillz_i4_checkbox_height">20dp</dimen>
+    
+    <dimen name="skillz_i4_place_width">70dp</dimen>
+    <dimen name="skillz_i4_icon_tile_width">28dp</dimen>
+    
+</resources>

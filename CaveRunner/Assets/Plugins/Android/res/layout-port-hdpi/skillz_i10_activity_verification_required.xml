@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i20_bg_game_history_title"
+        android:padding="@dimen/skillz_i10_side_margin"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin">
+        <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	style="@style/Skillz.I10.Text.White.Medium"
+        	android:contentDescription="@string/skillz_font_helvetica_black_cn"
+        	android:text="@string/skillz_verification_required_title" />
+    </RelativeLayout>
+    <TextView android:id="@+id/skillzTextView"
+        style="@style/Skillz.I10.H2.White"
+        android:background="@drawable/skillz_i20_bg_game_history_title"
+        android:contentDescription="@string/skillz_font_avenir_roman"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/skillz_i10_side_margin"
+        android:text="@string/skillz_verification_required_message"/>
+    <Button android:id="@+id/skillzSendButton"
+        android:layout_width="match_parent"
+        style="@style/Skillz.I10.Button.Medium.Blue"
+        android:text="@string/skillz_verification_required_send"
+        android:layout_margin="@dimen/skillz_i10_side_margin"/>
+</LinearLayout>

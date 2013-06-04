@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <color name="skillz_text_green">#a5cb34</color>
+    <color name="skillz_text_white">#FFFFFFFF</color>
+    <color name="skillz_text_white_half_alpha">#80FFFFFF</color>
+    <color name="skillz_text_black">#000000</color>
+    
+    <color name="skillz_list_item_striped_bg_0">#b2FFFFFF</color>
+    <color name="skillz_list_item_striped_bg_1">#00000000</color>
+    <color name="skillz_list_item_bg_pressed">#ccc</color>
+    
+	<color name="skillz_tournament_prize_center">#719d12</color>
+	<color name="skillz_tournament_prize_edge">#52830d</color>
+	<color name="skillz_tournament_prize_center_pressed">#adf11b</color>
+	<color name="skillz_tournament_prize_edge_pressed">#82b114</color>
+	
+	<color name="skillz_tournament_prize_center_disabled">#858585</color>
+	<color name="skillz_tournament_prize_edge_disabled">#5b5b5b</color>
+	<color name="skillz_tournament_prize_center_disabled_pressed">#a7a7a7</color>
+	<color name="skillz_tournament_prize_edge_disabled_pressed">#737373</color>
+	
+	<color name="skillz_text_field_bg_gradient_top">#dedede</color>
+	<color name="skillz_text_field_bg_gradient_bottom">#ffffff</color>
+	<color name="skillz_invalid_field_bg_gradient_top">#de8484</color>
+	<color name="skillz_invalid_field_bg_gradient_bottom">#ffa5a5</color>
+	<color name="skillz_divider_gradient_start">#a9a9a9</color>
+	<color name="skillz_divider_gradient_end">#2b2b2b</color>
+	<color name="skillz_button_separator">#1f1f1f</color>
+	
+	<color name="skillz_pulse_blue">#5681aa</color>
+	
+	<!-- Iteration 10 -->
+	<color name="skillz_i10_bg">#E2E2E2</color>
+	<color name="skillz_i10_bg_blue">#4564aa</color>
+	<color name="skillz_i10_bg_gray">#2a363e</color>
+	<color name="skillz_i10_bg_list_0">#b2FFFFFF</color>
+	<color name="skillz_i10_bg_list_1">#8cFFFFFF</color>
+<!-- 	<color name="skillz_i10_bg_list_pressed">#66FFFFFF</color> -->
+	<color name="skillz_i10_bg_list_pressed">#AB2C64AE</color>
+	<color name="skillz_i10_bg_list_header">#3f3f3f</color>
+	<color name="skillz_i10_bg_list_header_gray">#2d343c</color>
+	<color name="skillz_i10_bg_list_header_line">#1a1a1a</color>
+	<color name="skillz_i10_bg_footer_line">#949494</color>
+	<color name="skillz_i10_bg_footer">#e1e1e1</color>
+	
+	<color name="skillz_i10_avatar_bg">#e7e7e7</color>
+	<color name="skillz_i10_avatar_border_blue">#555fc1</color>
+	<color name="skillz_i10_avatar_border_gray">#2a2e35</color>
+	
+	<color name="skillz_i10_tile_tournament_bg">#dcdcdc</color>
+	<color name="skillz_i10_tile_tournament_bg_stroke">#2C64AE</color>
+	
+	<color name="skillz_i10_tile_gray_bg_stroke">#a0a0a0</color>
+	<color name="skillz_i10_tile_gray_bg">#eaeaea</color>
+	
+	<color name="skillz_i10_text_gray">#3f3f3f</color>
+	<color name="skillz_i10_text_blue">#245EA3</color>
+	<color name="skillz_i10_text_white">#FFFFFF</color>
+	<color name="skillz_i10_text_light_gray">#989898</color>
+	
+	<color name="skillz_i10_shadow_dark">#252525</color>
+	<color name="skillz_i10_shadow_light">#FFFFFF</color>
+	
+	<color name="skillz_i10_btn_outer_stroke">#000000</color>
+	<color name="skillz_i10_btn_outer_stroke_blue">#3b4053</color>
+	
+	<color name="skillz_i10_list_divider">#bababa</color>
+	<color name="skillz_i10_view_divider">#304c8e</color>
+	
+	<color name="skillz_i10_clear">#00000000</color>
+	
+	<color name="skillz_i10_profile_stat_bars">#2d343c</color>
+	<color name="skillz_i10_profile_stat_bars_border">#898989</color>
+	
+	<color name="skillz_i10_divider_gray">#989898</color>
+	
+	<color name="skillz_i10_bg_contact_customer_service">#dce0e5</color>
+	<color name="skillz_i10_bg_contact_customer_service_pressed">#bcc4cd</color>
+	
+	<!-- i11 -->
+	<color name="skillz_i11_text_light">#cecece</color>
+	<color name="skillz_i11_text_dark">#676767</color>
+	<color name="skillz_i11_text_slate">#303c48</color>
+	
+	<color name="skillz_congrats_background">#aa000000</color>
+</resources>

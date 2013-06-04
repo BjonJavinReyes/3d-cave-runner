@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_bg_taunt_selector" >
+
+    <ImageView
+        android:id="@+id/skillzTauntIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+        android:layout_centerVertical="true"
+        android:src="@drawable/skillz_i4_icon_megaphone" />
+	
+    <TextView
+        android:id="@+id/skillzTauntText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skillzTauntIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+        android:layout_marginRight="@dimen/skillz_i4_margin_half"
+        style="@style/Skillz.I4.TextView.White.Medium.Shadow"
+        android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+        android:visibility="gone"
+        android:maxLines="2"
+        android:gravity="left" />
+    
+    <LinearLayout
+        android:id="@+id/skillzTauntDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Skillz.I4.TextView.White.Medium.Shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+            android:text="@string/skillz_i4_choose_your_shout_out"
+            android:textSize="@dimen/skillz_i4_text_micro" />
+
+        <TextView
+            style="@style/Skillz.I4.TextView.White.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+            android:text="@string/skillz_i4_select_a_taunt_that_fits_you"
+            android:textSize="@dimen/skillz_i4_text_mini" />
+
+    </LinearLayout>
+
+</RelativeLayout>

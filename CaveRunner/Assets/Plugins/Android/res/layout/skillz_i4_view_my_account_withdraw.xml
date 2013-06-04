@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/skillz_i4_box_backing_fade">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/skillz_i4_margin_full"
+        android:gravity="center"
+        android:text="@string/skillz_i4_my_account_withdraw_information_uppercase"
+        android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+        style="@style/Skillz.I4.TextView.White.Medium.Shadow"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="@dimen/skillz_i4_margin_full"
+	    android:padding="@dimen/skillz_i4_margin_full"
+	    android:background="@drawable/skillz_i4_box_inner_opaque">
+	    <EditText
+	        android:id="@+id/skillzWithdrawAddress"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/skillz_i4_margin_full"
+	        android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+	        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+	        android:inputType="textNoSuggestions|textFilter"
+	        style="@style/Skillz.I4.EditText.Light.DarkGray"
+	        android:hint="@string/skillz_i4_my_account_street_address" />
+	    <EditText
+	        android:id="@+id/skillzWithdrawApt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/skillz_i4_margin_full"
+	        android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+	        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+	        android:inputType="textNoSuggestions|textFilter"
+	        style="@style/Skillz.I4.EditText.Light.DarkGray"
+	        android:hint="@string/skillz_i4_my_account_apt" />
+	    <EditText
+	        android:id="@+id/skillzWithdrawZip"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/skillz_i4_margin_full"
+	        android:layout_marginLeft="@dimen/skillz_i4_margin_full"
+	        android:layout_marginRight="@dimen/skillz_i4_margin_full"
+	        android:inputType="number"
+	        android:maxLength="5"
+	        style="@style/Skillz.I4.EditText.Light.DarkGray"
+	        android:hint="@string/skillz_i4_my_account_zip" />
+	    <EditText
+	        android:id="@+id/skillzWithdrawSSN"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/skillz_i4_margin_full"
+	        android:inputType="textNoSuggestions|textFilter"
+	        style="@style/Skillz.I4.EditText.Light.DarkGray"
+	        android:hint="@string/skillz_i4_my_account_ssn" />
+	</LinearLayout>
+</LinearLayout>

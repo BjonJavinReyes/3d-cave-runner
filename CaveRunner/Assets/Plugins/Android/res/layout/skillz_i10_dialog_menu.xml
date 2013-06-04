@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/Skillz.I10.View.Dialog.Background"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/skillzDialogMenuHeader"
+        style="@style/Skillz.I10.View.Dialog.Header" />
+    
+	<ListView
+	    android:id="@+id/skillzDialogMenuListView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginLeft="-1dp"
+	    android:layout_marginRight="-1dp"
+	    style="@style/Skillz.I10.View.ListView" />
+</LinearLayout>

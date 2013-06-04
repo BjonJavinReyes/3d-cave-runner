@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <bitmap android:src="@drawable/skillz_i4_button_filter_up" android:gravity="center" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/skillz_i4_icon_z_disabled" android:gravity="center" />
+    </item>
+</layer-list>

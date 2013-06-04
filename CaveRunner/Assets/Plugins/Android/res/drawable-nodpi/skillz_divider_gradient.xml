@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:type="radial"
+              android:startColor="@color/skillz_divider_gradient_start"
+              android:endColor="@color/skillz_divider_gradient_end"
+              android:gradientRadius="200"
+              />
+</shape>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/skillz_i4_box_inner_opaque"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+            android:src="@drawable/skillz_i4_icon_visa" />
+
+        <RelativeLayout
+            android:id="@+id/skillzCollapsedCreditCardEntryContainer"
+            style="@style/Skillz.I4.EditText.Light.DarkGray.SmallPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/skillz_i4_margin_quarter"
+            android:layout_marginLeft="@dimen/skillz_i4_margin_half"
+            android:layout_marginRight="@dimen/skillz_i4_margin_half"
+            android:layout_marginTop="@dimen/skillz_i4_margin_quarter" >
+
+            <com.skillz.android.client.ui.views.CollapsedCreditCardEntry
+                android:id="@+id/skillzCollapsedCreditCardEntry"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/skillz_i4_box_inner_opaque"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/skillzRememberPaymentInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@drawable/skillz_checkbox_button" />
+
+            </FrameLayout>
+            
+
+            <TextView
+                android:id="@+id/skillzRememberPaymentInfoLabel"
+                style="@style/Skillz.I4.TextView.DarkGray.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/skillz_i4_font_helvetica_roman"
+                android:text="@string/skillz_i4_deposit_preferred_card" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

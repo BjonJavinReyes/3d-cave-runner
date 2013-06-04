@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillzSignupBonus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+    <!-- WELCOME TO SKILLZ -->
+    <TextView
+        android:id="@+id/skillzPromptWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:contentDescription="@string/skillz_font_helvetica_bold_cn"
+        android:text="@string/skillz_i4_welcome_to_skillz"
+        style="@style/Skillz.I4.TextView.White.Medium.Shadow" />
+    <RelativeLayout
+        android:id="@+id/skillzPromptDialog"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skillzPromptWelcomeText"
+        android:layout_centerHorizontal="true"
+        android:clipChildren="false"
+        android:background="@drawable/skillz_i4_prompt_lightgrey_arrow" >
+        <RelativeLayout
+            android:id="@+id/skillzPromptSlateContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="28dp"
+            android:paddingBottom="0dp"
+            android:clipChildren="false"
+            android:background="@drawable/skillz_i4_prompt_silver_slate_temp" >
+            
+            <!-- HERE'S $10000000.00 ON US -->
+            <com.skillz.android.client.ui.views.GradientTextView
+                android:id="@+id/skillzPromptBonusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_centerHorizontal="true"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90" 
+                android:gravity="center"
+                android:lines="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                style="@style/Skillz.I4.TextView.Black.Medium" />
+            
+            <!-- You're ready to start winning! -->
+            <TextView
+                android:id="@+id/skillzPromptSubText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90" 
+                android:gravity="center_vertical"
+                android:layout_below="@id/skillzPromptBonusTitle"
+                android:text="@string/skillz_i4_start_winning"
+                android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+                android:visibility="gone"
+                style="@style/Skillz.I4.TextView.DarkGray.Small" />
+            
+            <!-- some blob of text -->
+            <TextView
+                android:id="@+id/skillzPromptTextBlob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_centerHorizontal="true"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90"
+                android:layout_below="@id/skillzPromptSubText"
+                android:gravity="center"
+                android:contentDescription="@string/skillz_i4_font_helvetica_medium"
+                style="@style/Skillz.I4.TextView.DarkGray.Micro" />
+		</RelativeLayout>
+      	<ImageView
+           android:id="@+id/skillzPromptIconCash"
+           android:layout_width="54dp"
+           android:layout_height="54dp"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="0dp"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/skillz_i11_prompt_money" />
+      	<ImageView
+           android:id="@+id/skillzPromptIconZ"
+           android:layout_width="54dp"
+           android:layout_height="54dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:visibility="gone"
+           android:src="@drawable/skillz_i4_icon_prompt_z" />
+        
+        <!-- GET STARTED -->
+        <com.skillz.android.client.ui.views.GradientTextView
+                android:id="@+id/skillzPromptFooterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:startColor="@color/skillz_i4_text_gradient_blueslate_start"
+                android:endColor="@color/skillz_i4_text_gradient_blueslate_end"
+                android:angle="90" 
+                android:layout_below="@id/skillzPromptSlateContainer"
+                android:gravity="center"
+                android:lines="1"
+                android:contentDescription="@string/skillz_i4_font_helvetica_black_cn"
+                android:text="@string/skillz_onboard_get_started"
+                style="@style/Skillz.I4.TextView.Black.Medium" />
+    </RelativeLayout>
+</RelativeLayout>

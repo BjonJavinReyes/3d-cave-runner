@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/skillz_i4_background">
+    <include layout="@layout/skillz_i10_actionbar" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skillz_i10_gamers_email_title"
+        android:background="@drawable/skillz_i10_bg_list_header"
+        android:paddingLeft="@dimen/skillz_i10_side_margin"
+        style="@style/Skillz.I10.Text.White.Small.Bold.Shadow" />
+    <TextView
+        android:id="@+id/skillzGamersEmailTo"
+        android:layout_width="fill_parent"
+        android:hint="@string/skillz_i10_gamers_email_to"
+        android:layout_margin="@dimen/skillz_i10_side_margin"
+        style="@style/Skillz.I10.Input.Text.ReadOnly" />
+    <EditText
+        android:id="@+id/skillzGamersEmailMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/skillz_i10_side_margin"
+        android:text="@string/skillz_i10_gamers_email_default_msg"
+        style="@style/Skillz.I10.Input.Text.Multiline" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/Skillz.I10.View.Footer">
+        <Button
+            android:id="@+id/skillzGamersEmailCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/skillz_i10_gamers_email_cancel"
+            android:layout_marginRight="@dimen/skillz_i10_side_margin_half"
+            style="@style/Skillz.I10.Button.Large" />
+        <Button
+            android:id="@+id/skillzGamersEmailSend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/skillz_i10_gamers_email_send"
+            android:layout_marginLeft="@dimen/skillz_i10_side_margin_half"
+            style="@style/Skillz.I10.Button.Large.Blue" />
+    </LinearLayout>
+</LinearLayout>

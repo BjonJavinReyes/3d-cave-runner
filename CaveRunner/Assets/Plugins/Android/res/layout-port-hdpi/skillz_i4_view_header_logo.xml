@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+    <ImageView
+    	android:id="@+id/skillzBetaTag"
+      	android:layout_width="wrap_content"
+      	android:layout_height="60dp"
+      	android:scaleType="fitEnd"
+      	android:gravity="right|top"
+        android:layout_alignParentTop="true"
+      	android:layout_alignParentRight="true"
+        android:src="@drawable/skillz_i4_tag_beta" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true" />
+    <ImageView 
+        android:id="@+id/skillzLogoDisplay"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/skillz_i4_icon_logo"/>
+	<com.skillz.android.client.ui.views.FillWidthTextView
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="4dp"
+	    android:layout_below="@id/skillzLogoDisplay"
+	    android:layout_alignLeft="@id/skillzLogoDisplay"
+	    android:layout_alignRight="@id/skillzLogoDisplay"
+	    style="@style/Skillz.I11.Text.LogoTagline"
+	    android:text="@string/skillz_i4_logo_tagline" />
+</RelativeLayout>

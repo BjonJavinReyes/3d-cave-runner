@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" >
+
+        <TextView
+            android:id="@+id/skillzHeader"
+            style="@style/Skillz.I10.View.Header.Relative"
+            android:text="@string/skillz_withdraw" />
+
+        <LinearLayout
+            android:id="@+id/skillzFooter"
+            style="@style/Skillz.I10.View.Footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/skillzCancelButton"
+                style="@style/Skillz.I10.Button.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_cancel" />
+
+            <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+            <Button
+                android:id="@+id/skillzSubmitButton"
+                style="@style/Skillz.I10.Button.Large.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_withdraw" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/skillzWithdrawPayDescription"
+            style="@style/Skillz.I10.Text.Gray.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skillzHeader"
+            android:padding="@dimen/skillz_i10_side_margin"
+            android:text="@string/skillz_withdraw_pay_description"
+            android:textSize="@dimen/skillz_i10_text_size_medium_small" />
+
+        <TableLayout
+            android:id="@+id/skillzWithdrawBottomSection"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/skillzWithdrawFooter"
+            android:layout_below="@id/skillzWithdrawPayDescription"
+            android:padding="@dimen/skillz_i10_side_margin" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/skillzWithdrawAmountLabel"
+                    style="@style/Skillz.I10.Text.Gray.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/skillz_withdraw_amount" />
+
+                <TextView
+                    android:id="@+id/skillzWithdrawAmount"
+                    style="@style/Skillz.I10.Input.Text.ReadOnly.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/skillzWithdrawFeeLabel"
+                    style="@style/Skillz.I10.Text.Gray.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/skillz_withdraw_fee" />
+
+                <TextView
+                    android:id="@+id/skillzWithdrawFee"
+                    style="@style/Skillz.I10.Input.Text.ReadOnly.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right" />
+
+                <ImageView
+                    android:id="@+id/skillzWithdrawFeeHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/skillz_i10_ic_moreinfo" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/skillzWithdrawTotalLabel"
+                    style="@style/Skillz.I10.Text.Gray.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/skillz_withdraw_total" />
+
+                <TextView
+                    android:id="@+id/skillzWithdrawTotal"
+                    style="@style/Skillz.I10.Input.Text.ReadOnly.Margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right" />
+
+                <ImageView
+                    android:id="@+id/skillzWithdrawTotalHelp"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/skillz_i10_ic_moreinfo" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

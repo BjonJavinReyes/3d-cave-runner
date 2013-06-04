@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/skillz_i10_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/skillz_i10_negative_shadow_margin" >
+
+        <LinearLayout
+            android:id="@+id/skillzFooter"
+            style="@style/Skillz.I10.View.Footer"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/skillzCancelButton"
+                style="@style/Skillz.I10.Button.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_i10_help_discard" />
+
+            <View style="@style/Skillz.I10.View.ButtonDivider" />
+
+            <Button
+                android:id="@+id/skillzSubmitButton"
+                style="@style/Skillz.I10.Button.Large.Blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/skillz_i10_help_send" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skillzHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/skillz_i10_side_margin"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/skillzHelpFAQs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/skillz_i10_side_margin"
+                android:paddingRight="@dimen/skillz_i10_side_margin"
+                android:layout_marginRight="@dimen/skillz_i10_side_margin"
+                android:background="@drawable/skillz_i10_btn_customer_service">
+                <ImageView
+                    android:id="@+id/skillzFAQIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/skillz_i10_ic_faqs" />
+                <TextView
+                    android:layout_toRightOf="@id/skillzFAQIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/skillz_i10_text_size_medium"
+                    android:textColor="@color/skillz_i10_text_gray"
+                    android:contentDescription="@string/skillz_font_helvetica_roman"
+                    android:text="@string/skillz_i10_help_faq"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/skillzHelpWebsite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/skillz_i10_side_margin"
+                android:paddingRight="@dimen/skillz_i10_side_margin"
+                android:background="@drawable/skillz_i10_btn_customer_service">
+                <ImageView
+                    android:id="@+id/skillzWebIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/skillz_i10_ic_web" />
+                <TextView
+                    android:layout_toRightOf="@id/skillzWebIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/skillz_i10_text_size_medium"
+                    android:textColor="@color/skillz_i10_text_gray"
+                    android:contentDescription="@string/skillz_font_helvetica_roman"
+                    android:text="@string/skillz_i10_help_website"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/skillzContactControls"
+            android:layout_below="@id/skillzHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/skillz_i10_side_margin"
+            android:layout_marginRight="@dimen/skillz_i10_side_margin"
+            android:layout_marginBottom="@dimen/skillz_i10_side_margin"
+            android:orientation="vertical" >
+            <Spinner
+                android:id="@+id/skillzContactTypes"
+                style="@style/Skillz.I10.Input.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/skillzContactDescription"
+            style="@style/Skillz.I10.Input.Text.Multiline"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/skillzFooter"
+            android:layout_below="@id/skillzContactControls"
+            android:layout_marginLeft="@dimen/skillz_i10_side_margin"
+            android:layout_marginRight="@dimen/skillz_i10_side_margin"
+            android:layout_marginBottom="4dp"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

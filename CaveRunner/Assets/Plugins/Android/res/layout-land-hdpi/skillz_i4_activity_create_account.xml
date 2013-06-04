@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skillz_i4_background"
+    android:orientation="vertical" >
+    <LinearLayout 
+         android:id="@+id/skillzCreateAccountSignUpContainer"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		 android:layout_below="@+id/skillzCreateAccountUpperContainer"
+		 android:layout_alignParentBottom="true"
+         android:background="@drawable/skillz_i4_bg_createaccount_footer"
+         android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:layout_weight="1" >
+               <TextView
+			        android:id="@+id/skillzToSText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="8dp"
+			        android:layout_marginTop="5dp"
+			        android:layout_marginBottom="10dp"
+			        android:gravity="center_vertical"
+			        android:textSize="@dimen/skillz_i4_text_small"
+			        android:textColor="@color/skillz_i4_text_light_gray"
+			        android:contentDescription="@string/skillz_font_helvetica_roman"
+			        android:text="@string/skillz_i11_create_account_tos" />
+          </LinearLayout>
+         <Button
+	        android:id="@+id/skillzCreateAccount"
+	        android:layout_width="0dp"
+	        android:layout_height="80dp"
+	        android:layout_weight="1"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center"
+	        android:contentDescription="@string/skillz_i4_font_helvetica_bold"
+	        style="@style/Skillz.I4.Button.Gold.Large.Shadow"
+	        android:text="@string/skillz_i4_playnow" />
+     </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-35dp"
+        android:layout_alignBottom="@+id/skillzCreateAccountUpperContainer"
+        android:orientation="horizontal">
+        <View
+           android:layout_height="match_parent"
+           android:layout_width="0dp"
+           android:layout_weight="1" />
+	    <ImageView
+	        android:layout_width="0dp"
+	        android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/skillz_i4_graphic_clear_pointer_round"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/skillzCreateAccountUpperContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+            <RelativeLayout
+                android:id="@+id/skillzCreateAccountLogo"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="0dp" >
+		        <ImageView
+		            android:id="@+id/skillzLogoDisplay"
+		            android:layout_height="wrap_content"
+		            android:layout_width="match_parent"
+		            android:paddingLeft="30dp"
+		            android:paddingRight="30dp"
+		            android:src="@drawable/skillz_i4_icon_logo_2" />
+				<com.skillz.android.client.ui.views.FillWidthTextView
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="30dp"
+		            android:paddingRight="30dp"
+				    android:layout_below="@id/skillzLogoDisplay"
+				    android:layout_alignLeft="@id/skillzLogoDisplay"
+				    android:layout_alignRight="@id/skillzLogoDisplay"
+				    style="@style/Skillz.I11.Text.LogoTagline.Land"
+				    android:text="@string/skillz_i11_play_for_fun_play_to_win" />
+				<TextView
+				    android:id="@+id/skillzHeaderHelp"
+				    android:layout_alignParentTop="true"
+				    android:visibility="gone"
+				    android:layout_width="0dp"
+				    android:layout_height="0dp"
+				    android:background="#d01d2025"
+				    android:textColor="#ffffff"
+				    android:gravity="center"
+				    android:textSize="16sp"
+				    android:text="@string/skillz_create_account_username_help" /> 
+	 	   </RelativeLayout>
+	 	   
+           <FrameLayout
+               android:layout_height="match_parent"
+               android:layout_width="0dp"
+               android:layout_weight="5"
+               android:background="@drawable/skillz_i4_bg_createaccount_container">
+		 	   <LinearLayout
+		            android:id="@+id/skillzCreateAccountFieldsContainer"
+		            android:layout_height="match_parent"
+		            android:layout_width="match_parent"
+		            android:layout_margin="5dp"
+		            android:gravity="center"
+		            android:orientation="vertical"
+		            android:background="@drawable/skillz_i4_bg_tournaments_header_content_one">
+	               <RelativeLayout
+	                   style="@style/Skillz.I11.View.InputContainer"
+	                   android:layout_marginTop="10dp"
+	                   android:layout_height="60dp">
+	                   <RelativeLayout
+	                       android:id="@+id/skillzEmailIcon"
+	                       android:layout_width="50dp"
+	                       android:layout_height="match_parent">
+	                       <ImageView
+	                        android:layout_width="40dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/skillz_i4_icon_email" />
+	                   </RelativeLayout>
+	                   <RelativeLayout
+	                       android:id="@+id/skillzEmailFieldContainer"
+	                       android:layout_width="match_parent"
+	                       android:layout_height="match_parent"
+	                       android:layout_toRightOf="@id/skillzEmailIcon">
+	                    <EditText
+	                        android:id="@+id/skillzEmail"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:inputType="textEmailAddress"
+	                        android:layout_marginRight="4dp"
+	                        android:layout_centerVertical="true"
+	                        android:singleLine="true"
+	                        android:gravity="center_vertical"
+	                        android:nextFocusDown="@+id/skillzPassword"
+	                        android:hint="@string/skillz_i11_EMAIL_ADDRESS"
+	                        style="@style/Skillz.I11.Input.Text.Light" />
+	                </RelativeLayout>
+	               </RelativeLayout>
+	               <RelativeLayout
+	                   style="@style/Skillz.I11.View.InputContainer"
+	                   android:layout_height="60dp">
+	                   <RelativeLayout
+	                       android:id="@+id/skillzPasswordIcon"
+	                       android:layout_width="50dp"
+	                       android:layout_height="match_parent">
+	                       <ImageView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="35dp"
+	                        android:layout_centerInParent="true"
+	                        android:src="@drawable/skillz_i4_icon_password" />
+	                   </RelativeLayout>
+	                   <RelativeLayout
+	                       android:id="@+id/skillzPasswordFieldContainer"
+	                       android:layout_width="match_parent"
+	                       android:layout_height="match_parent"
+	                       android:layout_toRightOf="@id/skillzPasswordIcon">
+	                    <EditText
+	                        android:id="@+id/skillzPassword"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="35dp"
+	                        android:inputType="textPassword"
+	                        android:layout_marginRight="4dp"
+	                        android:layout_centerVertical="true"
+	                        android:singleLine="true"
+	                        android:gravity="center_vertical"
+	                        android:hint="@string/skillz_i11_PASSWORD"
+	                        style="@style/Skillz.I11.Input.Text.Light" />
+	                 </RelativeLayout>
+	               </RelativeLayout>
+	               <ImageView
+					   android:layout_height="0dp"
+					   android:layout_width="wrap_content"
+					   android:layout_gravity="right|bottom"
+					   android:layout_weight="1"
+					   android:paddingRight="5dp"
+					   android:paddingBottom="5dp"
+					   android:scaleType="fitEnd"
+					   android:src="@drawable/skillz_i4_icon_geotrust_white_trans" />
+	        </LinearLayout>
+	    </FrameLayout>
+     </LinearLayout>
+</RelativeLayout>

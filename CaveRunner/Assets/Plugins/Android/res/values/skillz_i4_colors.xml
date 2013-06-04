@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="skillz_i4_transparent">#00000000</color>
+    
+    <color name="skillz_i4_text_white">#FFFFFF</color>
+    <color name="skillz_i4_text_black">#000000</color>
+    <color name="skillz_i4_text_lighter_gray">#d5d5d5</color>
+    <color name="skillz_i4_text_light_gray">#ababab</color>
+    <color name="skillz_i4_text_dark_gray">#454545</color>
+    <color name="skillz_i4_text_slate">#565e67</color>
+    <color name="skillz_i4_text_light_blue">#5b87a9</color>
+    
+    <color name="skillz_i4_text_gold_standard">#e79235</color>
+    <color name="skillz_i4_text_blue_standard">#4f99c4</color>
+    
+    <color name="skillz_i4_text_gradient_blueslate_start">#455565</color>
+    <color name="skillz_i4_text_gradient_blueslate_end">#242d36</color>
+    
+    <color name="skillz_i4_shadow_black">#000000</color>
+    
+    <color name="skillz_i4_background_dark_gray">#2a2a2a</color>
+    
+    <color name="skillz_i4_bg_tournaments_footer">#42454e</color>
+    <color name="skillz_i4_bg_tournaments_footer_down">#303238</color>
+</resources>
