@@ -104,6 +104,14 @@ function EndLevel()
 function WaitThenFinish() {
 	yield WaitForSeconds(2); 
 	
+	var TotalScore:int = TotalDistance * 10 + TotalGems * 100;
+	
+	//report Skillz stats
+	var statsData = new Dictionary.<String, String>();
+	statsData["gems"] = TotalGems.ToString();
+	statsData["totalDistance"] = TotalDistance.ToString();
+	Skillz.ReportStats(TotalScore, statsData);
+	
 	Application.LoadLevel("end");
 }
 
