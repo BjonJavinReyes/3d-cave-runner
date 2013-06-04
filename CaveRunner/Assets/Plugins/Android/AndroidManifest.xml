@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.skillz.android.client"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.skillzgames.caverun"
+    android:versionCode="2"
+    android:versionName="2.0.0">
     
     <!-- Required by Skillz -->
-    <permission android:name="com.your.package.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <permission android:name="com.skillzgames.caverun.permission.C2D_MESSAGE" android:protectionLevel="signature" />
     
     <!-- Required by Skillz -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,22 +16,20 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <uses-permission android:name="com.your.package.permission.C2D_MESSAGE" /> 
-	
+    <uses-permission android:name="com.skillzgames.caverun.permission.C2D_MESSAGE" /> 
+    
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
     
-    <application android:label=""
-        android:icon="@drawable/app_icon"
-        android:allowBackup="false"
-        android:theme="@style/AppTheme">
+    <application android:label="@string/app_name"
+        android:icon="@drawable/app_icon">
         
         <!-- UNITY USERS USE THIS ACTIVITY -->
-        <!-- <activity android:name="com.skillz.android.client.SkillzUnityPlayerActivity" android:label="" android:launchMode="singleInstance">
+        <activity android:name="com.skillz.android.client.SkillzUnityPlayerActivity" android:label="@string/app_name" android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> -->
+        </activity>
         <!-- END UNITY USERS -->
         
         <!-- Required by Skillz -->
@@ -97,35 +95,35 @@
         <receiver android:name="com.skillz.android.client.SkillzGCMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-			    <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-			    <category android:name="com.your.package" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.skillzgames.caverun" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.skillz.android.core.analytics.ReferralReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
-        	<!-- 
-        	if needed, use meta-data entries to forward to your own referral receivers, e.g.
-        	
+            <!-- 
+            if needed, use meta-data entries to forward to your own referral receivers, e.g.
+            
             <meta-data android:name="forward.myAnalyticsTracking" android:value="com.your.game.MyAdTracker" />
             <meta-data android:name="forward.myOtherTracker" android:value="com.your.game.OtherTracker" />
             
             Make sure no other <receiver>s are declared to filter for INSTALL_REFERRER!
-        	-->
+            -->
         </receiver>
         
         <!-- Required by Skillz -->
-		<meta-data android:name="com.skillz.ENVIRONMENT" android:value="" />
-		<meta-data android:name="com.skillz.GAME_ID" android:value="" />
-		<meta-data android:name="com.skillz.GAME_SECRET" android:value="" />
-    	<meta-data android:name="com.skillz.GAME_ACTIVITY_CLASS" android:value="" />
-    	<meta-data android:name="com.skillz.IS_UNITY" android:value="false" />
-    	<meta-data android:name="com.skillz.ORIENTATION" android:value="" />
-    	<meta-data android:name="com.skillz.LOCALYTICS_API_KEY" android:value="" />
-    	<meta-data android:name="com.skillz.TAPJOY_APP_ID" android:value="" />
-    	<meta-data android:name="com.skillz.TAPJOY_SECRET_KEY" android:value="" />
-    	<meta-data android:name="com.skillz.TAPJOY_DEPOSIT_ID" android:value="" />
+        <meta-data android:name="com.skillz.ENVIRONMENT" android:value="SANDBOX" />
+        <meta-data android:name="com.skillz.GAME_ID" android:value="6" />
+        <meta-data android:name="com.skillz.GAME_SECRET" android:value="a_real_secret_from_skillz" />
+        <meta-data android:name="com.skillz.GAME_ACTIVITY_CLASS" android:value="com.skillz.android.client.SkillzUnityPlayerActivity" />
+        <meta-data android:name="com.skillz.IS_UNITY" android:value="true" />
+        <meta-data android:name="com.skillz.ORIENTATION" android:value="PORTRAIT" />
+        <meta-data android:name="com.skillz.LOCALYTICS_API_KEY" android:value="localytics_api_key_from_skillz" />
+        <meta-data android:name="com.skillz.TAPJOY_APP_ID" android:value="" />
+        <meta-data android:name="com.skillz.TAPJOY_SECRET_KEY" android:value="" />
+        <meta-data android:name="com.skillz.TAPJOY_DEPOSIT_ID" android:value="" />
         
      </application>
 </manifest>
