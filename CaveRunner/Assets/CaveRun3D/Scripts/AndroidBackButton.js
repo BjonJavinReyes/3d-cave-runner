@@ -12,13 +12,16 @@ function FixedUpdate ()
        {
             if (Input.GetKeyUp(KeyCode.Escape))
             {
-				if (SceneIndex == 2) //Game
-				{
-					//return to MainMenu
-					Application.LoadLevel("start");
-					return;
-				}
-				
+                if (SceneIndex == 2) //Game
+                {
+                	if (PlayerPrefs.GetInt("SkillzGame") == 1) {
+                   		Skillz.AbortGame();
+                   	} else {
+                   		Application.LoadLevel("start");
+                   	}
+                    return;
+                }
+                
 				if (SceneIndex == 3) //GameOver
 				{
                 	//return to MainMenu
